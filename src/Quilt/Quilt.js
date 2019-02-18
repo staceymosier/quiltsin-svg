@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import './Quilt.scss';
 import Block from '../Block/Block.js';
 
+// TODO: Quilt columns not rendering correctly in grid
+
 class Quilt extends Component {
   render() {
-    const { rows, columns, blockData, options } = this.props;
+    const { rows, columns, blockData, layout } = this.props;
 
     const quiltColumns = [...Array(columns)].map((n, index) => {
       return (
         <Block
           key={`${index}-block`}
           blockData={blockData}
-          options={options}
         />
       )
     });
@@ -23,7 +24,7 @@ class Quilt extends Component {
     });
 
     return (
-      <div className='quilt checkered' key='quilt'>
+      <div className={`quilt ${layout}`} key='quilt'>
         {quiltRows}
       </div>
     );

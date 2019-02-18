@@ -14,13 +14,7 @@ class App extends Component {
         name: 'Sparkle-Plenty',
         id: 1,
         initialRows: 6,
-        initialColumns: 8,
-        palette: {
-          a: 'red',
-          b: 'orange',
-          c: 'yellow',
-          d: 'green'
-        }
+        initialColumns: 8
       }
     };
   }
@@ -31,7 +25,10 @@ class App extends Component {
         <div className="wrapper">
           <header className="header">
             <div className="logo"><a href="./index.html">Amish Quilts</a></div>
-            <Options/>
+            <Options
+              blockData = {this.state.blockData}
+              layout = {this.state.layout}
+            />
           </header>
           <section className="quilt-preview">
             <Quilt
