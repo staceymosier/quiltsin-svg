@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+$display-font: 'Zilla Slab', serif;
+
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, .display {
+  font-family: $display-font;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(20px, auto);
+}
+
+.header {
+    align-items: center;
+    background: #060645;
+    color: white;
+    display: flex;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-row-start: 1;
+    letter-spacing: 2px;
+    padding: 2rem;
+    text-transform: uppercase;
+
+    a {
+      color: #b2ccdc;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+}
+
+.quilt-meta {
+  background: #dbf6f6;
+  background: #dbf6f6;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.hr {
+  margin-bottom: 2rem;
+
+  &::after {
+    content: ' ';
+    border-top: 3px dotted #3d7e9a;
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 1rem;
+  }
+}

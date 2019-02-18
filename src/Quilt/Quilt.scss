@@ -1,0 +1,33 @@
+// Quilt Properties
+$rows: 6;
+$columns: 8;
+$border-inner: 1;
+$border: 3;
+$border-outter: 1;
+$border-inner-color: #157a8a;
+$border-color: #dff1f1;
+$border-outter-color: #8dd2bc;
+
+.quilt-preview {
+  color: white;
+}
+
+.quilt {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(100%/6), 1fr));
+  grid-template-rows: minmax(100px, auto);
+  border: solid 40px white;
+  background-color: orange;
+
+  .block {
+    font-size: 0;
+    background-color: orangered;
+  }
+
+  &.is-checkered {
+    .grid-row:nth-child(odd) .grid-cell:nth-child(odd),
+    .grid-row:nth-child(even) .grid-cell:nth-child(even){
+      transform: rotate(90deg);
+    }
+  }
+}
