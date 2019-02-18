@@ -1,32 +1,31 @@
-// Quilt Properties
-$rows: 6;
-$columns: 8;
-$border-inner: 1;
-$border: 3;
-$border-outter: 1;
-$border-inner-color: #157a8a;
-$border-color: #dff1f1;
-$border-outter-color: #8dd2bc;
-
-.quilt-preview {
-  color: white;
-}
-
 .quilt {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(100%/6), 1fr));
-  grid-template-rows: minmax(100px, auto);
+  font-size: 0;
   border: solid 40px white;
   background-color: orange;
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(calc(100%/6), 1fr));
+  grid-auto-rows: 1fr;
+
+  &::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+  
+  > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
 
   .block {
     font-size: 0;
-    background-color: orangered;
   }
 
-  &.is-checkered {
-    .grid-row:nth-child(odd) .grid-cell:nth-child(odd),
-    .grid-row:nth-child(even) .grid-cell:nth-child(even){
+  &.checkered {
+    .row:nth-child(odd) .block:nth-child(odd),
+    .row:nth-child(even) .block:nth-child(even){
       transform: rotate(90deg);
     }
   }

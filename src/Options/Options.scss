@@ -1,0 +1,23 @@
+
+.quilt-options {
+  margin-right: 2rem;
+
+  select {
+    border: 0;
+    background-color: transparent;
+    color: #b2ccdc;
+    font-size: 1.5rem;
+    font-weight:100;
+    font-family: 'Zilla Slab', serif;
+    background-color:rgb(42, 42, 72);
+    padding: .5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    margin:0 .5rem;
+  }
+}

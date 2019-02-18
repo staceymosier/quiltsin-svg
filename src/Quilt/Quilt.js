@@ -2,23 +2,34 @@ import React, { Component } from 'react';
 import './Quilt.scss';
 import Block from '../Block/Block.js';
 
-const columns = 8;
-const rows = 6;
-const layout = 'is-checkered';
-
 class Quilt extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {rows, columns, layout};
-  }
-
   render() {
+    const { rows, columns, blockData, options } = this.props;
+
+    const quiltColumns = [...Array(columns)].map((n, index) => {
+      return (
+        <Block
+          key={`${index}-block`}
+          blockData={blockData}
+          options={options}
+        />
+      )
+    });
+
+    const quiltRows = [...Array(rows)].map((n, index) => {
+      return (
+        <div className="row" key={`${index}-column`}>{quiltColumns}</div>
+      )
+    });
+
     return (
-      <div className="quilt" key="quilt">
-        <Block/>
+      <div className='quilt checkered' key='quilt'>
+        {quiltRows}
       </div>
     );
   }
+
+
 }
 
 export default Quilt;
