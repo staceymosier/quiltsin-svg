@@ -4,9 +4,10 @@ import Block from '../Block/Block.js';
 
 
 class Quilt extends Component {
-  render() {
-    const { rows, columns, data, layout, activeBlock } = this.props;
 
+  render() {
+    const { activeBlock } = this.props;
+    const { rows, columns, layout } = activeBlock;
     const quiltBlocks = [...Array(columns)].map((n, index) => {
       return [...Array(rows)].map((n, index) => {
         return (

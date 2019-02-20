@@ -3,21 +3,14 @@ import './Options.scss';
 import Palette from './Palette/Palette.js';
 
 class Options extends Component {
-  constructor(props) {
-    super(props);
-    this.updateActiveBlock = this.updateActiveBlock.bind(this);
-  }
-
-  updateActiveBlock(event) {
-    this.setState({activeBlock: event.target.value});
-  }
-
   render() {
-    const { rows, columns, data, activeBlock } = this.props;
+    const { activeBlock, data, updateActiveBlock } = this.props;
+    const { rows, columns } = activeBlock;
+
     console.log(activeBlock.id);
     return (
       <div className="quilt-options">
-        <select value={activeBlock.id} onChange={this.updateActiveBlock}>
+        <select value={activeBlock.id} onChange={updateActiveBlock}>
         {data.map( (item, _i) => {
           return <option value={item.id} key={_i} >{item.title}</option>
         })}
