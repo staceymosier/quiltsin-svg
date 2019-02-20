@@ -1,32 +1,21 @@
 .quilt {
+  border-color: tomato;
+  border: solid 40px aquamarine;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 0;
-  border: solid 40px #9c1438;
-  background-color: orange;
-  display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(calc(100%/6), 1fr));
-  grid-template-rows: minmax(100px, auto);
-
-  &::before {
-    content: '';
-    width: 0;
-    padding-bottom: 100%;
-    grid-row: 1 / 1;
-    grid-column: 1 / 1;
-  }
-  
-  > *:first-child {
-    grid-row: 1 / 1;
-    grid-column: 1 / 1;
-  }
+  margin: 0 auto;
+  width: 70%;
 
   .block {
     font-size: 0;
-  }
+    height: 0;
+    padding-bottom: 16.667%;
+    width: 16.667%;
 
-  &.checkered {
-    .row:nth-child(odd) .block:nth-child(odd),
-    .row:nth-child(even) .block:nth-child(even){
-      transform: rotate(90deg);
+    svg {
+      width: 100%;
+      height: 168px
     }
   }
 }

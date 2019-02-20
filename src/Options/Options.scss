@@ -1,6 +1,12 @@
 
 .quilt-options {
   margin-right: 2rem;
+  display: flex;
+  flex: 1 1 auto;
+
+  .quilt-options-palette {
+    display: none;
+  }
 
   select {
     border: 0;

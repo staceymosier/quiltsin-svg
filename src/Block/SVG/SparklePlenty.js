@@ -13,7 +13,6 @@ const SVG = ({
     height={width}
     viewBox={viewBox}
     xmlns="http://www.w3.org/2000/svg"
-    className="block"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
   <polygon className="a" points="10.03 20.03 10 20 10 20 10 20 0 10 0 40 15 25 10.03 20.03"/>
