@@ -13,16 +13,20 @@ class App extends Component {
       activeBlock: Data[0]
     };
     this.updateActiveBlock = this.updateActiveBlock.bind(this);
-  }
-
-  shouldComponentUpdate(nextProps){
-    const { activeBlock } = this.props;
-    return activeBlock !== nextProps.activeBlock;
+    this.updateQuiltGrid = this.updateQuiltGrid.bind(this);
   }
 
   updateActiveBlock(event) {
-    console.log(event.target.value);
-    this.setState({activeBlock: event.target.value});
+    const { data } = this.state;
+    const newID = event.target.value;
+    const newActiveBlock = data.filter((item) => {
+      return (item.id.toString() === newID);
+    });
+    this.setState({activeBlock: newActiveBlock[0]});
+  }
+
+  updateQuiltGrid(event) {
+    console.log('Just acknowledging this is a thing to come');
   }
 
   render() {
@@ -36,6 +40,7 @@ class App extends Component {
               data = {data}
               activeBlock = {activeBlock}
               updateActiveBlock={this.updateActiveBlock}
+              updateQuiltGrid={this.updateQuiltGrid}
             />
           </header>
           <section className="quilt-preview">

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './Options.scss';
-import Palette from './Palette/Palette.js';
+// import Palette from './Palette/Palette.js';
 
 class Options extends Component {
   render() {
-    const { activeBlock, data, updateActiveBlock } = this.props;
+    const { activeBlock, data, updateActiveBlock, updateQuiltGrid } = this.props;
     const { rows, columns } = activeBlock;
 
-    console.log(activeBlock.id);
     return (
       <div className="quilt-options">
         <select value={activeBlock.id} onChange={updateActiveBlock}>
@@ -15,8 +14,8 @@ class Options extends Component {
           return <option value={item.id} key={_i} >{item.title}</option>
         })}
         </select>
-        <input defaultValue={rows} size="1" />
-        <input defaultValue={columns} size="1" />
+        <input value={rows} size="1" onChange={updateQuiltGrid} />
+        <input value={columns} size="1" onChange={updateQuiltGrid} />
       </div>
     );
   }
