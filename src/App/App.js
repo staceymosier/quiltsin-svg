@@ -10,7 +10,8 @@ class App extends Component {
 
     this.state = {
       data: Data,
-      activeBlock: Data[0]
+      activeBlock: Data[0],
+      activeColors: { border: 'teal', a: 'cadetblue', b: "lightgoldenrodyellow", c: "teal", d: "aqua" }
     };
     this.updateActiveBlock = this.updateActiveBlock.bind(this);
     this.updateQuiltGrid = this.updateQuiltGrid.bind(this);
@@ -30,7 +31,13 @@ class App extends Component {
   }
 
   render() {
-    const { data, activeBlock} = this.state;
+    const { data, activeBlock, activeColors} = this.state;
+    const styles = {
+      preview: {
+        backgroundColor: '#1f1f38'
+      }
+    }
+
     return (
       <div className="App">
         <div className="wrapper">
@@ -39,13 +46,15 @@ class App extends Component {
             <Options
               data = {data}
               activeBlock = {activeBlock}
+              activeColors = {activeColors}
               updateActiveBlock={this.updateActiveBlock}
               updateQuiltGrid={this.updateQuiltGrid}
             />
           </header>
-          <section className="quilt-preview">
+          <section className="quilt-preview" style={styles.preview}>
             <Quilt
               activeBlock = {activeBlock}
+              activeColors = {activeColors}
             />
           </section>
           </div>

@@ -5,13 +5,7 @@
     "rows": 6,
     "columns": 8,
     "block": "SparklePlenty.js",
-    "layout": "checkered",
-    "palette": {
-      "A": "red",
-      "B": "orange",
-      "C": "yellow",
-      "D": "green"
-    }
+    "layout": "checkered"
   },
   {
     "id": 2,

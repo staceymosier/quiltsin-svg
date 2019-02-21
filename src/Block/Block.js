@@ -4,10 +4,9 @@ import SparklePlenty from './SVG/SparklePlenty';
 
 class Block extends Component {
   render() {
-
-    // TODO: Load svg file from data source
+    const { activeColors } = this.props;
     return (
-        <SparklePlenty/>
+        <SparklePlenty activeColors={activeColors}/>
     );
   }
 }
