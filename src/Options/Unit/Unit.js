@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Unit extends Component {
   render() {
-    const { height, width, viewBox, fill, stroke, children, label } = this.props;
+    const { height, width, viewBox, fill, stroke, children, strokeWidth } = this.props;
     return (
     <svg
       width={width}
@@ -10,6 +10,7 @@ class Unit extends Component {
       viewBox={viewBox}
       fill={fill}
       stroke={stroke}
+      strokeWidth={strokeWidth}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
@@ -21,7 +22,7 @@ class Unit extends Component {
 
 class SquareUnit extends Component {
   render(){
-    const square = <rect x="0" y="0" width="100" height="100" />;
+    const square = <rect x="0" y="0" width="100%" height="100%" />;
     return (
       <Unit {...this.props} children={square}/>
     )

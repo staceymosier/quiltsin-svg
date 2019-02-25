@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import { CirclePicker } from 'react-color';
+import SquareUnit from '../Unit/Unit.js';
 
-// TODO: put class names in state and control from this component
-// TODO: Update palette when the quilt selection changes
-// TODO: Use toggle to reassign colors to A-Z
+const styles = {
+  swatchList: {
+    display: 'flex',
+    flex: '1 1 0',
+  }
+}
 
 class Palette extends Component {
+
   render() {
+    const squareProps = { width: 40, height: 40, viewBox: "0 0 40 40"};
+    const {activeColors} = this.props;
     return (
-      <div className="quilt-options-palette">
-        <CirclePicker />
+      <div className="quilt-colors" style={styles.swatchList}>
+        <div key="borderColor">
+          test
+        </div>
       </div>
     );
   }

@@ -1,31 +1,45 @@
 import React, { Component } from 'react';
+import Palette from './Palette/Palette.js';
 import './Options.scss';
-import { SquareUnit } from '../Block/Unit/Unit.js';
-
-// import Palette from './Palette/Palette.js';
 
 class Options extends Component {
   render() {
     const { activeBlock, data, updateActiveBlock, updateQuiltGrid, activeColors } = this.props;
     const { rows, columns } = activeBlock;
-    const squareProps = { width: 40, height: 40, viewBox: "0 0 40 40"}; 
+    const styles = {
+      inputNumber: {
+        backgroundColor: '#2a2a48',
+        border: "none",
+        color: '#b2ccdc',
+        fontSize: '1rem',
+        fontWeight: 100,
+        fontFamily: '\'Zilla Slab\', serif',
+        textAlign: 'center',
+      }
+    }
 
     return (
       <div className="quilt-options">
         <select value={activeBlock.id} onChange={updateActiveBlock}>
-        {data.map( (item, _i) => {
-          return <option value={item.id} key={_i} >{item.title}</option>
+        {Object.entries(data).map( ([key, val]) => {
+          return <option value={key} key={key} >{val.title}</option>
         })}
         </select>
-        <input value={rows} size="1" onChange={updateQuiltGrid} />
-        <input value={columns} size="1" onChange={updateQuiltGrid} />
-        <div className="quilt-colors">
-          <SquareUnit {...squareProps} fill={activeColors.border} label="border"/>
-          <SquareUnit {...squareProps} fill={activeColors.a} label="A"/>
-          <SquareUnit {...squareProps} fill={activeColors.b} label="B"/>
-          <SquareUnit {...squareProps} fill={activeColors.c} label="C"/>
-          <SquareUnit {...squareProps} fill={activeColors.d} label="D"/>
-        </div>
+        <input
+          defaultValue={rows}
+          size={1}
+          onBlur={updateQuiltGrid}
+          min={40} max={120}
+          style={styles.inputNumber}
+        />
+        <input
+          defaultValue={columns}
+          size={1}
+          onBlur={updateQuiltGrid}
+          min={40} max={120}
+          style={styles.inputNumber}
+        />
+        <Palette activeColors={activeColors} />
       </div>
     );
   }

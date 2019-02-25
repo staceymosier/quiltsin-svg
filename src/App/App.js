@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Quilt from '../Quilt/Quilt.js';
 import Options from '../Options/Options.js';
-import Data from '../data.json';
+import Quilt from '../Quilt/Quilt.js';
+import Data from '../data.js';
 
 class App extends Component {
   constructor(props) {
@@ -10,24 +10,43 @@ class App extends Component {
 
     this.state = {
       data: Data,
-      activeBlock: Data[0],
+      activeBlock: {
+        "title": "Sparkle Plenty",
+        "rows": 6,
+        "columns": 8,
+        "block": "SparklePlenty.js",
+        "layout": "checkered"
+      },
       activeColors: { border: 'teal', a: 'cadetblue', b: "lightgoldenrodyellow", c: "teal", d: "aqua" }
     };
+
     this.updateActiveBlock = this.updateActiveBlock.bind(this);
     this.updateQuiltGrid = this.updateQuiltGrid.bind(this);
+    this.updateBorderColor = this.updateBorderColor.bind(this);
+    this.updateColor = this.updateColor.bind(this);
   }
 
-  updateActiveBlock(event) {
+  updateActiveBlock(e) {
     const { data } = this.state;
-    const newID = event.target.value;
-    const newActiveBlock = data.filter((item) => {
-      return (item.id.toString() === newID);
-    });
-    this.setState({activeBlock: newActiveBlock[0]});
+    const newID = e.target.value;
+    //this.setState({activeBlock: data[newID]});
+    return;
   }
 
-  updateQuiltGrid(event) {
-    console.log('Just acknowledging this is a thing to come');
+  updateQuiltGrid(e) {
+    console.log('the new value is ' + e.target.value);
+    return;
+  }
+
+  updateBorderColor(e) {
+    const { activeColors } = this.state;
+    console.log(activeColors.border);
+    return;
+  }
+
+  updateColor(e) {
+    console.log(e);
+    return;
   }
 
   render() {
@@ -49,6 +68,8 @@ class App extends Component {
               activeColors = {activeColors}
               updateActiveBlock={this.updateActiveBlock}
               updateQuiltGrid={this.updateQuiltGrid}
+              updateBorderColor={this.updateBorderColor}
+              updateColor={this.updateColor}
             />
           </header>
           <section className="quilt-preview" style={styles.preview}>
