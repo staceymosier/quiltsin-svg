@@ -29,6 +29,5 @@ class SquareUnit extends Component {
   }
 }
 
-
-export { SquareUnit };
+export default SquareUnit;
 

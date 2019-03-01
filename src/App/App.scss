@@ -22,7 +22,7 @@ h1, h2, h3, .display {
   display: flex;
   
   > div {
-      flex-basis: 50%;
+    flex-basis: 50%;
   }
 
   .logo {
@@ -38,23 +38,31 @@ h1, h2, h3, .display {
   }
 }
 
-.quilt-meta {
-  background: #dbf6f6;
-  background: #dbf6f6;
-  padding: 2rem;
-  height: 100vh;
-}
+.quilt-options {
+  display: flex;
+  flex: 1 1 auto;
+  margin-right: 2rem;
 
-.hr {
-  margin-bottom: 2rem;
+  .quilt-options-palette {
+    display: none;
+  }
 
-  &::after {
-    content: ' ';
-    border-top: 3px dotted #3d7e9a;
-    content: '';
-    display: block;
-    position: relative;
-    width: 100%;
-    top: 1rem;
+  select {
+    background-color: rgb(42, 42, 72);
+    background-color: transparent;
+    border: 0;
+    color: #b2ccdc;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: .5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    margin: 0 .5rem;
   }
 }

@@ -8,7 +8,7 @@ class Quilt extends Component {
     const { activeBlock, activeColors } = this.props;
     const { rows, columns } = activeBlock;
     const styles = {
-      border: 'solid 40px ' + activeColors.border
+      border: 'solid 60px ' + activeColors.d
     };
 
     const quiltBlocks = [...Array(columns)].map((n, index) => {
