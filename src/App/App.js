@@ -21,8 +21,6 @@ class App extends Component {
       activeColors: { a: '#3a4c95', b: '#c6d347', c: 'aqua', d: 'white' }
     };
 
-    this.updateActiveBlock = this.updateActiveBlock.bind(this);
-    this.updateQuiltGrid = this.updateQuiltGrid.bind(this);
     this.updateColor = this.updateColor.bind(this);
   }
 
@@ -33,14 +31,15 @@ class App extends Component {
     return;
   }
 
-  updateQuiltGrid(e) {
+  updateGrid(e) {
     console.log('the new value is ' + e.target.value);
     return;
   }
 
-  updateColor(e) {
-    console.log(e);
-    return;
+  updateColor({letter, color}, e) {
+    var activeColors = {...this.state.activeColors}
+    activeColors[letter] = color;
+    return this.setState({activeColors})
   }
 
   render() {
@@ -54,7 +53,7 @@ class App extends Component {
               <a href='./index.html'>Amish Quilts</a>
             </div>
             <div className='quilt-options'>
-              <select value={activeBlock.id} onChange={this.updateActiveBlock}>
+              <select value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
                 {Object.entries(data).map( ([key, val]) => {
                   return <option value={key} key={key} >{val.title}</option>
                 })}
@@ -66,20 +65,19 @@ class App extends Component {
               }).map( ([key, val]) => {
                 return <input key={key}
                   defaultValue={val.default}
-                  size={1}
-                  onBlur={this.updateQuiltGrid}
-                  min={val.min}
                   max={val.max}
+                  min={val.min}
+                  onBlur={(e) => this.updateGrid(e)}
+                  size={1}
                   style={styles.inputNumber}
                 />
               })}
 
-              <Palette activeColors={activeColors} />
+              <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
             </div>
           </header>
           <section style={styles.quiltPreview}>
-            <Quilt activeBlock = {activeBlock} activeColors = {activeColors}
-            />
+            <Quilt activeBlock={activeBlock} activeColors={activeColors} />
           </section>
         </div>
       </div>

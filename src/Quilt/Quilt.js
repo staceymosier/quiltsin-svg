@@ -8,7 +8,9 @@ class Quilt extends Component {
     const { activeBlock, activeColors } = this.props;
     const { rows, columns } = activeBlock;
     const styles = {
-      border: 'solid 60px ' + activeColors.d
+      quiltBorder: {
+        border: 'solid 40px ' + activeColors.d
+      }
     };
 
     const quiltBlocks = [...Array(columns)].map((n, index) => {
@@ -22,7 +24,7 @@ class Quilt extends Component {
     });
 
     return (
-      <div className='quilt' key='quilt' style={styles}>
+      <div className='quilt' key='quilt' style={styles.quiltBorder}>
         {quiltBlocks}
       </div>
     );
