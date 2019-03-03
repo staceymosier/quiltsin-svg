@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import Block from '../Block/Block.js';
+import SparklePlenty from './SVG/SparklePlenty';
+import RobbingPeter from './SVG/RobbingPeter';
+
+const designs = {
+  'SparklePlenty': SparklePlenty,
+  'RobbingPeter': RobbingPeter
+}
 
 class Quilt extends Component {
 
@@ -16,7 +22,7 @@ class Quilt extends Component {
 
     return (
       <div className='quilt' key='quilt' style={styles.quilt}>
-        <Block {...activeBlock} activeColors={activeColors} />
+        { React.createElement(designs[activeBlock.block], { activeColors }, null) }
       </div>
     );
   }
