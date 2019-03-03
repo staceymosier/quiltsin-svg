@@ -19,9 +19,12 @@ class App extends Component {
   }
 
   updateActiveBlock(e) {
-    //const { data } = this.state;
-    //const newID = e.target.value;
-    //this.setState({activeBlock: data[newID]});
+    const { data } = this.state;
+    const id = e.target.value;
+    this.setState({
+      activeBlock: data[id],
+      activeColors: data[id].colors
+     });
     return;
   }
 

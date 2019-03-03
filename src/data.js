@@ -1,7 +1,7 @@
 export default {
   1: {
     title: "Sparkle Plenty",
-    block: "SparklePlenty.js",
+    block: "SparklePlenty",
     colors: {
       a: '#4f4369', b: '#430039',
       c: '#cccbc0', d: '#6c0b5d',
@@ -12,7 +12,7 @@ export default {
   },
   2: {
     title: "Robbing Peter to Pay Paul",
-    block: "RobbingPeter.js",
+    block: "RobbingPeter",
     colors: {
       a: '#0f254e', b: '#00429c',
       c: '#ff435f', d: '#1cddff',
