@@ -8,6 +8,7 @@ class Quilt extends Component {
     const styles = {
       quilt: {
         border: 'solid 40px ' + activeColors.a,
+        backgroundColor: activeColors.a,
         fontSize: 0,
         margin: '0 auto'
       }

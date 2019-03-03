@@ -1,6 +1,6 @@
 export default {
   app: {
-    maxWidth: '1600px',
+    maxWidth: '1200px',
     margin: '0 auto',
     background: 'white',
     height: '100vh'
