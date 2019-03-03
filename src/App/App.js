@@ -11,14 +11,8 @@ class App extends Component {
 
     this.state = {
       data: Data,
-      activeBlock: {
-        'title': 'Sparkle Plenty',
-        'rows': 6,
-        'columns': 8,
-        'block': 'SparklePlenty.js',
-        'layout': 'checkered'
-      },
-      activeColors: { a: '#3a4c95', b: '#c6d347', c: 'aqua', d: 'white' }
+      activeBlock: Data['1'],
+      activeColors: Data['1'].colors
     };
 
     this.updateColor = this.updateColor.bind(this);
@@ -31,11 +25,6 @@ class App extends Component {
     return;
   }
 
-  updateGrid(e) {
-    console.log('the new value is ' + e.target.value);
-    return;
-  }
-
   updateColor({letter, color}, e) {
     var activeColors = {...this.state.activeColors}
     activeColors[letter] = color;
@@ -43,38 +32,21 @@ class App extends Component {
   }
 
   render() {
-    const { data, activeBlock, activeColors} = this.state;
+    const { data, activeBlock, activeColors } = this.state;
 
     return (
-      <div className='app'>
-        <div className='wrapper'>
-          <header className='header'>
+      <div className='app' style={styles.app}>
+        <div className='wrapper' style={styles.wrapper}>
+          <header className='options'>
             <div className='logo'>
               <a href='./index.html'>Amish Quilts</a>
             </div>
-            <div className='quilt-options'>
-              <select value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
-                {Object.entries(data).map( ([key, val]) => {
-                  return <option value={key} key={key} >{val.title}</option>
-                })}
-              </select>
-
-              {Object.entries({
-                'rows': { default: 8, min: 40, max: 120},
-                'columns': { default: 6, min: 40, max: 40}
-              }).map( ([key, val]) => {
-                return <input key={key}
-                  defaultValue={val.default}
-                  max={val.max}
-                  min={val.min}
-                  onBlur={(e) => this.updateGrid(e)}
-                  size={1}
-                  style={styles.inputNumber}
-                />
+            <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
+            <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
+              {Object.entries(data).map( ([key, val]) => {
+                return <option value={key} key={key} >{val.title}</option>
               })}
-
-              <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
-            </div>
+            </select>
           </header>
           <section style={styles.quiltPreview}>
             <Quilt activeBlock={activeBlock} activeColors={activeColors} />

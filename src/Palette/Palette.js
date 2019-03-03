@@ -2,23 +2,7 @@ import React, { Component } from 'react';
 import SquareUnit from '../Unit/Unit.js';
 import { CirclePicker } from 'react-color';
 import bella from './moda-bella.js';
-
-const styles = {
-  popover: {
-    background: '#2a2a48',
-    padding: '1rem',
-    position: 'fixed',
-    textAlign: 'center',
-    top: '3.5rem',
-    right: '3.5rem'
-  },
-  cover: {
-  },
-  swatchList: {
-    display: 'flex',
-    flex: '1 1 0',
-  }
-};
+import styles from '../styles.js';
 
 class PaletteSelection extends Component {
 
@@ -70,13 +54,13 @@ class Palette extends Component {
     const {activeColors, updateColor} = this.props;
 
     return (
-      <div className="quilt-colors" style={styles.swatchList}>
-        {['a', 'b', 'c', 'd', 'e'].map( letter => {
+      <div style={styles.swatchList} className='palette'>
+        {['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'].map( letter => {
           return (
             <div key={letter}
               property={letter}
               onClick={(e) => this.openPalette(letter, e)}>
-              <SquareUnit {...squareProps} fill={activeColors[letter]}/>
+              <SquareUnit {...squareProps} color={activeColors[letter]}/>
             </div>
           )
         })}

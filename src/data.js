@@ -1,10 +1,18 @@
 export default {
   1: {
     title: "Sparkle Plenty",
-    rows: 6,
-    columns: 8,
     block: "SparklePlenty.js",
-    layout: "checkered"
+    colors: {
+      a: '#4f4369',
+      b: '#430039',
+      c: '#cccbc0',
+      d: '#6c0b5d',
+      e: '#d29fcb',
+      f: '#a63e96',
+      g: '#102a3d',
+      h: '#1a6da8',
+      i: '#2a0723',
+    }
   },
   2: {
     title: "Broken Dishes",

@@ -2,7 +2,7 @@
 $display-font: 'Zilla Slab', serif;
 
 body {
-  background-color: #eef3f3;
+  background-color: #cecece;
   font-family: sans-serif;
   margin: 0;
 }
@@ -15,15 +15,8 @@ h1, h2, h3, .display {
   box-sizing: border-box;
 }
 
-.header {
-  align-items: center;
-  background-color: #1f1f38;
+header {
   padding: 1rem 2rem;
-  display: flex;
-  
-  > div {
-    flex-basis: 50%;
-  }
 
   .logo {
     font-size: 1.5rem;
@@ -31,27 +24,26 @@ h1, h2, h3, .display {
     font-family: 'Zilla Slab', serif;
 
     a {
-      color: #b2ccdc;
+      color: #06283e;
       text-decoration: none;
       font-size: 1.5rem;
     }
   }
 }
 
-.quilt-options {
+.options {
   display: flex;
   flex: 1 1 auto;
-  margin-right: 2rem;
+  align-items: center;
 
-  .quilt-options-palette {
+  .palette {
     display: none;
   }
 
   select {
     background-color: rgb(42, 42, 72);
     background-color: transparent;
-    border: 0;
-    color: #b2ccdc;
+    color: #06283e;
     font-family: 'Zilla Slab', serif;
     font-size: 1.5rem;
     font-weight: 100;
@@ -64,5 +56,35 @@ h1, h2, h3, .display {
 
   input {
     margin: 0 .5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quilt {
+    width: '70%'
+  }
+}
+
+@media (max-width: 1200px) {
+  header.options {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header.options .logo {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  header.options .palette {
+    padding-bottom: 1rem;
+  }
+
+  header.options .selected {
+    flex-basis: 100%;
+    text-align: center;
+    align-items: center;
   }
 }
