@@ -47,13 +47,11 @@ class App extends Component {
             <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
             <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
               {Object.entries(data).map( ([key, val]) => {
-                return <option value={key} key={key} >{val.title}</option>
+                return <option value={key} key={key}>{val.title}</option>
               })}
             </select>
           </header>
-          <section style={styles.quiltPreview}>
             <Quilt activeBlock={activeBlock} activeColors={activeColors} />
-          </section>
         </div>
       </div>
     );

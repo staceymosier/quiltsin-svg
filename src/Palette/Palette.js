@@ -55,18 +55,18 @@ class Palette extends Component {
 
     return (
       <div style={styles.swatchList} className='palette'>
-        {['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'].map( letter => {
+        {Object.entries(activeColors).map( ([key, value]) => {
           return (
-            <div key={letter}
-              property={letter}
-              onClick={(e) => this.openPalette(letter, e)}>
-              <SquareUnit {...squareProps} color={activeColors[letter]}/>
+            <div key={key}
+              property={key}
+              onClick={(e) => this.openPalette(key, e)}>
+              <SquareUnit {...squareProps} color={activeColors[key]}/>
             </div>
           )
         })}
 
         { this.state.displayColorPicker ?
-        <div onClick={(e) => this.closePalette(e)}>
+        <div className='paletteBox' onClick={(e) => this.closePalette(e)}>
           <PaletteSelection updateColor={updateColor} letter={this.state.selectedLetter}/>
         </div>
         : null }

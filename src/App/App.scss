@@ -15,6 +15,15 @@ h1, h2, h3, .display {
   box-sizing: border-box;
 }
 
+.app {
+  background: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 header {
   padding: 1rem 2rem;
 
@@ -22,6 +31,7 @@ header {
     font-size: 1.5rem;
     font-weight:100;
     font-family: 'Zilla Slab', serif;
+    margin: 2rem 0;
 
     a {
       color: #06283e;
@@ -33,8 +43,9 @@ header {
 
 .options {
   display: flex;
-  flex: 1 1 auto;
-  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
 
   .palette {
     display: none;
@@ -48,6 +59,7 @@ header {
     font-size: 1.5rem;
     font-weight: 100;
     padding: .5rem;
+    margin: 1rem 0;
 
     &:focus {
       outline: none;
@@ -59,32 +71,20 @@ header {
   }
 }
 
-@media (min-width: 1200px) {
-  .quilt {
-    width: '70%'
+.quilt {
+  background-color: #e1ecec;
+  flex: 2;
+  text-align: center;
+
+  svg {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 
-@media (max-width: 1200px) {
-  header.options {
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  header.options .logo {
-    flex-basis: 100%;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-weight: bold;
-  }
-
-  header.options .palette {
-    padding-bottom: 1rem;
-  }
-
-  header.options .selected {
-    flex-basis: 100%;
-    text-align: center;
-    align-items: center;
+@media (max-width: 950px) {
+  .wrapper {
+    display: block;
   }
 }

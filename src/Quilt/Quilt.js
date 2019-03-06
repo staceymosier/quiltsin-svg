@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import SparklePlenty from './SVG/SparklePlenty';
 import RobbingPeter from './SVG/RobbingPeter';
+import AmishHomage from './SVG/AmishHomage';
 
 const designs = {
   'SparklePlenty': SparklePlenty,
-  'RobbingPeter': RobbingPeter
+  'RobbingPeter': RobbingPeter,
+  'AmishHomage': AmishHomage
 }
 
 class Quilt extends Component {
@@ -13,8 +15,7 @@ class Quilt extends Component {
     const { activeBlock, activeColors } = this.props;
     const styles = {
       quilt: {
-        border: 'solid 40px ' + activeColors.a,
-        backgroundColor: activeColors.a,
+        // border: activeBlock.borderSize + activeColors.a,
         fontSize: 0,
         margin: '0 auto'
       }

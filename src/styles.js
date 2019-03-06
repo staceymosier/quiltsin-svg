@@ -1,11 +1,7 @@
 export default {
   app: {
-    maxWidth: '1200px',
-    margin: '0 auto',
     background: 'white',
     height: '100vh'
-  },
-  quiltPreview: {
   },
   inputNumber: {
     backgroundColor: '#2a2a48',
@@ -16,21 +12,21 @@ export default {
     textAlign: 'center',
   },
   popover: {
-    background: '#2a2a48',
     padding: '1rem',
-    position: 'fixed',
     textAlign: 'center',
-    top: '3.5rem',
-    right: '3.5rem'
+    position: 'relative',
+    background: '#ffffff',
+    height: '200px',
+    width: '300px',
+    overflowY: 'scroll',
+    boxShadow: '1px 1px 0px #8e989d',
+    border: 'solid 1px #8e989d',
   },
   cover: {
   },
   swatchList: {
     display: 'flex',
-    justifyContent: 'center',
-    flex: '1 1 0',
-    '&>div': {
-      border: 'solid 2px white'
-    }
+    flexWrap: 'wrap',
+    margin: '1rem 0'
   }
 };
