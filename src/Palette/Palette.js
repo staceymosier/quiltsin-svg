@@ -21,7 +21,10 @@ class PaletteSelection extends Component {
         <div style={styles.cover}>
           <CirclePicker 
             colors={Object.entries(bella).map( ([key, val]) => { return val.color }) }
-            onChangeComplete={this.handleCC(letter, updateColor)}/>
+            onChangeComplete={this.handleCC(letter, updateColor)}
+            width="100%"
+            circleSpacing={6}
+        />
       </div>
     </div>
     );
