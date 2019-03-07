@@ -54,7 +54,8 @@ class Palette extends Component {
     const {activeColors, updateColor} = this.props;
 
     return (
-      <div style={styles.swatchList} className='palette'>
+      <div>
+        <div style={styles.swatchList} className='palette'>
         {Object.entries(activeColors).map( ([key, value]) => {
           return (
             <div key={key}
@@ -64,6 +65,7 @@ class Palette extends Component {
             </div>
           )
         })}
+        </div>
 
         { this.state.displayColorPicker ?
         <div className='paletteBox' onClick={(e) => this.closePalette(e)}>
