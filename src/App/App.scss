@@ -25,27 +25,11 @@ h1, h2, h3, .display {
 }
 
 header {
-  padding: 1rem 2rem;
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight:100;
-    font-family: 'Zilla Slab', serif;
-    margin: 2rem 0;
-
-    a {
-      color: #06283e;
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
-  }
-}
-
-.options {
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: flex-start;
+  padding: 1rem 2rem;
 
   .palette {
     display: none;
@@ -59,15 +43,40 @@ header {
     font-size: 1.5rem;
     font-weight: 100;
     padding: .5rem;
-    margin: 1rem 0;
 
     &:focus {
       outline: none;
     }
   }
+}
 
-  input {
-    margin: 0 .5rem;
+@media (max-width: 950px) {
+  .wrapper {
+    display: block;
+  }
+}
+
+.topbar {
+  display: flex;
+
+ .logo {
+    align-content: center;
+    margin-right: 1rem;
+
+    a {
+      background: #c2d8d8;
+      color: #06283e;
+      display: inline-block;
+      font-family: 'Zilla Slab', serif;
+      font-size: 1.5rem;
+      font-weight:100;
+      padding: 1rem;
+      text-decoration: none;
+
+      &:hover {
+        background: #d2f7f7;
+      }
+    }
   }
 }
 
@@ -83,8 +92,3 @@ header {
   }
 }
 
-@media (max-width: 950px) {
-  .wrapper {
-    display: block;
-  }
-}

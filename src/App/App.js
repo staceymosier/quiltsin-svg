@@ -40,16 +40,18 @@ class App extends Component {
     return (
       <div className='app' style={styles.app}>
         <div className='wrapper' style={styles.wrapper}>
-          <header className='options'>
-            <div className='logo'>
-              <a href='./index.html'>Amish Quilts</a>
+          <header>
+            <div className='topbar'>
+              <div className='logo'>
+                <a href='./index.html'>Amish Quilts</a>
+              </div>
+              <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
+                {Object.entries(data).map( ([key, val]) => {
+                  return <option value={key} key={key}>{val.title}</option>
+                })}
+              </select>
             </div>
             <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
-            <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
-              {Object.entries(data).map( ([key, val]) => {
-                return <option value={key} key={key}>{val.title}</option>
-              })}
-            </select>
           </header>
             <Quilt activeBlock={activeBlock} activeColors={activeColors} />
         </div>
