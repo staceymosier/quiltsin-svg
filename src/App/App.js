@@ -19,9 +19,12 @@ class App extends Component {
   }
 
   updateActiveBlock(e) {
-    //const { data } = this.state;
-    //const newID = e.target.value;
-    //this.setState({activeBlock: data[newID]});
+    const { data } = this.state;
+    const id = e.target.value;
+    this.setState({
+      activeBlock: data[id],
+      activeColors: data[id].colors
+     });
     return;
   }
 
@@ -37,20 +40,20 @@ class App extends Component {
     return (
       <div className='app' style={styles.app}>
         <div className='wrapper' style={styles.wrapper}>
-          <header className='options'>
-            <div className='logo'>
-              <a href='./index.html'>Amish Quilts</a>
+          <header>
+            <div className='topbar'>
+              <div className='logo'>
+                <a href='./index.html'>Amish Quilts</a>
+              </div>
+              <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
+                {Object.entries(data).map( ([key, val]) => {
+                  return <option value={key} key={key}>{val.title}</option>
+                })}
+              </select>
             </div>
             <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
-            <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
-              {Object.entries(data).map( ([key, val]) => {
-                return <option value={key} key={key} >{val.title}</option>
-              })}
-            </select>
           </header>
-          <section style={styles.quiltPreview}>
             <Quilt activeBlock={activeBlock} activeColors={activeColors} />
-          </section>
         </div>
       </div>
     );

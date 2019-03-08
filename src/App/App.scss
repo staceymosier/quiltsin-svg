@@ -15,26 +15,21 @@ h1, h2, h3, .display {
   box-sizing: border-box;
 }
 
-header {
-  padding: 1rem 2rem;
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight:100;
-    font-family: 'Zilla Slab', serif;
-
-    a {
-      color: #06283e;
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
-  }
+.app {
+  background: white;
 }
 
-.options {
+.wrapper {
   display: flex;
-  flex: 1 1 auto;
-  align-items: center;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
 
   .palette {
     display: none;
@@ -53,38 +48,47 @@ header {
       outline: none;
     }
   }
+}
 
-  input {
-    margin: 0 .5rem;
+@media (max-width: 950px) {
+  .wrapper {
+    display: block;
   }
 }
 
-@media (min-width: 1200px) {
-  .quilt {
-    width: '70%'
+.topbar {
+  display: flex;
+
+ .logo {
+    align-content: center;
+    margin-right: 1rem;
+
+    a {
+      background: #c2d8d8;
+      color: #06283e;
+      display: inline-block;
+      font-family: 'Zilla Slab', serif;
+      font-size: 1.5rem;
+      font-weight:100;
+      padding: 1rem;
+      text-decoration: none;
+
+      &:hover {
+        background: #d2f7f7;
+      }
+    }
   }
 }
 
-@media (max-width: 1200px) {
-  header.options {
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.quilt {
+  background-color: #e1ecec;
+  flex: 2;
+  text-align: center;
 
-  header.options .logo {
-    flex-basis: 100%;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-weight: bold;
-  }
-
-  header.options .palette {
-    padding-bottom: 1rem;
-  }
-
-  header.options .selected {
-    flex-basis: 100%;
-    text-align: center;
-    align-items: center;
+  svg {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
+

@@ -21,7 +21,10 @@ class PaletteSelection extends Component {
         <div style={styles.cover}>
           <CirclePicker 
             colors={Object.entries(bella).map( ([key, val]) => { return val.color }) }
-            onChangeComplete={this.handleCC(letter, updateColor)}/>
+            onChangeComplete={this.handleCC(letter, updateColor)}
+            width="100%"
+            circleSpacing={6}
+        />
       </div>
     </div>
     );
@@ -54,19 +57,21 @@ class Palette extends Component {
     const {activeColors, updateColor} = this.props;
 
     return (
-      <div style={styles.swatchList} className='palette'>
-        {['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'].map( letter => {
+      <div>
+        <div style={styles.swatchList} className='palette'>
+        {Object.entries(activeColors).map( ([key, value]) => {
           return (
-            <div key={letter}
-              property={letter}
-              onClick={(e) => this.openPalette(letter, e)}>
-              <SquareUnit {...squareProps} color={activeColors[letter]}/>
+            <div key={key}
+              property={key}
+              onClick={(e) => this.openPalette(key, e)}>
+              <SquareUnit {...squareProps} color={activeColors[key]}/>
             </div>
           )
         })}
+        </div>
 
         { this.state.displayColorPicker ?
-        <div onClick={(e) => this.closePalette(e)}>
+        <div className='paletteBox' onClick={(e) => this.closePalette(e)}>
           <PaletteSelection updateColor={updateColor} letter={this.state.selectedLetter}/>
         </div>
         : null }
