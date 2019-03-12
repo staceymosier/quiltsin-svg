@@ -7,16 +7,16 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, .display {
-  font-family: $display-font;
-}
-
 * {
   box-sizing: border-box;
 }
 
+h1, h2, h3, .display {
+  font-family: $display-font;
+}
+
 .app {
-  background: white;
+  background: #fff;
 }
 
 .wrapper {
@@ -29,24 +29,91 @@ header {
   flex-direction: column;
   flex: 1;
   justify-content: flex-start;
-  padding: 1rem 2rem;
 
   .palette {
     display: none;
   }
+}
+
+.topbar {
+  display: flex;
+
+ .logo {
+    align-content: center;
+
+    a {
+      background: #c2d8d8;
+      color: #06283e;
+      display: inline-block;
+      font-family: 'Zilla Slab', serif;
+      font-size: 1.5rem;
+      font-weight:100;
+      text-decoration: none;
+      padding: 1rem;
+
+      &:hover {
+        background: #d2f7f7;
+      }
+    }
+  }
+}
+
+.select-field {
+  border: solid 2px #c2d8d8;
+  display: flex;
+  padding: .5rem;
+  position: relative;
+
+  &::after {
+    background: #fff;
+    border-bottom: 1px solid #c2d8d8;
+    color: #333;
+    content: '<>';
+    font: 24px "Consolas", monospace;
+    padding: 0 0 2px;
+    pointer-events: none;
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    transform: rotate(90deg);
+  }
 
   select {
-    background-color: rgb(42, 42, 72);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: transparent;
+    border: none;
     color: #06283e;
     font-family: 'Zilla Slab', serif;
     font-size: 1.5rem;
     font-weight: 100;
-    padding: .5rem;
+    width: 100%;
 
     &:focus {
       outline: none;
     }
+  }
+}
+
+.palette-tray {
+  padding-left: 1rem;
+}
+
+.quilt {
+  flex: 2;
+  text-align: center;
+  background-image: linear-gradient(45deg, #dfdfdf 25%, transparent 25%),
+    linear-gradient(-45deg, #dfdfdf 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #dfdfdf 75%), 
+    linear-gradient(-45deg, transparent 75%, #dfdfdf 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+
+  svg {
+    margin: 2rem auto;
+    max-width: 100%;
+    max-height: calc( 100vh - 4rem);
   }
 }
 
@@ -56,39 +123,9 @@ header {
   }
 }
 
-.topbar {
-  display: flex;
-
- .logo {
-    align-content: center;
-    margin-right: 1rem;
-
-    a {
-      background: #c2d8d8;
-      color: #06283e;
-      display: inline-block;
-      font-family: 'Zilla Slab', serif;
-      font-size: 1.5rem;
-      font-weight:100;
-      padding: 1rem;
-      text-decoration: none;
-
-      &:hover {
-        background: #d2f7f7;
-      }
-    }
+@media (max-width: 500px) {
+  .topbar,
+  .topbar .logo a {
+    display: block;
   }
 }
-
-.quilt {
-  background-color: #e1ecec;
-  flex: 2;
-  text-align: center;
-
-  svg {
-    height: 100%;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-}
-

@@ -24,9 +24,9 @@ class PaletteSelection extends Component {
             onChangeComplete={this.handleCC(letter, updateColor)}
             width="100%"
             circleSpacing={6}
-        />
+          />
+        </div>
       </div>
-    </div>
     );
   }
 }
@@ -53,11 +53,11 @@ class Palette extends Component {
   }
 
   render() {
-    const squareProps = { width: 40, height: 40, viewBox: "0 0 40 40"};
+    const squareProps = { width: 40, height: 40, viewBox: "0 0 60 60"};
     const {activeColors, updateColor} = this.props;
 
     return (
-      <div>
+      <div className='palette-tray'>
         <div style={styles.swatchList} className='palette'>
         {Object.entries(activeColors).map( ([key, value]) => {
           return (
@@ -71,7 +71,7 @@ class Palette extends Component {
         </div>
 
         { this.state.displayColorPicker ?
-        <div className='paletteBox' onClick={(e) => this.closePalette(e)}>
+        <div className='palette-box' onClick={(e) => this.closePalette(e)}>
           <PaletteSelection updateColor={updateColor} letter={this.state.selectedLetter}/>
         </div>
         : null }

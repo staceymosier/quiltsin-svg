@@ -11,7 +11,6 @@ class RobbingPeter extends Component {
         viewBox='0 0 536.5 536.5'
         xmlns='http://www.w3.org/2000/svg'
         xmlnsXlink='http://www.w3.org/1999/xlink'
-        style={{backgroundColor:a, border: 'solid 40px ' + a}}
       >
     <path fill={b} d='M488.3,528.25h39.9a28.25,28.25,0,0,0-39.9,0Z'/>
     <path fill={b} d='m528.2 488.25h-39.9a28.25 28.25 0 0 0 39.9 0z'/>

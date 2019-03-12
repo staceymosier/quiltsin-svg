@@ -43,13 +43,15 @@ class App extends Component {
           <header>
             <div className='topbar'>
               <div className='logo'>
-                <a href='./index.html'>Amish Quilts</a>
+                <a href='./index.html'> Amish Quilts </a>
               </div>
-              <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
-                {Object.entries(data).map( ([key, val]) => {
-                  return <option value={key} key={key}>{val.title}</option>
-                })}
-              </select>
+              <div className="select-field">
+                <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
+                  {Object.entries(data).map( ([key, val]) => {
+                    return <option value={key} key={key} className="option"> &nbsp; {val.title} &nbsp; </option>
+                  })}
+                </select>
+              </div>
             </div>
             <Palette activeColors={activeColors} updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
           </header>

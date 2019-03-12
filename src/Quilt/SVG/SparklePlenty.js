@@ -4,14 +4,13 @@ class SparklePlenty extends Component {
   render() {
 
     // A is for the border
-    const {a, b,c,d,e,f,g,h,i} = this.props.activeColors;
+    const {b,c,d,e,f,g,h,i} = this.props.activeColors;
     return (
       <svg
         fill="#000"
         viewBox="0 0 260 340"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        style={{backgroundColor:a, border: 'solid 40px ' + a}}
       >
         <rect fill={i} width="260" height="340"/>
         <polygon fill={b} points="29.95 20.05 29.95 20.05 29.94 20.04 29.95 20.05 40 10 10 10 25 25"/>

@@ -1,17 +1,17 @@
 export default {
   app: {
-    background: 'white',
-    height: '100vh'
+    background: '#fff',
+    maxHeight: '100vh'
   },
   popover: {
-    padding: '1rem',
-    textAlign: 'center',
-    position: 'relative',
     background: '#ffffff',
+    border: 'solid 1px #8e989d',
+    boxShadow: '1px 1px 0px #8e989d',
     height: '200px',
     overflowY: 'scroll',
-    boxShadow: '1px 1px 0px #8e989d',
-    border: 'solid 1px #8e989d',
+    padding: '1rem',
+    position: 'relative',
+    textAlign: 'center',
   },
   cover: {
   },
