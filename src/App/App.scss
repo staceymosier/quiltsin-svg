@@ -117,6 +117,58 @@ header {
   }
 }
 
+.fab {
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  bottom: 10px;
+  left: 10px;
+  outline: none;
+  padding: 1rem;
+  position: fixed;
+  transition: background-color .5s ease-in-out;
+
+  &:hover {
+    background-color: #437899;
+  }
+}
+
+.modal {
+  background-color: rgba(19, 19, 21, .65);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+  .content {
+    background: #fff;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 75vw;
+
+    .button {
+      background: #06283e;
+      border-radius: 3px;
+      border: none;
+      color: #c2d8d8;
+      cursor: pointer;
+      padding: 1rem;
+      transition: background-color .5s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: #5e89a5;
+      }
+    }
+
+    .form-group {
+      border-top: solid 4px #c6e9e9;
+    }
+  }
+}
+
 @media (max-width: 950px) {
   .wrapper {
     display: block;

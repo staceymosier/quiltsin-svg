@@ -53,25 +53,25 @@ class Palette extends Component {
   }
 
   render() {
-    const squareProps = { width: 40, height: 40, viewBox: "0 0 60 60"};
+    const squareProps = { width: 80, height: 80, viewBox: "0 0 80 80"};
     const {activeColors, updateColor} = this.props;
 
     return (
       <div className='palette-tray'>
         <div style={styles.swatchList} className='palette'>
-        {Object.entries(activeColors).map( ([key, value]) => {
-          return (
-            <div key={key}
-              property={key}
-              onClick={(e) => this.openPalette(key, e)}>
-              <SquareUnit {...squareProps} color={activeColors[key]}/>
-            </div>
-          )
-        })}
+          {Object.entries(activeColors).map( ([key, value]) => {
+            return (
+              <div key={key}
+                property={key}
+                onClick={(e) => this.openPalette(key, e)}>
+                <SquareUnit {...squareProps} color={activeColors[key]}/>
+              </div>
+            )
+          })}
         </div>
 
         { this.state.displayColorPicker ?
-        <div className='palette-box' onClick={(e) => this.closePalette(e)}>
+        <div className='palette-box' onClick={(e) => this.closePalette(e)} style={styles.paletteBox}>
           <PaletteSelection updateColor={updateColor} letter={this.state.selectedLetter}/>
         </div>
         : null }

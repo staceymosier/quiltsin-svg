@@ -3,6 +3,9 @@ export default {
     background: '#fff',
     maxHeight: '100vh'
   },
+  paletteBox: {
+    position: 'relative',
+  },
   popover: {
     background: '#ffffff',
     border: 'solid 1px #8e989d',
@@ -10,7 +13,7 @@ export default {
     height: '200px',
     overflowY: 'scroll',
     padding: '1rem',
-    position: 'relative',
+    position: 'absolute',
     textAlign: 'center',
   },
   cover: {
