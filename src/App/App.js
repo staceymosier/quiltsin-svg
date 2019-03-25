@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Icon from '@mdi/react';
-import { mdiCheckboxBlankOutline, mdiShuffle} from '@mdi/js';
+import { mdiCheckboxBlankOutline, mdiShuffle, mdiLayersOff, mdiAlphaABoxOutline } from '@mdi/js';
 import './App.scss';
 import Quilt from '../Quilt/Quilt.js';
 import Palette from '../Palette/Palette.js';
-import ButtonGroup from '../ButtonGroup/ButtonGroup.js';
 import Data from '../data.js';
 import styles from '../styles.js';
 
@@ -16,10 +15,33 @@ class App extends Component {
       data: Data,
       activeBlock: Data['1'],
       activeColors: Data['1'].colors,
+      isOutlined: false,
+      isShowingLetters: false
     };
 
     this.updateColor = this.updateColor.bind(this);
     this.randomizeActiveColors = this.randomizeActiveColors.bind(this);
+    this.clearPalette = this.clearPalette.bind(this);
+    this.toggleOutline = this.toggleOutline.bind(this);
+    this.showLetters = this.showLetters.bind(this);
+  }
+
+  clearPalette(e){
+    const { activeColors } = this.state;
+    this.setState({
+      isOutlined: true,
+      activeColors: Object.entries(activeColors).reduce( (result, [key, val], idx) => {
+        result[key] = '#fdfefc';
+        return result;
+      }, {})
+    });
+  }
+
+  toggleOutline(e){
+    const { isOutlined } = this.state;
+    return this.setState({
+      isOutlined: !isOutlined
+    });
   }
 
   randomizeActiveColors(e){
@@ -32,6 +54,11 @@ class App extends Component {
         return result;
       }, {})
     });
+  }
+
+  showLetters(e) {
+    const { isShowingLetters } = this.state;
+    return this.setState({ isShowingLetters: !isShowingLetters});
   }
 
   updateActiveBlock(e) {
@@ -51,11 +78,10 @@ class App extends Component {
   }
 
   render() {
-    const { data, activeBlock, activeColors } = this.state;
+    const { data, activeBlock, activeColors, isOutlined, isShowingLetters } = this.state;
 
     return (
       <div className='app' style={styles.app}>
-        <ButtonGroup />
         <div className='wrapper' style={styles.wrapper}>
           <header>
             <div className='topbar'>
@@ -71,15 +97,32 @@ class App extends Component {
               </div>
             </div>
             <Palette 
-              activeColors={activeColors} 
-              updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)} />
+              activeColors={activeColors}
+              isShowingLetters={isShowingLetters}
+              updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)}/>
             <div className='palette-tools'>
-              <Icon path={mdiCheckboxBlankOutline} color="black" size={2}/>
+              <Icon 
+                path={mdiCheckboxBlankOutline}
+                color={ isOutlined ? 'black' : '#c9c9cb'}
+                size={2} 
+                onClick={this.toggleOutline}
+              />
+              <Icon 
+                path={mdiAlphaABoxOutline}
+                color={ isShowingLetters ? 'black' : '#c9c9cb'}
+                size={2}
+                onClick={this.showLetters}
+              />
+              <Icon
+                path={mdiLayersOff}
+                color="black"
+                size={2}
+                onClick={this.clearPalette}
+              />
               <Icon path={mdiShuffle} color="black" size={2} onClick={this.randomizeActiveColors} />
-              <Icon path={mdiCheckboxBlankOutline} color="black" size={2} />
             </div>
           </header>
-            <Quilt activeBlock={activeBlock} activeColors={activeColors} />
+            <Quilt activeBlock={activeBlock} activeColors={activeColors} isOutlined={isOutlined} />
         </div>
       </div>
     );

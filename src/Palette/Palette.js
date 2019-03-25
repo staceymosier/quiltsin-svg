@@ -54,7 +54,7 @@ class Palette extends Component {
 
   render() {
     const squareProps = { width: 80, height: 80, viewBox: "0 0 80 80"};
-    const {activeColors, updateColor} = this.props;
+    const {activeColors, updateColor, isShowingLetters} = this.props;
 
     return (
       <div className='palette-tray'>
@@ -64,7 +64,12 @@ class Palette extends Component {
               <div key={key}
                 property={key}
                 onClick={(e) => this.openPalette(key, e)}>
-                <SquareUnit {...squareProps} color={activeColors[key]}/>
+                <SquareUnit
+                  {...squareProps}
+                  color={activeColors[key]}
+                  name={key}
+                  isShowingLetters={isShowingLetters}
+                  />
               </div>
             )
           })}

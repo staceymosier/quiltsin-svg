@@ -56,7 +56,7 @@ class ButtonGroup extends Component {
         { this.state.activeModal ?
           <div className="modal">
             <div className="content">
-              <div class="panel">
+              <div className="panel">
                 <h3>Save Options</h3>
                 <SavePanel/>
               </div>

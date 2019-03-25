@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import styles from '../styles';
 
 class Unit extends Component {
   render() {
-    const { height, width, viewBox, color, children} = this.props;
+    const { height, width, viewBox, color, children, name, isShowingLetters} = this.props;
     return (
     <svg
       width={width}
@@ -15,6 +16,13 @@ class Unit extends Component {
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       {children}
+      { isShowingLetters ? (
+      <foreignObject x="0" y="0" width="100%" height="100%">
+      <div style={styles.swatchName} xmlns="http://www.w3.org/1999/xhtml">
+          {name}
+        </div>
+      </foreignObject>
+      ) : '' }
     </svg>
     )
   }

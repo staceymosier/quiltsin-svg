@@ -115,6 +115,10 @@ header {
     max-width: 100%;
     max-height: calc( 100vh - 4rem);
   }
+
+  .is-outlined svg > * {
+    stroke: black;
+  }
 }
 
 .fab {
