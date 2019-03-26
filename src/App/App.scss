@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
-$display-font: 'Zilla Slab', serif;
+@import url('https://fonts.googleapis.com/css?family=Anaheim');
+$display-font: 'Anaheim', serif;
 
 body {
   background-color: #cecece;
@@ -45,7 +45,7 @@ header {
       background: #c2d8d8;
       color: #06283e;
       display: inline-block;
-      font-family: 'Zilla Slab', serif;
+      font-family: $display-font;
       font-size: 1.5rem;
       font-weight:100;
       text-decoration: none;
@@ -79,13 +79,13 @@ header {
   }
 
   select {
-    -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
     border: none;
     color: #06283e;
-    font-family: 'Zilla Slab', serif;
+    font-family: $display-font;
     font-size: 1.5rem;
     font-weight: 100;
     width: 100%;
@@ -118,6 +118,7 @@ header {
 
   .is-outlined svg > * {
     stroke: black;
+    stroke-width: .25px;
   }
 }
 
@@ -171,6 +172,14 @@ header {
       border-top: solid 4px #c6e9e9;
     }
   }
+}
+
+.swatch-name {
+  background: #fff;
+  color: #4f4f4f;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2px;
 }
 
 @media (max-width: 950px) {

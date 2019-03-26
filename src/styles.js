@@ -22,14 +22,5 @@ export default {
     display: 'flex',
     flexWrap: 'wrap',
     margin: '1rem 0'
-  },
-  swatchName: {
-    color:  '#c2d8d8',
-    fontSize: '1.5rem',
-    textTransform: 'uppercase',
-    fontFamily: '\'Zilla Slab\', serif',
-    lineHeight: '100%',
-    paddingLeft: '.2rem',
-    paddingTop: '.1rem'
   }
 };

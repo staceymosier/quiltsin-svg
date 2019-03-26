@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/parcel ./public/index.html --no-cache",
-    "build": "./node_modules/.bin/parcel build --public-url ./amish-quilts/ ./public/index.html --no-cache"
+    "build": "./node_modules/.bin/parcel build --public-url /amish-quilts/ ./public/index.html --no-cache"
   },
   "eslintConfig": {
     "extends": "react-app"

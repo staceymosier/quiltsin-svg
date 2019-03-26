@@ -10,7 +10,7 @@ class AmishHomage extends Component {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
-       <rect fill={a} width="60" height="60"/>
+      <rect fill={a} width="60" height="60"/>
       <rect fill={a} x="300" width="60" height="60"/>
       <rect fill={b} x="60" width="240" height="60"/>
       <rect fill={a} y="300" width="60" height="60"/>
