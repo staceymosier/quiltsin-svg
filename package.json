@@ -12,7 +12,8 @@
     "react-dom": "^16.8.2",
     "react-ga": "^2.5.7",
     "react-scripts": "2.1.5",
-    "save-svg-as-png": "^1.4.11"
+    "save-svg-as-png": "^1.4.11",
+    "tinycolor2": "^1.4.1"
   },
   "scripts": {
     "start": "./node_modules/.bin/parcel ./public/index.html --no-cache",
@@ -26,5 +27,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
 }

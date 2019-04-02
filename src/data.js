@@ -15,8 +15,8 @@ export default {
       i: '#e2909e',
       j: '#aa7fd3',
       k: '#302e82',
-      l: '#52373f'
-    }
+      l: '#52373f',
+    },
   },
   2: {
     title: 'Amish Homage',
@@ -36,12 +36,12 @@ export default {
       k: '#ef8e9c',
       l: '#5d111a',
       m: '#475656',
-    }
+    },
   },
   3: {
-    title: "Sparkle Plenty",
-    block: "SparklePlenty",
-    borderSize: "solid 40px",
+    title: 'Sparkle Plenty',
+    block: 'SparklePlenty',
+    borderSize: 'solid 40px',
     colors: {
       a: '#262955',
       b: '#c5d5ee',
@@ -50,19 +50,23 @@ export default {
       e: '#c1e6e9',
       f: '#faf0dc',
       g: '#113259',
-      h: '#0179bf'
-    }
+      h: '#0179bf',
+    },
   },
   4: {
-    title: "Robbing Peter to Pay Paul",
-    block: "RobbingPeter",
-    borderSize: "solid 40px",
+    title: 'Robbing Peter to Pay Paul',
+    block: 'RobbingPeter',
+    borderSize: 'solid 40px',
     colors: {
-      a: '#0f254e', b: '#00429c',
-      c: '#ff435f', d: '#1cddff',
-      e: '#ff9339', f: '#984cb2',
-      g: '#6cc1ff', h: '#00a87d',
-      i: '#000'
-    }
-  }
+      a: '#0f254e',
+      b: '#00429c',
+      c: '#ff435f',
+      d: '#1cddff',
+      e: '#ff9339',
+      f: '#984cb2',
+      g: '#6cc1ff',
+      h: '#00a87d',
+      i: '#000',
+    },
+  },
 };

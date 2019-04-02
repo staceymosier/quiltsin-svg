@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
-import SquareUnit from '../Unit/Unit.js';
 import { CirclePicker } from 'react-color';
-import bella from './moda-bella.js';
-import styles from '../styles.js';
+import SquareUnit from '../Unit/Unit';
+import colors from './colors';
+
+const styles = {
+  paletteBox: {
+    position: 'relative',
+  },
+  popover: {
+    background: '#fff',
+    border: 'solid 1px #8e989d',
+    boxShadow: '1px 1px 0px #8e989d',
+    height: '200px',
+    overflowY: 'scroll',
+    padding: '1rem',
+    position: 'absolute',
+    textAlign: 'center',
+  },
+  swatchList: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    margin: '1rem 0',
+  },
+};
 
 class PaletteSelection extends Component {
 
@@ -19,8 +39,8 @@ class PaletteSelection extends Component {
     return (
       <div style={styles.popover}>
         <div style={styles.cover}>
-          <CirclePicker 
-            colors={Object.entries(bella).map( ([key, val]) => { return val.color }) }
+          <CirclePicker
+            colors={Object.entries(colors).map(([key, val]) => { return val.color }) }
             onChangeComplete={this.handleCC(letter, updateColor)}
             width="100%"
             circleSpacing={6}

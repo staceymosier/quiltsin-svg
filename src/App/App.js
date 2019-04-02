@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import Icon from '@mdi/react';
-import { mdiCheckboxBlankOutline, mdiShuffle, mdiLayersOff, mdiAlphaABoxOutline, mdiRefresh } from '@mdi/js';
+import {
+  mdiAlphaABoxOutline,
+  mdiCheckboxBlankOutline,
+  mdiLayersOff,
+  mdiRefresh,
+  mdiShuffle,
+} from '@mdi/js';
+
 import './App.scss';
-import Quilt from '../Quilt/Quilt.js';
-import Palette from '../Palette/Palette.js';
-import Data from '../data.js';
-import styles from '../styles.js';
+import Quilt from '../Quilt/Quilt';
+import Palette from '../Palette/Palette';
+import Data from '../data';
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +24,7 @@ class App extends Component {
       allowRefresh: false,
       data: Data,
       isOutlined: false,
-      isShowingLetters: false
+      isShowingLetters: false,
     };
 
     this.updateColor = this.updateColor.bind(this);
@@ -29,20 +35,20 @@ class App extends Component {
     this.resetActiveColors = this.resetActiveColors.bind(this);
   }
 
-  clearPalette(e){
+  clearPalette() {
     const { activeColors } = this.state;
     this.setState({
       isOutlined: true,
       allowClearPalette: false,
       allowRefresh: true,
-      activeColors: Object.entries(activeColors).reduce( (result, [key, val], idx) => {
+      activeColors: Object.entries(activeColors).reduce((result, [key, val], idx) => {
         result[key] = '#fdfefc';
         return result;
-      }, {})
+      }, {}),
     });
   }
 
-  randomizeActiveColors(e){
+  randomizeActiveColors() {
     const { activeColors } = this.state;
     const newColors = Object.values(activeColors);
     newColors.push(newColors.shift());
@@ -52,29 +58,29 @@ class App extends Component {
       activeColors: Object.entries(activeColors).reduce((result, [key, val], idx) => {
         result[key] = newColors[idx];
         return result;
-      }, {})
+      }, {}),
     });
   }
 
-  resetActiveColors(e){
+  resetActiveColors() {
     const { activeBlock } = this.state;
     return this.setState({
       allowClearPalette: true,
       isOutlined: false,
       allowRefresh: false,
-      activeColors: activeBlock.colors
+      activeColors: activeBlock.colors,
     });
   }
 
-  showLetters(e) {
+  showLetters() {
     const { isShowingLetters } = this.state;
-    return this.setState({ isShowingLetters: !isShowingLetters});
+    return this.setState({ isShowingLetters: !isShowingLetters });
   }
 
-  toggleOutline(e){
+  toggleOutline() {
     const { isOutlined } = this.state;
     return this.setState({
-      isOutlined: !isOutlined
+      isOutlined: !isOutlined,
     });
   }
 
@@ -83,15 +89,14 @@ class App extends Component {
     const id = e.target.value;
     this.setState({
       activeBlock: data[id],
-      activeColors: data[id].colors
-     });
-    return;
+      activeColors: data[id].colors,
+    });
   }
 
-  updateColor({letter, color}, e) {
-    var activeColors = {...this.state.activeColors}
+  updateColor({ letter, color }) {
+    const { activeColors } = this.state;
     activeColors[letter] = color;
-    return this.setState({activeColors})
+    return this.setState({ activeColors });
   }
 
   render() {
@@ -102,58 +107,61 @@ class App extends Component {
       allowRefresh,
       data,
       isOutlined,
-      isShowingLetters
+      isShowingLetters,
     } = this.state;
 
     return (
-      <div className='app' style={styles.app}>
-        <div className='wrapper' style={styles.wrapper}>
+      <div className="app">
+        <div className="wrapper">
           <header>
-            <div className='topbar'>
-              <div className='logo'>
-                <a href='./index.html'> Amish Quilts </a>
-              </div>
-              <div className="select-field">
-                <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
-                  {Object.entries(data).map( ([key, value]) => {
-                    return <option value={key} key={key} className="option">  {value.title} </option>
-                  })}
-                </select>
-              </div>
+            <div className="topbar">
+              <div className="logo">
+              <a href="./index.html"> Amish Quilts </a>
             </div>
-            <Palette 
+              <div className="select-field">
+              <select className="selected" value={activeBlock.id} onChange={e => this.updateActiveBlock(e)}>
+                {Object.entries(data).map(([key, value]) => (
+                  <option value={key} key={key} className="option">
+                    {value.title}
+                  </option>
+                ))}
+              </select>
+            </div>
+            </div>
+            <Palette
               activeColors={activeColors}
               isShowingLetters={isShowingLetters}
-              updateColor={({letter, color}, e) => this.updateColor({letter, color}, e)}/>
-            <div className='palette-tools'>
-              <Icon 
-                path={mdiCheckboxBlankOutline}
-                color={ isOutlined ? 'black' : '#c9c9cb'}
-                size={2} 
-                onClick={this.toggleOutline}
-              />
-              <Icon 
-                path={mdiAlphaABoxOutline}
-                color={ isShowingLetters ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.showLetters}
-              />
+              updateColor={({ letter, color }, e) => this.updateColor({ letter, color }, e)}
+            />
+            <div className="palette-tools">
               <Icon
-                path={mdiLayersOff}
-                color={ allowClearPalette ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.clearPalette}
-              />
+              path={mdiCheckboxBlankOutline}
+              color={isOutlined ? 'black' : '#c9c9cb'}
+              size={2}
+              onClick={this.toggleOutline}
+            />
+              <Icon
+              path={mdiAlphaABoxOutline}
+              color={isShowingLetters ? 'black' : '#c9c9cb'}
+              size={2}
+              onClick={this.showLetters}
+            />
+              <Icon
+              path={mdiLayersOff}
+              color={allowClearPalette ? 'black' : '#c9c9cb'}
+              size={2}
+              onClick={this.clearPalette}
+            />
               <Icon path={mdiShuffle} color="black" size={2} onClick={this.randomizeActiveColors} />
               <Icon
-                path={mdiRefresh}
-                color={ allowRefresh ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.resetActiveColors}
-              />
+              path={mdiRefresh}
+              color={allowRefresh ? 'black' : '#c9c9cb'}
+              size={2}
+              onClick={this.resetActiveColors}
+            />
             </div>
           </header>
-            <Quilt activeBlock={activeBlock} activeColors={activeColors} isOutlined={isOutlined} />
+          <Quilt activeBlock={activeBlock} activeColors={activeColors} isOutlined={isOutlined} />
         </div>
       </div>
     );
