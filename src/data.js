@@ -1,5 +1,24 @@
 export default {
   1: {
+    title: 'Roman Stripe',
+    block: 'RomanStripe',
+    borderSize: 'none',
+    colors: {
+      a: '#2c2521',
+      b: '#ce623c',
+      c: '#0a6191',
+      d: '#a8906f',
+      e: '#6a9ba3',
+      f: '#b8403c',
+      g: '#72cfe8',
+      h: '#e6bc97',
+      i: '#e2909e',
+      j: '#aa7fd3',
+      k: '#302e82',
+      l: '#52373f'
+    }
+  },
+  2: {
     title: 'Amish Homage',
     block: 'AmishHomage',
     borderSize: 'none',
@@ -19,19 +38,22 @@ export default {
       m: '#475656',
     }
   },
-  2: {
+  3: {
     title: "Sparkle Plenty",
     block: "SparklePlenty",
     borderSize: "solid 40px",
     colors: {
-      a: '#4f4369', b: '#430039',
-      c: '#cccbc0', d: '#6c0b5d',
-      e: '#d29fcb', f: '#a63e96',
-      g: '#102a3d', h: '#1a6da8',
-      i: '#2a0723',
+      a: '#262955',
+      b: '#c5d5ee',
+      c: '#1f1538',
+      d: '#bae4f9',
+      e: '#c1e6e9',
+      f: '#faf0dc',
+      g: '#113259',
+      h: '#0179bf'
     }
   },
-  3: {
+  4: {
     title: "Robbing Peter to Pay Paul",
     block: "RobbingPeter",
     borderSize: "solid 40px",

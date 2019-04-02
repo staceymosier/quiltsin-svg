@@ -116,7 +116,7 @@ class App extends Component {
               <div className="select-field">
                 <select className="selected" value={activeBlock.id} onChange={(e) => this.updateActiveBlock(e)}>
                   {Object.entries(data).map( ([key, value]) => {
-                    return <option value={key} key={key} className="option"> &nbsp; {value.title} &nbsp; </option>
+                    return <option value={key} key={key} className="option">  {value.title} </option>
                   })}
                 </select>
               </div>

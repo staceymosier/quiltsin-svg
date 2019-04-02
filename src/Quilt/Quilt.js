@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import SparklePlenty from './SVG/SparklePlenty';
-import RobbingPeter from './SVG/RobbingPeter';
+
+// TODO: optimize adding quilt design as to not have to map name to component here
 import AmishHomage from './SVG/AmishHomage';
+import RobbingPeter from './SVG/RobbingPeter';
+import RomanStripe from './SVG/RomanStripe';
+import SparklePlenty from './SVG/SparklePlenty';
 
 const designs = {
   'SparklePlenty': SparklePlenty,
   'RobbingPeter': RobbingPeter,
-  'AmishHomage': AmishHomage
+  'AmishHomage': AmishHomage,
+  'RomanStripe': RomanStripe
 }
 
 class Quilt extends Component {

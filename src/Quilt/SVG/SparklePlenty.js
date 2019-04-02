@@ -4,1703 +4,1705 @@ class SparklePlenty extends Component {
   render() {
 
     // A is for the border
-    const {b,c,d,e,f,g,h,i} = this.props.activeColors;
+    const {a,b,c,d,e,f,g,h} = this.props.activeColors;
     return (
       <svg
         fill="#000"
-        viewBox="0 0 260 340"
+        viewBox="0 0 320 400"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
-        <rect fill={i} width="260" height="340"/>
-        <polygon fill={b} points="29.95 20.05 29.95 20.05 29.94 20.04 29.95 20.05 40 10 10 10 25 25"/>
-        <polygon fill={c} points="20 30 25 25 10 10 10 40 19.97 30.03"/>
-        <polygon fill={b} points="30.05 39.94 30.05 39.95 30.06 39.95 30.05 39.95 20 49.99 50 49.99 35 34.99"/>
-        <polygon fill={c} points="40 29.99 35 34.99 50 49.99 50 19.99 40.03 29.97"/>
-        <polygon fill={d} points="14.99 35.01 10 40 19.99 40"/>
-        <polygon fill={i} points="20 40 20 30 19.97 30.03 14.99 35.01 19.99 40"/>
-        <rect fill={i} x="20" y="49.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="35 15 30 20 40 20"/>
-        <polygon fill={f} points="25 25 20 30 29.99 30"/>
-        <rect fill={i} x="29.99" y="49.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="30 30 30 20 29.95 20.05 29.95 20.05 25 25 25 25 29.99 30"/>
-        <polygon fill={i} points="40 10 35 15 40 20"/>
-        <polygon fill={f} points="30 30.01 34.99 35 35 34.99 39.99 30 30 30"/>
-        <polygon fill={g} points="30 39.99 30.05 39.95 30.05 39.94 34.99 35 30 30.01"/>
-        <polygon fill={i} points="40 29.99 40.03 29.97 45 25 40 20"/>
-        <polygon fill={e} points="45 25 49.99 20 40 20"/>
-        <polygon fill={i} points="20 49.99 24.99 45 20 40.01"/>
-        <polygon fill={d} points="20 40.01 24.99 45 29.99 40 20 40"/>
-        <polygon fill={e} points="40 10 40 20 45 15"/>
-        <polygon fill={g} points="50 10 40 10 45 15"/>
-        <polygon fill={i} points="40 20 49.99 20 45 15"/>
-        <polygon fill={h} points="45 15 49.99 20 50 19.99 50 10"/>
-        <polygon fill={f} points="30 20 30 30 35 25"/>
-        <polygon fill={i} points="40 20 30 20 35 25"/>
-        <polygon fill={g} points="30 30 39.99 30 35 25"/>
-        <polygon fill={e} points="35 25 39.99 30 40 29.99 40 20"/>
-        <polygon fill={d} points="20 30 20 40 25 35"/>
-        <polygon fill={g} points="30 30 20 30 25 35"/>
-        <polygon fill={i} points="20 40 29.99 40 25 35"/>
-        <polygon fill={f} points="25 35 29.99 40 30 39.99 30 30"/>
-        <polygon fill={h} points="10 40 10 50 15 45"/>
-        <polygon fill={i} points="20 40 10 40 15 45"/>
-        <polygon fill={g} points="10 50 19.99 50 15 45"/>
-        <polygon fill={d} points="15 45 19.99 50 20 49.99 20 40"/>
-        <polygon fill={b} points="60.05 30.05 60.05 30.05 60.04 30.06 60.05 30.05 50 20 50 50 65 35"/>
-        <polygon fill={c} points="70 40 65 35 50 50 80 50 70.03 40.03"/>
-        <polygon fill={b} points="79.94 29.95 79.95 29.95 79.95 29.94 79.95 29.95 89.99 40 89.99 10 74.99 25"/>
-        <polygon fill={c} points="69.99 20 74.99 25 89.99 10 59.99 10 69.97 19.97"/>
-        <polygon fill={d} points="75.01 45.01 80 50 80 40.01"/>
-        <polygon fill={i} points="80 40 70 40 70.03 40.03 75.01 45.01 80 40.01"/>
-        <rect fill={i} x="89.99" y="30.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="55 25 60 30 60 20"/>
-        <polygon fill={f} points="65 35 70 40 70 30.01"/>
-        <rect fill={i} x="89.99" y="10" width=".01" height="20.01"/>
-        <polygon fill={g} points="70 30 60 30 60.05 30.05 60.05 30.05 65 35 65 35 70 30.01"/>
-        <polygon fill={i} points="50 20 55 25 60 20"/>
-        <polygon fill={f} points="70.01 30 75 25.01 74.99 25 70 20.01 70 30"/>
-        <polygon fill={g} points="79.99 30 79.95 29.95 79.94 29.95 75 25.01 70.01 30"/>
-        <polygon fill={i} points="69.99 20 69.97 19.97 65 15 60 20"/>
-        <polygon fill={e} points="65 15 60 10.01 60 20"/>
-        <polygon fill={i} points="89.99 40 85 35.01 80.01 40"/>
-        <polygon fill={d} points="80.01 40 85 35.01 80 30.01 80 40"/>
-        <polygon fill={e} points="50 20 60 20 55 15"/>
-        <polygon fill={g} points="50 10 50 20 55 15"/>
-        <polygon fill={i} points="60 20 60 10.01 55 15"/>
-        <polygon fill={h} points="55 15 60 10.01 59.99 10 50 10"/>
-        <polygon fill={f} points="60 30 70 30 65 25"/>
-        <polygon fill={i} points="60 20 60 30 65 25"/>
-        <polygon fill={g} points="70 30 70 20.01 65 25"/>
-        <polygon fill={e} points="65 25 70 20.01 69.99 20 60 20"/>
-        <polygon fill={d} points="70 40 80 40 75 35"/>
-        <polygon fill={g} points="70 30 70 40 75 35"/>
-        <polygon fill={i} points="80 40 80 30.01 75 35"/>
-        <polygon fill={f} points="75 35 80 30.01 79.99 30 70 30"/>
-        <polygon fill={h} points="80 50 90 50 85 45"/>
-        <polygon fill={i} points="80 40 80 50 85 45"/>
-        <polygon fill={g} points="90 50 90 40.01 85 45"/>
-        <polygon fill={d} points="85 45 90 40.01 89.99 40 80 40"/>
-        <polygon fill={b} points="109.95 20.05 109.95 20.05 109.94 20.04 109.95 20.05 120 10 90 10 105 25"/>
-        <polygon fill={c} points="100 30 105 25 90 10 90 40 99.97 30.03"/>
-        <polygon fill={b} points="110.05 39.94 110.05 39.95 110.06 39.95 110.05 39.95 100 49.99 130 49.99 115 34.99"/>
-        <polygon fill={c} points="120 29.99 115 34.99 130 49.99 130 19.99 120.03 29.97"/>
-        <polygon fill={d} points="94.99 35.01 90 40 99.99 40"/>
-        <polygon fill={i} points="100 40 100 30 99.97 30.03 94.99 35.01 99.99 40"/>
-        <rect fill={i} x="100" y="49.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="115 15 110 20 120 20"/>
-        <polygon fill={f} points="105 25 100 30 109.99 30"/>
-        <rect fill={i} x="109.99" y="49.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="110 30 110 20 109.95 20.05 109.95 20.05 105 25 105 25 109.99 30"/>
-        <polygon fill={i} points="120 10 115 15 120 20"/>
-        <polygon fill={f} points="110 30.01 114.99 35 115 34.99 119.99 30 110 30"/>
-        <polygon fill={g} points="110 39.99 110.05 39.95 110.05 39.94 114.99 35 110 30.01"/>
-        <polygon fill={i} points="120 29.99 120.03 29.97 125 25 120 20"/>
-        <polygon fill={e} points="125 25 129.99 20 120 20"/>
-        <polygon fill={i} points="100 49.99 104.99 45 100 40.01"/>
-        <polygon fill={d} points="100 40.01 104.99 45 109.99 40 100 40"/>
-        <polygon fill={e} points="120 10 120 20 125 15"/>
-        <polygon fill={g} points="130 10 120 10 125 15"/>
-        <polygon fill={i} points="120 20 129.99 20 125 15"/>
-        <polygon fill={h} points="125 15 129.99 20 130 19.99 130 10"/>
-        <polygon fill={f} points="110 20 110 30 115 25"/>
-        <polygon fill={i} points="120 20 110 20 115 25"/>
-        <polygon fill={g} points="110 30 119.99 30 115 25"/>
-        <polygon fill={e} points="115 25 119.99 30 120 29.99 120 20"/>
-        <polygon fill={d} points="100 30 100 40 105 35"/>
-        <polygon fill={g} points="110 30 100 30 105 35"/>
-        <polygon fill={i} points="100 40 109.99 40 105 35"/>
-        <polygon fill={f} points="105 35 109.99 40 110 39.99 110 30"/>
-        <polygon fill={h} points="90 40 90 50 95 45"/>
-        <polygon fill={i} points="100 40 90 40 95 45"/>
-        <polygon fill={g} points="90 50 99.99 50 95 45"/>
-        <polygon fill={d} points="95 45 99.99 50 100 49.99 100 40"/>
-        <polygon fill={b} points="159.95 29.95 159.95 29.95 159.96 29.94 159.95 29.95 170 40 170 10 155 25"/>
-        <polygon fill={c} points="150 20 155 25 170 10 140 10 149.97 19.97"/>
-        <polygon fill={b} points="140.06 30.05 140.05 30.05 140.04 30.06 140.05 30.05 130.01 20 130.01 50 145.01 35"/>
-        <polygon fill={c} points="150.01 40 145.01 35 130.01 50 160.01 50 150.03 40.03"/>
-        <polygon fill={d} points="144.99 14.99 140 10 140 19.99"/>
-        <polygon fill={i} points="140 20 150 20 149.97 19.97 144.99 14.99 140 19.99"/>
-        <rect fill={i} x="130" y="20" width=".01" height="9.99"/>
-        <polygon fill={e} points="165 35 160 30 160 40"/>
-        <polygon fill={f} points="155 25 150 20 150 29.99"/>
-        <rect fill={i} x="130" y="29.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="150 30 160 30 159.95 29.95 159.95 29.95 155 25 155 25 150 29.99"/>
-        <polygon fill={i} points="170 40 165 35 160 40"/>
-        <polygon fill={f} points="149.99 30 145 34.99 145.01 35 150 39.99 150 30"/>
-        <polygon fill={g} points="140.01 30 140.05 30.05 140.06 30.05 145 34.99 149.99 30"/>
-        <polygon fill={i} points="150.01 40 150.03 40.03 155 45 160 40"/>
-        <polygon fill={e} points="155 45 160 49.99 160 40"/>
-        <polygon fill={i} points="130.01 20 135 24.99 139.99 20"/>
-        <polygon fill={d} points="139.99 20 135 24.99 140 29.99 140 20"/>
-        <polygon fill={e} points="170 40 160 40 165 45"/>
-        <polygon fill={g} points="170 50 170 40 165 45"/>
-        <polygon fill={i} points="160 40 160 49.99 165 45"/>
-        <polygon fill={h} points="165 45 160 49.99 160.01 50 170 50"/>
-        <polygon fill={f} points="160 30 150 30 155 35"/>
-        <polygon fill={i} points="160 40 160 30 155 35"/>
-        <polygon fill={g} points="150 30 150 39.99 155 35"/>
-        <polygon fill={e} points="155 35 150 39.99 150.01 40 160 40"/>
-        <polygon fill={d} points="150 20 140 20 145 25"/>
-        <polygon fill={g} points="150 30 150 20 145 25"/>
-        <polygon fill={i} points="140 20 140 29.99 145 25"/>
-        <polygon fill={f} points="145 25 140 29.99 140.01 30 150 30"/>
-        <polygon fill={h} points="140 10 130 10 135 15"/>
-        <polygon fill={i} points="140 20 140 10 135 15"/>
-        <polygon fill={g} points="130 10 130 19.99 135 15"/>
-        <polygon fill={d} points="135 15 130 19.99 130.01 20 140 20"/>
-        <polygon fill={b} points="189.95 20.05 189.95 20.05 189.94 20.04 189.95 20.05 200 10 170 10 185 25"/>
-        <polygon fill={c} points="180 30 185 25 170 10 170 40 179.97 30.03"/>
-        <polygon fill={b} points="190.05 39.94 190.05 39.95 190.06 39.95 190.05 39.95 180 49.99 210 49.99 195 34.99"/>
-        <polygon fill={c} points="200 29.99 195 34.99 210 49.99 210 19.99 200.03 29.97"/>
-        <polygon fill={d} points="174.99 35.01 170 40 179.99 40"/>
-        <polygon fill={i} points="180 40 180 30 179.97 30.03 174.99 35.01 179.99 40"/>
-        <rect fill={i} x="180" y="49.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="195 15 190 20 200 20"/>
-        <polygon fill={f} points="185 25 180 30 189.99 30"/>
-        <rect fill={i} x="189.99" y="49.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="190 30 190 20 189.95 20.05 189.95 20.05 185 25 185 25 189.99 30"/>
-        <polygon fill={i} points="200 10 195 15 200 20"/>
-        <polygon fill={f} points="190 30.01 194.99 35 195 34.99 199.99 30 190 30"/>
-        <polygon fill={g} points="190 39.99 190.05 39.95 190.05 39.94 194.99 35 190 30.01"/>
-        <polygon fill={i} points="200 29.99 200.03 29.97 205 25 200 20"/>
-        <polygon fill={e} points="205 25 209.99 20 200 20"/>
-        <polygon fill={i} points="180 49.99 184.99 45 180 40.01"/>
-        <polygon fill={d} points="180 40.01 184.99 45 189.99 40 180 40"/>
-        <polygon fill={e} points="200 10 200 20 205 15"/>
-        <polygon fill={g} points="210 10 200 10 205 15"/>
-        <polygon fill={i} points="200 20 209.99 20 205 15"/>
-        <polygon fill={h} points="205 15 209.99 20 210 19.99 210 10"/>
-        <polygon fill={f} points="190 20 190 30 195 25"/>
-        <polygon fill={i} points="200 20 190 20 195 25"/>
-        <polygon fill={g} points="190 30 199.99 30 195 25"/>
-        <polygon fill={e} points="195 25 199.99 30 200 29.99 200 20"/>
-        <polygon fill={d} points="180 30 180 40 185 35"/>
-        <polygon fill={g} points="190 30 180 30 185 35"/>
-        <polygon fill={i} points="180 40 189.99 40 185 35"/>
-        <polygon fill={f} points="185 35 189.99 40 190 39.99 190 30"/>
-        <polygon fill={h} points="170 40 170 50 175 45"/>
-        <polygon fill={i} points="180 40 170 40 175 45"/>
-        <polygon fill={g} points="170 50 179.99 50 175 45"/>
-        <polygon fill={d} points="175 45 179.99 50 180 49.99 180 40"/>
-        <polygon fill={b} points="220.05 30.05 220.05 30.05 220.04 30.06 220.05 30.05 210 20 210 50 225 35"/>
-        <polygon fill={c} points="230 40 225 35 210 50 240 50 230.03 40.03"/>
-        <polygon fill={b} points="239.94 29.95 239.95 29.95 239.96 29.94 239.95 29.95 249.99 40 249.99 10 234.99 25"/>
-        <polygon fill={c} points="229.99 20 234.99 25 249.99 10 219.99 10 229.97 19.97"/>
-        <polygon fill={d} points="235.01 45.01 240 50 240 40.01"/>
-        <polygon fill={i} points="240 40 230 40 230.03 40.03 235.01 45.01 240 40.01"/>
-        <rect fill={i} x="249.99" y="30.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="215 25 220 30 220 20"/>
-        <polygon fill={f} points="225 35 230 40 230 30.01"/>
-        <rect fill={i} x="249.99" y="10" width=".01" height="20.01"/>
-        <polygon fill={g} points="230 30 220 30 220.05 30.05 220.05 30.05 225 35 225 35 230 30.01"/>
-        <polygon fill={i} points="210 20 215 25 220 20"/>
-        <polygon fill={f} points="230.01 30 235 25.01 234.99 25 230 20.01 230 30"/>
-        <polygon fill={g} points="239.99 30 239.95 29.95 239.94 29.95 235 25.01 230.01 30"/>
-        <polygon fill={i} points="229.99 20 229.97 19.97 225 15 220 20"/>
-        <polygon fill={e} points="225 15 220 10.01 220 20"/>
-        <polygon fill={i} points="249.99 40 245 35.01 240.01 40"/>
-        <polygon fill={d} points="240.01 40 245 35.01 240 30.01 240 40"/>
-        <polygon fill={e} points="210 20 220 20 215 15"/>
-        <polygon fill={g} points="210 10 210 20 215 15"/>
-        <polygon fill={i} points="220 20 220 10.01 215 15"/>
-        <polygon fill={h} points="215 15 220 10.01 219.99 10 210 10"/>
-        <polygon fill={f} points="220 30 230 30 225 25"/>
-        <polygon fill={i} points="220 20 220 30 225 25"/>
-        <polygon fill={g} points="230 30 230 20.01 225 25"/>
-        <polygon fill={e} points="225 25 230 20.01 229.99 20 220 20"/>
-        <polygon fill={d} points="230 40 240 40 235 35"/>
-        <polygon fill={g} points="230 30 230 40 235 35"/>
-        <polygon fill={i} points="240 40 240 30.01 235 35"/>
-        <polygon fill={f} points="235 35 240 30.01 239.99 30 230 30"/>
-        <polygon fill={h} points="240 50 250 50 245 45"/>
-        <polygon fill={i} points="240 40 240 50 245 45"/>
-        <polygon fill={g} points="250 50 250 40.01 245 45"/>
-        <polygon fill={d} points="245 45 250 40.01 249.99 40 240 40"/>
-        <polygon fill={b} points="20.05 70.05 20.05 70.05 20.04 70.06 20.05 70.05 10 60 10 90 25 75"/>
-        <polygon fill={c} points="30 80 25 75 10 90 40 90 30.03 80.03"/>
-        <polygon fill={b} points="39.94 69.95 39.95 69.95 39.95 69.94 39.95 69.95 49.99 80 49.99 50 34.99 65"/>
-        <polygon fill={c} points="29.99 60 34.99 65 49.99 50 19.99 50 29.97 59.97"/>
-        <polygon fill={d} points="35.01 85.01 40 90 40 80.01"/>
-        <polygon fill={i} points="40 80 30 80 30.03 80.03 35.01 85.01 40 80.01"/>
-        <rect fill={i} x="49.99" y="70.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="15 65 20 70 20 60"/>
-        <polygon fill={f} points="25 75 30 80 30 70.01"/>
-        <rect fill={i} x="49.99" y="50" width=".01" height="20.01"/>
-        <polygon fill={g} points="30 70 20 70 20.05 70.05 20.05 70.05 25 75 25 75 30 70.01"/>
-        <polygon fill={i} points="10 60 15 65 20 60"/>
-        <polygon fill={f} points="30.01 70 35 65.01 34.99 65 30 60.01 30 70"/>
-        <polygon fill={g} points="39.99 70 39.95 69.95 39.94 69.95 35 65.01 30.01 70"/>
-        <polygon fill={i} points="29.99 60 29.97 59.97 25 55 20 60"/>
-        <polygon fill={e} points="25 55 20 50.01 20 60"/>
-        <polygon fill={i} points="49.99 80 45 75.01 40.01 80"/>
-        <polygon fill={d} points="40.01 80 45 75.01 40 70.01 40 80"/>
-        <polygon fill={e} points="10 60 20 60 15 55"/>
-        <polygon fill={g} points="10 50 10 60 15 55"/>
-        <polygon fill={i} points="20 60 20 50.01 15 55"/>
-        <polygon fill={h} points="15 55 20 50.01 19.99 50 10 50"/>
-        <polygon fill={f} points="20 70 30 70 25 65"/>
-        <polygon fill={i} points="20 60 20 70 25 65"/>
-        <polygon fill={g} points="30 70 30 60.01 25 65"/>
-        <polygon fill={e} points="25 65 30 60.01 29.99 60 20 60"/>
-        <polygon fill={d} points="30 80 40 80 35 75"/>
-        <polygon fill={g} points="30 70 30 80 35 75"/>
-        <polygon fill={i} points="40 80 40 70.01 35 75"/>
-        <polygon fill={f} points="35 75 40 70.01 39.99 70 30 70"/>
-        <polygon fill={h} points="40 90 50 90 45 85"/>
-        <polygon fill={i} points="40 80 40 90 45 85"/>
-        <polygon fill={g} points="50 90 50 80.01 45 85"/>
-        <polygon fill={d} points="45 85 50 80.01 49.99 80 40 80"/>
-        <polygon fill={b} points="69.95 60.05 69.95 60.05 69.94 60.04 69.95 60.05 80 50 50 50 65 65"/>
-        <polygon fill={c} points="60 70 65 65 50 50 50 80 59.97 70.03"/>
-        <polygon fill={b} points="70.05 79.94 70.05 79.95 70.06 79.95 70.05 79.95 60 89.99 90 89.99 75 74.99"/>
-        <polygon fill={c} points="80 69.99 75 74.99 90 89.99 90 59.99 80.03 69.97"/>
-        <polygon fill={d} points="54.99 75.01 50 80 59.99 80"/>
-        <polygon fill={i} points="60 80 60 70 59.97 70.03 54.99 75.01 59.99 80"/>
-        <rect fill={i} x="60" y="89.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="75 55 70 60 80 60"/>
-        <polygon fill={f} points="65 65 60 70 69.99 70"/>
-        <rect fill={i} x="69.99" y="89.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="70 70 70 60 69.95 60.05 69.95 60.05 65 65 65 65 69.99 70"/>
-        <polygon fill={i} points="80 50 75 55 80 60"/>
-        <polygon fill={f} points="70 70.01 74.99 75 75 74.99 79.99 70 70 70"/>
-        <polygon fill={g} points="70 79.99 70.05 79.95 70.05 79.94 74.99 75 70 70.01"/>
-        <polygon fill={i} points="80 69.99 80.03 69.97 85 65 80 60"/>
-        <polygon fill={e} points="85 65 89.99 60 80 60"/>
-        <polygon fill={i} points="60 89.99 64.99 85 60 80.01"/>
-        <polygon fill={d} points="60 80.01 64.99 85 69.99 80 60 80"/>
-        <polygon fill={e} points="80 50 80 60 85 55"/>
-        <polygon fill={g} points="90 50 80 50 85 55"/>
-        <polygon fill={i} points="80 60 89.99 60 85 55"/>
-        <polygon fill={h} points="85 55 89.99 60 90 59.99 90 50"/>
-        <polygon fill={f} points="70 60 70 70 75 65"/>
-        <polygon fill={i} points="80 60 70 60 75 65"/>
-        <polygon fill={g} points="70 70 79.99 70 75 65"/>
-        <polygon fill={e} points="75 65 79.99 70 80 69.99 80 60"/>
-        <polygon fill={d} points="60 70 60 80 65 75"/>
-        <polygon fill={g} points="70 70 60 70 65 75"/>
-        <polygon fill={i} points="60 80 69.99 80 65 75"/>
-        <polygon fill={f} points="65 75 69.99 80 70 79.99 70 70"/>
-        <polygon fill={h} points="50 80 50 90 55 85"/>
-        <polygon fill={i} points="60 80 50 80 55 85"/>
-        <polygon fill={g} points="50 90 59.99 90 55 85"/>
-        <polygon fill={d} points="55 85 59.99 90 60 89.99 60 80"/>
-        <polygon fill={b} points="100.05 70.05 100.05 70.05 100.04 70.06 100.05 70.05 90 60 90 90 105 75"/>
-        <polygon fill={c} points="110 80 105 75 90 90 120 90 110.03 80.03"/>
-        <polygon fill={b} points="119.94 69.95 119.95 69.95 119.95 69.94 119.95 69.95 129.99 80 129.99 50 114.99 65"/>
-        <polygon fill={c} points="109.99 60 114.99 65 129.99 50 99.99 50 109.97 59.97"/>
-        <polygon fill={d} points="115.01 85.01 120 90 120 80.01"/>
-        <polygon fill={i} points="120 80 110 80 110.03 80.03 115.01 85.01 120 80.01"/>
-        <rect fill={i} x="129.99" y="70.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="95 65 100 70 100 60"/>
-        <polygon fill={f} points="105 75 110 80 110 70.01"/>
-        <rect fill={i} x="129.99" y="50" width=".01" height="20.01"/>
-        <polygon fill={g} points="110 70 100 70 100.05 70.05 100.05 70.05 105 75 105 75 110 70.01"/>
-        <polygon fill={i} points="90 60 95 65 100 60"/>
-        <polygon fill={f} points="110.01 70 115 65.01 114.99 65 110 60.01 110 70"/>
-        <polygon fill={g} points="119.99 70 119.95 69.95 119.94 69.95 115 65.01 110.01 70"/>
-        <polygon fill={i} points="109.99 60 109.97 59.97 105 55 100 60"/>
-        <polygon fill={e} points="105 55 100 50.01 100 60"/>
-        <polygon fill={i} points="129.99 80 125 75.01 120.01 80"/>
-        <polygon fill={d} points="120.01 80 125 75.01 120 70.01 120 80"/>
-        <polygon fill={e} points="90 60 100 60 95 55"/>
-        <polygon fill={g} points="90 50 90 60 95 55"/>
-        <polygon fill={i} points="100 60 100 50.01 95 55"/>
-        <polygon fill={h} points="95 55 100 50.01 99.99 50 90 50"/>
-        <polygon fill={f} points="100 70 110 70 105 65"/>
-        <polygon fill={i} points="100 60 100 70 105 65"/>
-        <polygon fill={g} points="110 70 110 60.01 105 65"/>
-        <polygon fill={e} points="105 65 110 60.01 109.99 60 100 60"/>
-        <polygon fill={d} points="110 80 120 80 115 75"/>
-        <polygon fill={g} points="110 70 110 80 115 75"/>
-        <polygon fill={i} points="120 80 120 70.01 115 75"/>
-        <polygon fill={f} points="115 75 120 70.01 119.99 70 110 70"/>
-        <polygon fill={h} points="120 90 130 90 125 85"/>
-        <polygon fill={i} points="120 80 120 90 125 85"/>
-        <polygon fill={g} points="130 90 130 80.01 125 85"/>
-        <polygon fill={d} points="125 85 130 80.01 129.99 80 120 80"/>
-        <polygon fill={b} points="149.95 60.05 149.95 60.05 149.94 60.04 149.95 60.05 160 50 130 50 145 65"/>
-        <polygon fill={c} points="140 70 145 65 130 50 130 80 139.97 70.03"/>
-        <polygon fill={b} points="150.05 79.94 150.05 79.95 150.06 79.95 150.05 79.95 140 89.99 170 89.99 155 74.99"/>
-        <polygon fill={c} points="160 69.99 155 74.99 170 89.99 170 59.99 160.03 69.97"/>
-        <polygon fill={d} points="134.99 75.01 130 80 139.99 80"/>
-        <polygon fill={i} points="140 80 140 70 139.97 70.03 134.99 75.01 139.99 80"/>
-        <rect fill={i} x="140" y="89.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="155 55 150 60 160 60"/>
-        <polygon fill={f} points="145 65 140 70 149.99 70"/>
-        <rect fill={i} x="149.99" y="89.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="150 70 150 60 149.95 60.05 149.95 60.05 145 65 145 65 149.99 70"/>
-        <polygon fill={i} points="160 50 155 55 160 60"/>
-        <polygon fill={f} points="150 70.01 154.99 75 155 74.99 159.99 70 150 70"/>
-        <polygon fill={g} points="150 79.99 150.05 79.95 150.05 79.94 154.99 75 150 70.01"/>
-        <polygon fill={i} points="160 69.99 160.03 69.97 165 65 160 60"/>
-        <polygon fill={e} points="165 65 169.99 60 160 60"/>
-        <polygon fill={i} points="140 89.99 144.99 85 140 80.01"/>
-        <polygon fill={d} points="140 80.01 144.99 85 149.99 80 140 80"/>
-        <polygon fill={e} points="160 50 160 60 165 55"/>
-        <polygon fill={g} points="170 50 160 50 165 55"/>
-        <polygon fill={i} points="160 60 169.99 60 165 55"/>
-        <polygon fill={h} points="165 55 169.99 60 170 59.99 170 50"/>
-        <polygon fill={f} points="150 60 150 70 155 65"/>
-        <polygon fill={i} points="160 60 150 60 155 65"/>
-        <polygon fill={g} points="150 70 159.99 70 155 65"/>
-        <polygon fill={e} points="155 65 159.99 70 160 69.99 160 60"/>
-        <polygon fill={d} points="140 70 140 80 145 75"/>
-        <polygon fill={g} points="150 70 140 70 145 75"/>
-        <polygon fill={i} points="140 80 149.99 80 145 75"/>
-        <polygon fill={f} points="145 75 149.99 80 150 79.99 150 70"/>
-        <polygon fill={h} points="130 80 130 90 135 85"/>
-        <polygon fill={i} points="140 80 130 80 135 85"/>
-        <polygon fill={g} points="130 90 139.99 90 135 85"/>
-        <polygon fill={d} points="135 85 139.99 90 140 89.99 140 80"/>
-        <polygon fill={b} points="180.05 70.05 180.05 70.05 180.04 70.06 180.05 70.05 170 60 170 90 185 75"/>
-        <polygon fill={c} points="190 80 185 75 170 90 200 90 190.03 80.03"/>
-        <polygon fill={b} points="199.94 69.95 199.95 69.95 199.96 69.94 199.95 69.95 209.99 80 209.99 50 194.99 65"/>
-        <polygon fill={c} points="189.99 60 194.99 65 209.99 50 179.99 50 189.97 59.97"/>
-        <polygon fill={d} points="195.01 85.01 200 90 200 80.01"/>
-        <polygon fill={i} points="200 80 190 80 190.03 80.03 195.01 85.01 200 80.01"/>
-        <rect fill={i} x="209.99" y="70.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="175 65 180 70 180 60"/>
-        <polygon fill={f} points="185 75 190 80 190 70.01"/>
-        <rect fill={i} x="209.99" y="50" width=".01" height="20.01"/>
-        <polygon fill={g} points="190 70 180 70 180.05 70.05 180.05 70.05 185 75 185 75 190 70.01"/>
-        <polygon fill={i} points="170 60 175 65 180 60"/>
-        <polygon fill={f} points="190.01 70 195 65.01 194.99 65 190 60.01 190 70"/>
-        <polygon fill={g} points="199.99 70 199.95 69.95 199.94 69.95 195 65.01 190.01 70"/>
-        <polygon fill={i} points="189.99 60 189.97 59.97 185 55 180 60"/>
-        <polygon fill={e} points="185 55 180 50.01 180 60"/>
-        <polygon fill={i} points="209.99 80 205 75.01 200.01 80"/>
-        <polygon fill={d} points="200.01 80 205 75.01 200 70.01 200 80"/>
-        <polygon fill={e} points="170 60 180 60 175 55"/>
-        <polygon fill={g} points="170 50 170 60 175 55"/>
-        <polygon fill={i} points="180 60 180 50.01 175 55"/>
-        <polygon fill={h} points="175 55 180 50.01 179.99 50 170 50"/>
-        <polygon fill={f} points="180 70 190 70 185 65"/>
-        <polygon fill={i} points="180 60 180 70 185 65"/>
-        <polygon fill={g} points="190 70 190 60.01 185 65"/>
-        <polygon fill={e} points="185 65 190 60.01 189.99 60 180 60"/>
-        <polygon fill={d} points="190 80 200 80 195 75"/>
-        <polygon fill={g} points="190 70 190 80 195 75"/>
-        <polygon fill={i} points="200 80 200 70.01 195 75"/>
-        <polygon fill={f} points="195 75 200 70.01 199.99 70 190 70"/>
-        <polygon fill={h} points="200 90 210 90 205 85"/>
-        <polygon fill={i} points="200 80 200 90 205 85"/>
-        <polygon fill={g} points="210 90 210 80.01 205 85"/>
-        <polygon fill={d} points="205 85 210 80.01 209.99 80 200 80"/>
-        <polygon fill={b} points="229.95 60.05 229.95 60.05 229.94 60.04 229.95 60.05 240 50 210 50 225 65"/>
-        <polygon fill={c} points="220 70 225 65 210 50 210 80 219.97 70.03"/>
-        <polygon fill={b} points="230.05 79.94 230.05 79.95 230.06 79.95 230.05 79.95 220 89.99 250 89.99 235 74.99"/>
-        <polygon fill={c} points="240 69.99 235 74.99 250 89.99 250 59.99 240.03 69.97"/>
-        <polygon fill={d} points="214.99 75.01 210 80 219.99 80"/>
-        <polygon fill={i} points="220 80 220 70 219.97 70.03 214.99 75.01 219.99 80"/>
-        <rect fill={i} x="220" y="89.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="235 55 230 60 240 60"/>
-        <polygon fill={f} points="225 65 220 70 229.99 70"/>
-        <rect fill={i} x="229.99" y="89.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="230 70 230 60 229.95 60.05 229.95 60.05 225 65 225 65 229.99 70"/>
-        <polygon fill={i} points="240 50 235 55 240 60"/>
-        <polygon fill={f} points="230 70.01 234.99 75 235 74.99 239.99 70 230 70"/>
-        <polygon fill={g} points="230 79.99 230.05 79.95 230.05 79.94 234.99 75 230 70.01"/>
-        <polygon fill={i} points="240 69.99 240.03 69.97 245 65 240 60"/>
-        <polygon fill={e} points="245 65 249.99 60 240 60"/>
-        <polygon fill={i} points="220 89.99 224.99 85 220 80.01"/>
-        <polygon fill={d} points="220 80.01 224.99 85 229.99 80 220 80"/>
-        <polygon fill={e} points="240 50 240 60 245 55"/>
-        <polygon fill={g} points="250 50 240 50 245 55"/>
-        <polygon fill={i} points="240 60 249.99 60 245 55"/>
-        <polygon fill={h} points="245 55 249.99 60 250 59.99 250 50"/>
-        <polygon fill={f} points="230 60 230 70 235 65"/>
-        <polygon fill={i} points="240 60 230 60 235 65"/>
-        <polygon fill={g} points="230 70 239.99 70 235 65"/>
-        <polygon fill={e} points="235 65 239.99 70 240 69.99 240 60"/>
-        <polygon fill={d} points="220 70 220 80 225 75"/>
-        <polygon fill={g} points="230 70 220 70 225 75"/>
-        <polygon fill={i} points="220 80 229.99 80 225 75"/>
-        <polygon fill={f} points="225 75 229.99 80 230 79.99 230 70"/>
-        <polygon fill={h} points="210 80 210 90 215 85"/>
-        <polygon fill={i} points="220 80 210 80 215 85"/>
-        <polygon fill={g} points="210 90 219.99 90 215 85"/>
-        <polygon fill={d} points="215 85 219.99 90 220 89.99 220 80"/>
-        <polygon fill={b} points="29.95 100.05 29.95 100.05 29.94 100.04 29.95 100.05 40 90 10 90 25 105"/>
-        <polygon fill={c} points="20 110 25 105 10 90 10 120 19.97 110.03"/>
-        <polygon fill={b} points="30.05 119.94 30.05 119.95 30.06 119.95 30.05 119.95 20 129.99 50 129.99 35 114.99"/>
-        <polygon fill={c} points="40 109.99 35 114.99 50 129.99 50 99.99 40.03 109.97"/>
-        <polygon fill={d} points="14.99 115.01 10 120 19.99 120"/>
-        <polygon fill={i} points="20 120 20 110 19.97 110.03 14.99 115.01 19.99 120"/>
-        <rect fill={i} x="20" y="129.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="35 95 30 100 40 100"/>
-        <polygon fill={f} points="25 105 20 110 29.99 110"/>
-        <rect fill={i} x="29.99" y="129.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="30 110 30 100 29.95 100.05 29.95 100.05 25 105 25 105 29.99 110"/>
-        <polygon fill={i} points="40 90 35 95 40 100"/>
-        <polygon fill={f} points="30 110.01 34.99 115 35 114.99 39.99 110 30 110"/>
-        <polygon fill={g} points="30 119.99 30.05 119.95 30.05 119.94 34.99 115 30 110.01"/>
-        <polygon fill={i} points="40 109.99 40.03 109.97 45 105 40 100"/>
-        <polygon fill={e} points="45 105 49.99 100 40 100"/>
-        <polygon fill={i} points="20 129.99 24.99 125 20 120.01"/>
-        <polygon fill={d} points="20 120.01 24.99 125 29.99 120 20 120"/>
-        <polygon fill={e} points="40 90 40 100 45 95"/>
-        <polygon fill={g} points="50 90 40 90 45 95"/>
-        <polygon fill={i} points="40 100 49.99 100 45 95"/>
-        <polygon fill={h} points="45 95 49.99 100 50 99.99 50 90"/>
-        <polygon fill={f} points="30 100 30 110 35 105"/>
-        <polygon fill={i} points="40 100 30 100 35 105"/>
-        <polygon fill={g} points="30 110 39.99 110 35 105"/>
-        <polygon fill={e} points="35 105 39.99 110 40 109.99 40 100"/>
-        <polygon fill={d} points="20 110 20 120 25 115"/>
-        <polygon fill={g} points="30 110 20 110 25 115"/>
-        <polygon fill={i} points="20 120 29.99 120 25 115"/>
-        <polygon fill={f} points="25 115 29.99 120 30 119.99 30 110"/>
-        <polygon fill={h} points="10 120 10 130 15 125"/>
-        <polygon fill={i} points="20 120 10 120 15 125"/>
-        <polygon fill={g} points="10 130 19.99 130 15 125"/>
-        <polygon fill={d} points="15 125 19.99 130 20 129.99 20 120"/>
-        <polygon fill={b} points="60.05 110.05 60.05 110.05 60.04 110.06 60.05 110.05 50 100 50 130 65 115"/>
-        <polygon fill={c} points="70 120 65 115 50 130 80 130 70.03 120.03"/>
-        <polygon fill={b} points="79.94 109.95 79.95 109.95 79.95 109.94 79.95 109.95 89.99 120 89.99 90 74.99 105"/>
-        <polygon fill={c} points="69.99 100 74.99 105 89.99 90 59.99 90 69.97 99.97"/>
-        <polygon fill={d} points="75.01 125.01 80 130 80 120.01"/>
-        <polygon fill={i} points="80 120 70 120 70.03 120.03 75.01 125.01 80 120.01"/>
-        <rect fill={i} x="89.99" y="110.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="55 105 60 110 60 100"/>
-        <polygon fill={f} points="65 115 70 120 70 110.01"/>
-        <rect fill={i} x="89.99" y="90" width=".01" height="20.01"/>
-        <polygon fill={g} points="70 110 60 110 60.05 110.05 60.05 110.05 65 115 65 115 70 110.01"/>
-        <polygon fill={i} points="50 100 55 105 60 100"/>
-        <polygon fill={f} points="70.01 110 75 105.01 74.99 105 70 100.01 70 110"/>
-        <polygon fill={g} points="79.99 110 79.95 109.95 79.94 109.95 75 105.01 70.01 110"/>
-        <polygon fill={i} points="69.99 100 69.97 99.97 65 95 60 100"/>
-        <polygon fill={e} points="65 95 60 90.01 60 100"/>
-        <polygon fill={i} points="89.99 120 85 115.01 80.01 120"/>
-        <polygon fill={d} points="80.01 120 85 115.01 80 110.01 80 120"/>
-        <polygon fill={e} points="50 100 60 100 55 95"/>
-        <polygon fill={g} points="50 90 50 100 55 95"/>
-        <polygon fill={i} points="60 100 60 90.01 55 95"/>
-        <polygon fill={h} points="55 95 60 90.01 59.99 90 50 90"/>
-        <polygon fill={f} points="60 110 70 110 65 105"/>
-        <polygon fill={i} points="60 100 60 110 65 105"/>
-        <polygon fill={g} points="70 110 70 100.01 65 105"/>
-        <polygon fill={e} points="65 105 70 100.01 69.99 100 60 100"/>
-        <polygon fill={d} points="70 120 80 120 75 115"/>
-        <polygon fill={g} points="70 110 70 120 75 115"/>
-        <polygon fill={i} points="80 120 80 110.01 75 115"/>
-        <polygon fill={f} points="75 115 80 110.01 79.99 110 70 110"/>
-        <polygon fill={h} points="80 130 90 130 85 125"/>
-        <polygon fill={i} points="80 120 80 130 85 125"/>
-        <polygon fill={g} points="90 130 90 120.01 85 125"/>
-        <polygon fill={d} points="85 125 90 120.01 89.99 120 80 120"/>
-        <polygon fill={b} points="109.95 100.05 109.95 100.05 109.94 100.04 109.95 100.05 120 90 90 90 105 105"/>
-        <polygon fill={c} points="100 110 105 105 90 90 90 120 99.97 110.03"/>
-        <polygon fill={b} points="110.05 119.94 110.05 119.95 110.06 119.95 110.05 119.95 100 129.99 130 129.99 115 114.99"/>
-        <polygon fill={c} points="120 109.99 115 114.99 130 129.99 130 99.99 120.03 109.97"/>
-        <polygon fill={d} points="94.99 115.01 90 120 99.99 120"/>
-        <polygon fill={i} points="100 120 100 110 99.97 110.03 94.99 115.01 99.99 120"/>
-        <rect fill={i} x="100" y="129.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="115 95 110 100 120 100"/>
-        <polygon fill={f} points="105 105 100 110 109.99 110"/>
-        <rect fill={i} x="109.99" y="129.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="110 110 110 100 109.95 100.05 109.95 100.05 105 105 105 105 109.99 110"/>
-        <polygon fill={i} points="120 90 115 95 120 100"/>
-        <polygon fill={f} points="110 110.01 114.99 115 115 114.99 119.99 110 110 110"/>
-        <polygon fill={g} points="110 119.99 110.05 119.95 110.05 119.94 114.99 115 110 110.01"/>
-        <polygon fill={i} points="120 109.99 120.03 109.97 125 105 120 100"/>
-        <polygon fill={e} points="125 105 129.99 100 120 100"/>
-        <polygon fill={i} points="100 129.99 104.99 125 100 120.01"/>
-        <polygon fill={d} points="100 120.01 104.99 125 109.99 120 100 120"/>
-        <polygon fill={e} points="120 90 120 100 125 95"/>
-        <polygon fill={g} points="130 90 120 90 125 95"/>
-        <polygon fill={i} points="120 100 129.99 100 125 95"/>
-        <polygon fill={h} points="125 95 129.99 100 130 99.99 130 90"/>
-        <polygon fill={f} points="110 100 110 110 115 105"/>
-        <polygon fill={i} points="120 100 110 100 115 105"/>
-        <polygon fill={g} points="110 110 119.99 110 115 105"/>
-        <polygon fill={e} points="115 105 119.99 110 120 109.99 120 100"/>
-        <polygon fill={d} points="100 110 100 120 105 115"/>
-        <polygon fill={g} points="110 110 100 110 105 115"/>
-        <polygon fill={i} points="100 120 109.99 120 105 115"/>
-        <polygon fill={f} points="105 115 109.99 120 110 119.99 110 110"/>
-        <polygon fill={h} points="90 120 90 130 95 125"/>
-        <polygon fill={i} points="100 120 90 120 95 125"/>
-        <polygon fill={g} points="90 130 99.99 130 95 125"/>
-        <polygon fill={d} points="95 125 99.99 130 100 129.99 100 120"/>
-        <polygon fill={b} points="140.05 110.05 140.05 110.05 140.04 110.06 140.05 110.05 130 100 130 130 145 115"/>
-        <polygon fill={c} points="150 120 145 115 130 130 160 130 150.03 120.03"/>
-        <polygon fill={b} points="159.94 109.95 159.95 109.95 159.96 109.94 159.95 109.95 169.99 120 169.99 90 154.99 105"/>
-        <polygon fill={c} points="149.99 100 154.99 105 169.99 90 139.99 90 149.97 99.97"/>
-        <polygon fill={d} points="155.01 125.01 160 130 160 120.01"/>
-        <polygon fill={i} points="160 120 150 120 150.03 120.03 155.01 125.01 160 120.01"/>
-        <rect fill={i} x="169.99" y="110.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="135 105 140 110 140 100"/>
-        <polygon fill={f} points="145 115 150 120 150 110.01"/>
-        <rect fill={i} x="169.99" y="90" width=".01" height="20.01"/>
-        <polygon fill={g} points="150 110 140 110 140.05 110.05 140.05 110.05 145 115 145 115 150 110.01"/>
-        <polygon fill={i} points="130 100 135 105 140 100"/>
-        <polygon fill={f} points="150.01 110 155 105.01 154.99 105 150 100.01 150 110"/>
-        <polygon fill={g} points="159.99 110 159.95 109.95 159.94 109.95 155 105.01 150.01 110"/>
-        <polygon fill={i} points="149.99 100 149.97 99.97 145 95 140 100"/>
-        <polygon fill={e} points="145 95 140 90.01 140 100"/>
-        <polygon fill={i} points="169.99 120 165 115.01 160.01 120"/>
-        <polygon fill={d} points="160.01 120 165 115.01 160 110.01 160 120"/>
-        <polygon fill={e} points="130 100 140 100 135 95"/>
-        <polygon fill={g} points="130 90 130 100 135 95"/>
-        <polygon fill={i} points="140 100 140 90.01 135 95"/>
-        <polygon fill={h} points="135 95 140 90.01 139.99 90 130 90"/>
-        <polygon fill={f} points="140 110 150 110 145 105"/>
-        <polygon fill={i} points="140 100 140 110 145 105"/>
-        <polygon fill={g} points="150 110 150 100.01 145 105"/>
-        <polygon fill={e} points="145 105 150 100.01 149.99 100 140 100"/>
-        <polygon fill={d} points="150 120 160 120 155 115"/>
-        <polygon fill={g} points="150 110 150 120 155 115"/>
-        <polygon fill={i} points="160 120 160 110.01 155 115"/>
-        <polygon fill={f} points="155 115 160 110.01 159.99 110 150 110"/>
-        <polygon fill={h} points="160 130 170 130 165 125"/>
-        <polygon fill={i} points="160 120 160 130 165 125"/>
-        <polygon fill={g} points="170 130 170 120.01 165 125"/>
-        <polygon fill={d} points="165 125 170 120.01 169.99 120 160 120"/>
-        <polygon fill={b} points="189.95 100.05 189.95 100.05 189.94 100.04 189.95 100.05 200 90 170 90 185 105"/>
-        <polygon fill={c} points="180 110 185 105 170 90 170 120 179.97 110.03"/>
-        <polygon fill={b} points="190.05 119.94 190.05 119.95 190.06 119.95 190.05 119.95 180 129.99 210 129.99 195 114.99"/>
-        <polygon fill={c} points="200 109.99 195 114.99 210 129.99 210 99.99 200.03 109.97"/>
-        <polygon fill={d} points="174.99 115.01 170 120 179.99 120"/>
-        <polygon fill={i} points="180 120 180 110 179.97 110.03 174.99 115.01 179.99 120"/>
-        <rect fill={i} x="180" y="129.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="195 95 190 100 200 100"/>
-        <polygon fill={f} points="185 105 180 110 189.99 110"/>
-        <rect fill={i} x="189.99" y="129.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="190 110 190 100 189.95 100.05 189.95 100.05 185 105 185 105 189.99 110"/>
-        <polygon fill={i} points="200 90 195 95 200 100"/>
-        <polygon fill={f} points="190 110.01 194.99 115 195 114.99 199.99 110 190 110"/>
-        <polygon fill={g} points="190 119.99 190.05 119.95 190.05 119.94 194.99 115 190 110.01"/>
-        <polygon fill={i} points="200 109.99 200.03 109.97 205 105 200 100"/>
-        <polygon fill={e} points="205 105 209.99 100 200 100"/>
-        <polygon fill={i} points="180 129.99 184.99 125 180 120.01"/>
-        <polygon fill={d} points="180 120.01 184.99 125 189.99 120 180 120"/>
-        <polygon fill={e} points="200 90 200 100 205 95"/>
-        <polygon fill={g} points="210 90 200 90 205 95"/>
-        <polygon fill={i} points="200 100 209.99 100 205 95"/>
-        <polygon fill={h} points="205 95 209.99 100 210 99.99 210 90"/>
-        <polygon fill={f} points="190 100 190 110 195 105"/>
-        <polygon fill={i} points="200 100 190 100 195 105"/>
-        <polygon fill={g} points="190 110 199.99 110 195 105"/>
-        <polygon fill={e} points="195 105 199.99 110 200 109.99 200 100"/>
-        <polygon fill={d} points="180 110 180 120 185 115"/>
-        <polygon fill={g} points="190 110 180 110 185 115"/>
-        <polygon fill={i} points="180 120 189.99 120 185 115"/>
-        <polygon fill={f} points="185 115 189.99 120 190 119.99 190 110"/>
-        <polygon fill={h} points="170 120 170 130 175 125"/>
-        <polygon fill={i} points="180 120 170 120 175 125"/>
-        <polygon fill={g} points="170 130 179.99 130 175 125"/>
-        <polygon fill={d} points="175 125 179.99 130 180 129.99 180 120"/>
-        <polygon fill={b} points="220.05 110.05 220.05 110.05 220.04 110.06 220.05 110.05 210 100 210 130 225 115"/>
-        <polygon fill={c} points="230 120 225 115 210 130 240 130 230.03 120.03"/>
-        <polygon fill={b} points="239.94 109.95 239.95 109.95 239.96 109.94 239.95 109.95 249.99 120 249.99 90 234.99 105"/>
-        <polygon fill={c} points="229.99 100 234.99 105 249.99 90 219.99 90 229.97 99.97"/>
-        <polygon fill={d} points="235.01 125.01 240 130 240 120.01"/>
-        <polygon fill={i} points="240 120 230 120 230.03 120.03 235.01 125.01 240 120.01"/>
-        <rect fill={i} x="249.99" y="110.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="215 105 220 110 220 100"/>
-        <polygon fill={f} points="225 115 230 120 230 110.01"/>
-        <rect fill={i} x="249.99" y="90" width=".01" height="20.01"/>
-        <polygon fill={g} points="230 110 220 110 220.05 110.05 220.05 110.05 225 115 225 115 230 110.01"/>
-        <polygon fill={i} points="210 100 215 105 220 100"/>
-        <polygon fill={f} points="230.01 110 235 105.01 234.99 105 230 100.01 230 110"/>
-        <polygon fill={g} points="239.99 110 239.95 109.95 239.94 109.95 235 105.01 230.01 110"/>
-        <polygon fill={i} points="229.99 100 229.97 99.97 225 95 220 100"/>
-        <polygon fill={e} points="225 95 220 90.01 220 100"/>
-        <polygon fill={i} points="249.99 120 245 115.01 240.01 120"/>
-        <polygon fill={d} points="240.01 120 245 115.01 240 110.01 240 120"/>
-        <polygon fill={e} points="210 100 220 100 215 95"/>
-        <polygon fill={g} points="210 90 210 100 215 95"/>
-        <polygon fill={i} points="220 100 220 90.01 215 95"/>
-        <polygon fill={h} points="215 95 220 90.01 219.99 90 210 90"/>
-        <polygon fill={f} points="220 110 230 110 225 105"/>
-        <polygon fill={i} points="220 100 220 110 225 105"/>
-        <polygon fill={g} points="230 110 230 100.01 225 105"/>
-        <polygon fill={e} points="225 105 230 100.01 229.99 100 220 100"/>
-        <polygon fill={d} points="230 120 240 120 235 115"/>
-        <polygon fill={g} points="230 110 230 120 235 115"/>
-        <polygon fill={i} points="240 120 240 110.01 235 115"/>
-        <polygon fill={f} points="235 115 240 110.01 239.99 110 230 110"/>
-        <polygon fill={h} points="240 130 250 130 245 125"/>
-        <polygon fill={i} points="240 120 240 130 245 125"/>
-        <polygon fill={g} points="250 130 250 120.01 245 125"/>
-        <polygon fill={d} points="245 125 250 120.01 249.99 120 240 120"/>
-        <polygon fill={b} points="39.95 149.95 39.95 149.95 39.96 149.94 39.95 149.95 50 160 50 130 35 145"/>
-        <polygon fill={c} points="30 140 35 145 50 130 20 130 29.97 139.97"/>
-        <polygon fill={b} points="20.06 150.05 20.05 150.05 20.05 150.06 20.05 150.05 10.01 140 10.01 170 25.01 155"/>
-        <polygon fill={c} points="30.01 160 25.01 155 10.01 170 40.01 170 30.03 160.03"/>
-        <polygon fill={d} points="24.99 134.99 20 130 20 139.99"/>
-        <polygon fill={i} points="20 140 30 140 29.97 139.97 24.99 134.99 20 139.99"/>
-        <rect fill={i} x="10" y="140" width=".01" height="9.99"/>
-        <polygon fill={e} points="45 155 40 150 40 160"/>
-        <polygon fill={f} points="35 145 30 140 30 149.99"/>
-        <rect fill={i} x="10" y="149.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="30 150 40 150 39.95 149.95 39.95 149.95 35 145 35 145 30 149.99"/>
-        <polygon fill={i} points="50 160 45 155 40 160"/>
-        <polygon fill={f} points="29.99 150 25 154.99 25.01 155 30 159.99 30 150"/>
-        <polygon fill={g} points="20.01 150 20.05 150.05 20.06 150.05 25 154.99 29.99 150"/>
-        <polygon fill={i} points="30.01 160 30.03 160.03 35 165 40 160"/>
-        <polygon fill={e} points="35 165 40 169.99 40 160"/>
-        <polygon fill={i} points="10.01 140 15 144.99 19.99 140"/>
-        <polygon fill={d} points="19.99 140 15 144.99 20 149.99 20 140"/>
-        <polygon fill={e} points="50 160 40 160 45 165"/>
-        <polygon fill={g} points="50 170 50 160 45 165"/>
-        <polygon fill={i} points="40 160 40 169.99 45 165"/>
-        <polygon fill={h} points="45 165 40 169.99 40.01 170 50 170"/>
-        <polygon fill={f} points="40 150 30 150 35 155"/>
-        <polygon fill={i} points="40 160 40 150 35 155"/>
-        <polygon fill={g} points="30 150 30 159.99 35 155"/>
-        <polygon fill={e} points="35 155 30 159.99 30.01 160 40 160"/>
-        <polygon fill={d} points="30 140 20 140 25 145"/>
-        <polygon fill={g} points="30 150 30 140 25 145"/>
-        <polygon fill={i} points="20 140 20 149.99 25 145"/>
-        <polygon fill={f} points="25 145 20 149.99 20.01 150 30 150"/>
-        <polygon fill={h} points="20 130 10 130 15 135"/>
-        <polygon fill={i} points="20 140 20 130 15 135"/>
-        <polygon fill={g} points="10 130 10 139.99 15 135"/>
-        <polygon fill={d} points="15 135 10 139.99 10.01 140 20 140"/>
-        <polygon fill={b} points="69.95 140.05 69.95 140.05 69.94 140.04 69.95 140.05 80 130 50 130 65 145"/>
-        <polygon fill={c} points="60 150 65 145 50 130 50 160 59.97 150.03"/>
-        <polygon fill={b} points="70.05 159.94 70.05 159.95 70.06 159.96 70.05 159.95 60 169.99 90 169.99 75 154.99"/>
-        <polygon fill={c} points="80 149.99 75 154.99 90 169.99 90 139.99 80.03 149.97"/>
-        <polygon fill={d} points="54.99 155.01 50 160 59.99 160"/>
-        <polygon fill={i} points="60 160 60 150 59.97 150.03 54.99 155.01 59.99 160"/>
-        <rect fill={i} x="60" y="169.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="75 135 70 140 80 140"/>
-        <polygon fill={f} points="65 145 60 150 69.99 150"/>
-        <rect fill={i} x="69.99" y="169.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="70 150 70 140 69.95 140.05 69.95 140.05 65 145 65 145 69.99 150"/>
-        <polygon fill={i} points="80 130 75 135 80 140"/>
-        <polygon fill={f} points="70 150.01 74.99 155 75 154.99 79.99 150 70 150"/>
-        <polygon fill={g} points="70 159.99 70.05 159.95 70.05 159.94 74.99 155 70 150.01"/>
-        <polygon fill={i} points="80 149.99 80.03 149.97 85 145 80 140"/>
-        <polygon fill={e} points="85 145 89.99 140 80 140"/>
-        <polygon fill={i} points="60 169.99 64.99 165 60 160.01"/>
-        <polygon fill={d} points="60 160.01 64.99 165 69.99 160 60 160"/>
-        <polygon fill={e} points="80 130 80 140 85 135"/>
-        <polygon fill={g} points="90 130 80 130 85 135"/>
-        <polygon fill={i} points="80 140 89.99 140 85 135"/>
-        <polygon fill={h} points="85 135 89.99 140 90 139.99 90 130"/>
-        <polygon fill={f} points="70 140 70 150 75 145"/>
-        <polygon fill={i} points="80 140 70 140 75 145"/>
-        <polygon fill={g} points="70 150 79.99 150 75 145"/>
-        <polygon fill={e} points="75 145 79.99 150 80 149.99 80 140"/>
-        <polygon fill={d} points="60 150 60 160 65 155"/>
-        <polygon fill={g} points="70 150 60 150 65 155"/>
-        <polygon fill={i} points="60 160 69.99 160 65 155"/>
-        <polygon fill={f} points="65 155 69.99 160 70 159.99 70 150"/>
-        <polygon fill={h} points="50 160 50 170 55 165"/>
-        <polygon fill={i} points="60 160 50 160 55 165"/>
-        <polygon fill={g} points="50 170 59.99 170 55 165"/>
-        <polygon fill={d} points="55 165 59.99 170 60 169.99 60 160"/>
-        <polygon fill={b} points="119.95 149.95 119.95 149.95 119.96 149.94 119.95 149.95 130 160 130 130 115 145"/>
-        <polygon fill={c} points="110 140 115 145 130 130 100 130 109.97 139.97"/>
-        <polygon fill={b} points="100.06 150.05 100.05 150.05 100.05 150.06 100.05 150.05 90.01 140 90.01 170 105.01 155"/>
-        <polygon fill={c} points="110.01 160 105.01 155 90.01 170 120.01 170 110.03 160.03"/>
-        <polygon fill={d} points="104.99 134.99 100 130 100 139.99"/>
-        <polygon fill={i} points="100 140 110 140 109.97 139.97 104.99 134.99 100 139.99"/>
-        <rect fill={i} x="90" y="140" width=".01" height="9.99"/>
-        <polygon fill={e} points="125 155 120 150 120 160"/>
-        <polygon fill={f} points="115 145 110 140 110 149.99"/>
-        <rect fill={i} x="90" y="149.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="110 150 120 150 119.95 149.95 119.95 149.95 115 145 115 145 110 149.99"/>
-        <polygon fill={i} points="130 160 125 155 120 160"/>
-        <polygon fill={f} points="109.99 150 105 154.99 105.01 155 110 159.99 110 150"/>
-        <polygon fill={g} points="100.01 150 100.05 150.05 100.06 150.05 105 154.99 109.99 150"/>
-        <polygon fill={i} points="110.01 160 110.03 160.03 115 165 120 160"/>
-        <polygon fill={e} points="115 165 120 169.99 120 160"/>
-        <polygon fill={i} points="90.01 140 95 144.99 99.99 140"/>
-        <polygon fill={d} points="99.99 140 95 144.99 100 149.99 100 140"/>
-        <polygon fill={e} points="130 160 120 160 125 165"/>
-        <polygon fill={g} points="130 170 130 160 125 165"/>
-        <polygon fill={i} points="120 160 120 169.99 125 165"/>
-        <polygon fill={h} points="125 165 120 169.99 120.01 170 130 170"/>
-        <polygon fill={f} points="120 150 110 150 115 155"/>
-        <polygon fill={i} points="120 160 120 150 115 155"/>
-        <polygon fill={g} points="110 150 110 159.99 115 155"/>
-        <polygon fill={e} points="115 155 110 159.99 110.01 160 120 160"/>
-        <polygon fill={d} points="110 140 100 140 105 145"/>
-        <polygon fill={g} points="110 150 110 140 105 145"/>
-        <polygon fill={i} points="100 140 100 149.99 105 145"/>
-        <polygon fill={f} points="105 145 100 149.99 100.01 150 110 150"/>
-        <polygon fill={h} points="100 130 90 130 95 135"/>
-        <polygon fill={i} points="100 140 100 130 95 135"/>
-        <polygon fill={g} points="90 130 90 139.99 95 135"/>
-        <polygon fill={d} points="95 135 90 139.99 90.01 140 100 140"/>
-        <polygon fill={b} points="149.95 140.05 149.95 140.05 149.94 140.04 149.95 140.05 160 130 130 130 145 145"/>
-        <polygon fill={c} points="140 150 145 145 130 130 130 160 139.97 150.03"/>
-        <polygon fill={b} points="150.05 159.94 150.05 159.95 150.06 159.96 150.05 159.95 140 169.99 170 169.99 155 154.99"/>
-        <polygon fill={c} points="160 149.99 155 154.99 170 169.99 170 139.99 160.03 149.97"/>
-        <polygon fill={d} points="134.99 155.01 130 160 139.99 160"/>
-        <polygon fill={i} points="140 160 140 150 139.97 150.03 134.99 155.01 139.99 160"/>
-        <rect fill={i} x="140" y="169.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="155 135 150 140 160 140"/>
-        <polygon fill={f} points="145 145 140 150 149.99 150"/>
-        <rect fill={i} x="149.99" y="169.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="150 150 150 140 149.95 140.05 149.95 140.05 145 145 145 145 149.99 150"/>
-        <polygon fill={i} points="160 130 155 135 160 140"/>
-        <polygon fill={f} points="150 150.01 154.99 155 155 154.99 159.99 150 150 150"/>
-        <polygon fill={g} points="150 159.99 150.05 159.95 150.05 159.94 154.99 155 150 150.01"/>
-        <polygon fill={i} points="160 149.99 160.03 149.97 165 145 160 140"/>
-        <polygon fill={e} points="165 145 169.99 140 160 140"/>
-        <polygon fill={i} points="140 169.99 144.99 165 140 160.01"/>
-        <polygon fill={d} points="140 160.01 144.99 165 149.99 160 140 160"/>
-        <polygon fill={e} points="160 130 160 140 165 135"/>
-        <polygon fill={g} points="170 130 160 130 165 135"/>
-        <polygon fill={i} points="160 140 169.99 140 165 135"/>
-        <polygon fill={h} points="165 135 169.99 140 170 139.99 170 130"/>
-        <polygon fill={f} points="150 140 150 150 155 145"/>
-        <polygon fill={i} points="160 140 150 140 155 145"/>
-        <polygon fill={g} points="150 150 159.99 150 155 145"/>
-        <polygon fill={e} points="155 145 159.99 150 160 149.99 160 140"/>
-        <polygon fill={d} points="140 150 140 160 145 155"/>
-        <polygon fill={g} points="150 150 140 150 145 155"/>
-        <polygon fill={i} points="140 160 149.99 160 145 155"/>
-        <polygon fill={f} points="145 155 149.99 160 150 159.99 150 150"/>
-        <polygon fill={h} points="130 160 130 170 135 165"/>
-        <polygon fill={i} points="140 160 130 160 135 165"/>
-        <polygon fill={g} points="130 170 139.99 170 135 165"/>
-        <polygon fill={d} points="135 165 139.99 170 140 169.99 140 160"/>
-        <polygon fill={b} points="199.95 149.95 199.95 149.95 199.96 149.94 199.95 149.95 210 160 210 130 195 145"/>
-        <polygon fill={c} points="190 140 195 145 210 130 180 130 189.97 139.97"/>
-        <polygon fill={b} points="180.06 150.05 180.05 150.05 180.04 150.06 180.05 150.05 170.01 140 170.01 170 185.01 155"/>
-        <polygon fill={c} points="190.01 160 185.01 155 170.01 170 200.01 170 190.03 160.03"/>
-        <polygon fill={d} points="184.99 134.99 180 130 180 139.99"/>
-        <polygon fill={i} points="180 140 190 140 189.97 139.97 184.99 134.99 180 139.99"/>
-        <rect fill={i} x="170" y="140" width=".01" height="9.99"/>
-        <polygon fill={e} points="205 155 200 150 200 160"/>
-        <polygon fill={f} points="195 145 190 140 190 149.99"/>
-        <rect fill={i} x="170" y="149.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="190 150 200 150 199.95 149.95 199.95 149.95 195 145 195 145 190 149.99"/>
-        <polygon fill={i} points="210 160 205 155 200 160"/>
-        <polygon fill={f} points="189.99 150 185 154.99 185.01 155 190 159.99 190 150"/>
-        <polygon fill={g} points="180.01 150 180.05 150.05 180.06 150.05 185 154.99 189.99 150"/>
-        <polygon fill={i} points="190.01 160 190.03 160.03 195 165 200 160"/>
-        <polygon fill={e} points="195 165 200 169.99 200 160"/>
-        <polygon fill={i} points="170.01 140 175 144.99 179.99 140"/>
-        <polygon fill={d} points="179.99 140 175 144.99 180 149.99 180 140"/>
-        <polygon fill={e} points="210 160 200 160 205 165"/>
-        <polygon fill={g} points="210 170 210 160 205 165"/>
-        <polygon fill={i} points="200 160 200 169.99 205 165"/>
-        <polygon fill={h} points="205 165 200 169.99 200.01 170 210 170"/>
-        <polygon fill={f} points="200 150 190 150 195 155"/>
-        <polygon fill={i} points="200 160 200 150 195 155"/>
-        <polygon fill={g} points="190 150 190 159.99 195 155"/>
-        <polygon fill={e} points="195 155 190 159.99 190.01 160 200 160"/>
-        <polygon fill={d} points="190 140 180 140 185 145"/>
-        <polygon fill={g} points="190 150 190 140 185 145"/>
-        <polygon fill={i} points="180 140 180 149.99 185 145"/>
-        <polygon fill={f} points="185 145 180 149.99 180.01 150 190 150"/>
-        <polygon fill={h} points="180 130 170 130 175 135"/>
-        <polygon fill={i} points="180 140 180 130 175 135"/>
-        <polygon fill={g} points="170 130 170 139.99 175 135"/>
-        <polygon fill={d} points="175 135 170 139.99 170.01 140 180 140"/>
-        <polygon fill={b} points="229.95 140.05 229.95 140.05 229.94 140.04 229.95 140.05 240 130 210 130 225 145"/>
-        <polygon fill={c} points="220 150 225 145 210 130 210 160 219.97 150.03"/>
-        <polygon fill={b} points="230.05 159.94 230.05 159.95 230.06 159.96 230.05 159.95 220 169.99 250 169.99 235 154.99"/>
-        <polygon fill={c} points="240 149.99 235 154.99 250 169.99 250 139.99 240.03 149.97"/>
-        <polygon fill={d} points="214.99 155.01 210 160 219.99 160"/>
-        <polygon fill={i} points="220 160 220 150 219.97 150.03 214.99 155.01 219.99 160"/>
-        <rect fill={i} x="220" y="169.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="235 135 230 140 240 140"/>
-        <polygon fill={f} points="225 145 220 150 229.99 150"/>
-        <rect fill={i} x="229.99" y="169.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="230 150 230 140 229.95 140.05 229.95 140.05 225 145 225 145 229.99 150"/>
-        <polygon fill={i} points="240 130 235 135 240 140"/>
-        <polygon fill={f} points="230 150.01 234.99 155 235 154.99 239.99 150 230 150"/>
-        <polygon fill={g} points="230 159.99 230.05 159.95 230.05 159.94 234.99 155 230 150.01"/>
-        <polygon fill={i} points="240 149.99 240.03 149.97 245 145 240 140"/>
-        <polygon fill={e} points="245 145 249.99 140 240 140"/>
-        <polygon fill={i} points="220 169.99 224.99 165 220 160.01"/>
-        <polygon fill={d} points="220 160.01 224.99 165 229.99 160 220 160"/>
-        <polygon fill={e} points="240 130 240 140 245 135"/>
-        <polygon fill={g} points="250 130 240 130 245 135"/>
-        <polygon fill={i} points="240 140 249.99 140 245 135"/>
-        <polygon fill={h} points="245 135 249.99 140 250 139.99 250 130"/>
-        <polygon fill={f} points="230 140 230 150 235 145"/>
-        <polygon fill={i} points="240 140 230 140 235 145"/>
-        <polygon fill={g} points="230 150 239.99 150 235 145"/>
-        <polygon fill={e} points="235 145 239.99 150 240 149.99 240 140"/>
-        <polygon fill={d} points="220 150 220 160 225 155"/>
-        <polygon fill={g} points="230 150 220 150 225 155"/>
-        <polygon fill={i} points="220 160 229.99 160 225 155"/>
-        <polygon fill={f} points="225 155 229.99 160 230 159.99 230 150"/>
-        <polygon fill={h} points="210 160 210 170 215 165"/>
-        <polygon fill={i} points="220 160 210 160 215 165"/>
-        <polygon fill={g} points="210 170 219.99 170 215 165"/>
-        <polygon fill={d} points="215 165 219.99 170 220 169.99 220 160"/>
-        <polygon fill={b} points="29.95 180.05 29.95 180.05 29.94 180.04 29.95 180.05 40 170 10 170 25 185"/>
-        <polygon fill={c} points="20 190 25 185 10 170 10 200 19.97 190.03"/>
-        <polygon fill={b} points="30.05 199.94 30.05 199.95 30.06 199.96 30.05 199.95 20 209.99 50 209.99 35 194.99"/>
-        <polygon fill={c} points="40 189.99 35 194.99 50 209.99 50 179.99 40.03 189.97"/>
-        <polygon fill={d} points="14.99 195.01 10 200 19.99 200"/>
-        <polygon fill={i} points="20 200 20 190 19.97 190.03 14.99 195.01 19.99 200"/>
-        <rect fill={i} x="20" y="209.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="35 175 30 180 40 180"/>
-        <polygon fill={f} points="25 185 20 190 29.99 190"/>
-        <rect fill={i} x="29.99" y="209.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="30 190 30 180 29.95 180.05 29.95 180.05 25 185 25 185 29.99 190"/>
-        <polygon fill={i} points="40 170 35 175 40 180"/>
-        <polygon fill={f} points="30 190.01 34.99 195 35 194.99 39.99 190 30 190"/>
-        <polygon fill={g} points="30 199.99 30.05 199.95 30.05 199.94 34.99 195 30 190.01"/>
-        <polygon fill={i} points="40 189.99 40.03 189.97 45 185 40 180"/>
-        <polygon fill={e} points="45 185 49.99 180 40 180"/>
-        <polygon fill={i} points="20 209.99 24.99 205 20 200.01"/>
-        <polygon fill={d} points="20 200.01 24.99 205 29.99 200 20 200"/>
-        <polygon fill={e} points="40 170 40 180 45 175"/>
-        <polygon fill={g} points="50 170 40 170 45 175"/>
-        <polygon fill={i} points="40 180 49.99 180 45 175"/>
-        <polygon fill={h} points="45 175 49.99 180 50 179.99 50 170"/>
-        <polygon fill={f} points="30 180 30 190 35 185"/>
-        <polygon fill={i} points="40 180 30 180 35 185"/>
-        <polygon fill={g} points="30 190 39.99 190 35 185"/>
-        <polygon fill={e} points="35 185 39.99 190 40 189.99 40 180"/>
-        <polygon fill={d} points="20 190 20 200 25 195"/>
-        <polygon fill={g} points="30 190 20 190 25 195"/>
-        <polygon fill={i} points="20 200 29.99 200 25 195"/>
-        <polygon fill={f} points="25 195 29.99 200 30 199.99 30 190"/>
-        <polygon fill={h} points="10 200 10 210 15 205"/>
-        <polygon fill={i} points="20 200 10 200 15 205"/>
-        <polygon fill={g} points="10 210 19.99 210 15 205"/>
-        <polygon fill={d} points="15 205 19.99 210 20 209.99 20 200"/>
-        <polygon fill={b} points="60.05 190.05 60.05 190.05 60.04 190.06 60.05 190.05 50 180 50 210 65 195"/>
-        <polygon fill={c} points="70 200 65 195 50 210 80 210 70.03 200.03"/>
-        <polygon fill={b} points="79.94 189.95 79.95 189.95 79.95 189.94 79.95 189.95 89.99 200 89.99 170 74.99 185"/>
-        <polygon fill={c} points="69.99 180 74.99 185 89.99 170 59.99 170 69.97 179.97"/>
-        <polygon fill={d} points="75.01 205.01 80 210 80 200.01"/>
-        <polygon fill={i} points="80 200 70 200 70.03 200.03 75.01 205.01 80 200.01"/>
-        <rect fill={i} x="89.99" y="190.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="55 185 60 190 60 180"/>
-        <polygon fill={f} points="65 195 70 200 70 190.01"/>
-        <rect fill={i} x="89.99" y="170" width=".01" height="20.01"/>
-        <polygon fill={g} points="70 190 60 190 60.05 190.05 60.05 190.05 65 195 65 195 70 190.01"/>
-        <polygon fill={i} points="50 180 55 185 60 180"/>
-        <polygon fill={f} points="70.01 190 75 185.01 74.99 185 70 180.01 70 190"/>
-        <polygon fill={g} points="79.99 190 79.95 189.95 79.94 189.95 75 185.01 70.01 190"/>
-        <polygon fill={i} points="69.99 180 69.97 179.97 65 175 60 180"/>
-        <polygon fill={e} points="65 175 60 170.01 60 180"/>
-        <polygon fill={i} points="89.99 200 85 195.01 80.01 200"/>
-        <polygon fill={d} points="80.01 200 85 195.01 80 190.01 80 200"/>
-        <polygon fill={e} points="50 180 60 180 55 175"/>
-        <polygon fill={g} points="50 170 50 180 55 175"/>
-        <polygon fill={i} points="60 180 60 170.01 55 175"/>
-        <polygon fill={h} points="55 175 60 170.01 59.99 170 50 170"/>
-        <polygon fill={f} points="60 190 70 190 65 185"/>
-        <polygon fill={i} points="60 180 60 190 65 185"/>
-        <polygon fill={g} points="70 190 70 180.01 65 185"/>
-        <polygon fill={e} points="65 185 70 180.01 69.99 180 60 180"/>
-        <polygon fill={d} points="70 200 80 200 75 195"/>
-        <polygon fill={g} points="70 190 70 200 75 195"/>
-        <polygon fill={i} points="80 200 80 190.01 75 195"/>
-        <polygon fill={f} points="75 195 80 190.01 79.99 190 70 190"/>
-        <polygon fill={h} points="80 210 90 210 85 205"/>
-        <polygon fill={i} points="80 200 80 210 85 205"/>
-        <polygon fill={g} points="90 210 90 200.01 85 205"/>
-        <polygon fill={d} points="85 205 90 200.01 89.99 200 80 200"/>
-        <polygon fill={b} points="109.95 180.05 109.95 180.05 109.94 180.04 109.95 180.05 120 170 90 170 105 185"/>
-        <polygon fill={c} points="100 190 105 185 90 170 90 200 99.97 190.03"/>
-        <polygon fill={b} points="110.05 199.94 110.05 199.95 110.06 199.96 110.05 199.95 100 209.99 130 209.99 115 194.99"/>
-        <polygon fill={c} points="120 189.99 115 194.99 130 209.99 130 179.99 120.03 189.97"/>
-        <polygon fill={d} points="94.99 195.01 90 200 99.99 200"/>
-        <polygon fill={i} points="100 200 100 190 99.97 190.03 94.99 195.01 99.99 200"/>
-        <rect fill={i} x="100" y="209.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="115 175 110 180 120 180"/>
-        <polygon fill={f} points="105 185 100 190 109.99 190"/>
-        <rect fill={i} x="109.99" y="209.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="110 190 110 180 109.95 180.05 109.95 180.05 105 185 105 185 109.99 190"/>
-        <polygon fill={i} points="120 170 115 175 120 180"/>
-        <polygon fill={f} points="110 190.01 114.99 195 115 194.99 119.99 190 110 190"/>
-        <polygon fill={g} points="110 199.99 110.05 199.95 110.05 199.94 114.99 195 110 190.01"/>
-        <polygon fill={i} points="120 189.99 120.03 189.97 125 185 120 180"/>
-        <polygon fill={e} points="125 185 129.99 180 120 180"/>
-        <polygon fill={i} points="100 209.99 104.99 205 100 200.01"/>
-        <polygon fill={d} points="100 200.01 104.99 205 109.99 200 100 200"/>
-        <polygon fill={e} points="120 170 120 180 125 175"/>
-        <polygon fill={g} points="130 170 120 170 125 175"/>
-        <polygon fill={i} points="120 180 129.99 180 125 175"/>
-        <polygon fill={h} points="125 175 129.99 180 130 179.99 130 170"/>
-        <polygon fill={f} points="110 180 110 190 115 185"/>
-        <polygon fill={i} points="120 180 110 180 115 185"/>
-        <polygon fill={g} points="110 190 119.99 190 115 185"/>
-        <polygon fill={e} points="115 185 119.99 190 120 189.99 120 180"/>
-        <polygon fill={d} points="100 190 100 200 105 195"/>
-        <polygon fill={g} points="110 190 100 190 105 195"/>
-        <polygon fill={i} points="100 200 109.99 200 105 195"/>
-        <polygon fill={f} points="105 195 109.99 200 110 199.99 110 190"/>
-        <polygon fill={h} points="90 200 90 210 95 205"/>
-        <polygon fill={i} points="100 200 90 200 95 205"/>
-        <polygon fill={g} points="90 210 99.99 210 95 205"/>
-        <polygon fill={d} points="95 205 99.99 210 100 209.99 100 200"/>
-        <polygon fill={b} points="140.05 190.05 140.05 190.05 140.04 190.06 140.05 190.05 130 180 130 210 145 195"/>
-        <polygon fill={c} points="150 200 145 195 130 210 160 210 150.03 200.03"/>
-        <polygon fill={b} points="159.94 189.95 159.95 189.95 159.96 189.94 159.95 189.95 169.99 200 169.99 170 154.99 185"/>
-        <polygon fill={c} points="149.99 180 154.99 185 169.99 170 139.99 170 149.97 179.97"/>
-        <polygon fill={d} points="155.01 205.01 160 210 160 200.01"/>
-        <polygon fill={i} points="160 200 150 200 150.03 200.03 155.01 205.01 160 200.01"/>
-        <rect fill={i} x="169.99" y="190.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="135 185 140 190 140 180"/>
-        <polygon fill={f} points="145 195 150 200 150 190.01"/>
-        <rect fill={i} x="169.99" y="170" width=".01" height="20.01"/>
-        <polygon fill={g} points="150 190 140 190 140.05 190.05 140.05 190.05 145 195 145 195 150 190.01"/>
-        <polygon fill={i} points="130 180 135 185 140 180"/>
-        <polygon fill={f} points="150.01 190 155 185.01 154.99 185 150 180.01 150 190"/>
-        <polygon fill={g} points="159.99 190 159.95 189.95 159.94 189.95 155 185.01 150.01 190"/>
-        <polygon fill={i} points="149.99 180 149.97 179.97 145 175 140 180"/>
-        <polygon fill={e} points="145 175 140 170.01 140 180"/>
-        <polygon fill={i} points="169.99 200 165 195.01 160.01 200"/>
-        <polygon fill={d} points="160.01 200 165 195.01 160 190.01 160 200"/>
-        <polygon fill={e} points="130 180 140 180 135 175"/>
-        <polygon fill={g} points="130 170 130 180 135 175"/>
-        <polygon fill={i} points="140 180 140 170.01 135 175"/>
-        <polygon fill={h} points="135 175 140 170.01 139.99 170 130 170"/>
-        <polygon fill={f} points="140 190 150 190 145 185"/>
-        <polygon fill={i} points="140 180 140 190 145 185"/>
-        <polygon fill={g} points="150 190 150 180.01 145 185"/>
-        <polygon fill={e} points="145 185 150 180.01 149.99 180 140 180"/>
-        <polygon fill={d} points="150 200 160 200 155 195"/>
-        <polygon fill={g} points="150 190 150 200 155 195"/>
-        <polygon fill={i} points="160 200 160 190.01 155 195"/>
-        <polygon fill={f} points="155 195 160 190.01 159.99 190 150 190"/>
-        <polygon fill={h} points="160 210 170 210 165 205"/>
-        <polygon fill={i} points="160 200 160 210 165 205"/>
-        <polygon fill={g} points="170 210 170 200.01 165 205"/>
-        <polygon fill={d} points="165 205 170 200.01 169.99 200 160 200"/>
-        <polygon fill={b} points="189.95 180.05 189.95 180.05 189.94 180.04 189.95 180.05 200 170 170 170 185 185"/>
-        <polygon fill={c} points="180 190 185 185 170 170 170 200 179.97 190.03"/>
-        <polygon fill={b} points="190.05 199.94 190.05 199.95 190.06 199.96 190.05 199.95 180 209.99 210 209.99 195 194.99"/>
-        <polygon fill={c} points="200 189.99 195 194.99 210 209.99 210 179.99 200.03 189.97"/>
-        <polygon fill={d} points="174.99 195.01 170 200 179.99 200"/>
-        <polygon fill={i} points="180 200 180 190 179.97 190.03 174.99 195.01 179.99 200"/>
-        <rect fill={i} x="180" y="209.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="195 175 190 180 200 180"/>
-        <polygon fill={f} points="185 185 180 190 189.99 190"/>
-        <rect fill={i} x="189.99" y="209.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="190 190 190 180 189.95 180.05 189.95 180.05 185 185 185 185 189.99 190"/>
-        <polygon fill={i} points="200 170 195 175 200 180"/>
-        <polygon fill={f} points="190 190.01 194.99 195 195 194.99 199.99 190 190 190"/>
-        <polygon fill={g} points="190 199.99 190.05 199.95 190.05 199.94 194.99 195 190 190.01"/>
-        <polygon fill={i} points="200 189.99 200.03 189.97 205 185 200 180"/>
-        <polygon fill={e} points="205 185 209.99 180 200 180"/>
-        <polygon fill={i} points="180 209.99 184.99 205 180 200.01"/>
-        <polygon fill={d} points="180 200.01 184.99 205 189.99 200 180 200"/>
-        <polygon fill={e} points="200 170 200 180 205 175"/>
-        <polygon fill={g} points="210 170 200 170 205 175"/>
-        <polygon fill={i} points="200 180 209.99 180 205 175"/>
-        <polygon fill={h} points="205 175 209.99 180 210 179.99 210 170"/>
-        <polygon fill={f} points="190 180 190 190 195 185"/>
-        <polygon fill={i} points="200 180 190 180 195 185"/>
-        <polygon fill={g} points="190 190 199.99 190 195 185"/>
-        <polygon fill={e} points="195 185 199.99 190 200 189.99 200 180"/>
-        <polygon fill={d} points="180 190 180 200 185 195"/>
-        <polygon fill={g} points="190 190 180 190 185 195"/>
-        <polygon fill={i} points="180 200 189.99 200 185 195"/>
-        <polygon fill={f} points="185 195 189.99 200 190 199.99 190 190"/>
-        <polygon fill={h} points="170 200 170 210 175 205"/>
-        <polygon fill={i} points="180 200 170 200 175 205"/>
-        <polygon fill={g} points="170 210 179.99 210 175 205"/>
-        <polygon fill={d} points="175 205 179.99 210 180 209.99 180 200"/>
-        <polygon fill={b} points="220.05 190.05 220.05 190.05 220.04 190.06 220.05 190.05 210 180 210 210 225 195"/>
-        <polygon fill={c} points="230 200 225 195 210 210 240 210 230.03 200.03"/>
-        <polygon fill={b} points="239.94 189.95 239.95 189.95 239.96 189.94 239.95 189.95 249.99 200 249.99 170 234.99 185"/>
-        <polygon fill={c} points="229.99 180 234.99 185 249.99 170 219.99 170 229.97 179.97"/>
-        <polygon fill={d} points="235.01 205.01 240 210 240 200.01"/>
-        <polygon fill={i} points="240 200 230 200 230.03 200.03 235.01 205.01 240 200.01"/>
-        <rect fill={i} x="249.99" y="190.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="215 185 220 190 220 180"/>
-        <polygon fill={f} points="225 195 230 200 230 190.01"/>
-        <rect fill={i} x="249.99" y="170" width=".01" height="20.01"/>
-        <polygon fill={g} points="230 190 220 190 220.05 190.05 220.05 190.05 225 195 225 195 230 190.01"/>
-        <polygon fill={i} points="210 180 215 185 220 180"/>
-        <polygon fill={f} points="230.01 190 235 185.01 234.99 185 230 180.01 230 190"/>
-        <polygon fill={g} points="239.99 190 239.95 189.95 239.94 189.95 235 185.01 230.01 190"/>
-        <polygon fill={i} points="229.99 180 229.97 179.97 225 175 220 180"/>
-        <polygon fill={e} points="225 175 220 170.01 220 180"/>
-        <polygon fill={i} points="249.99 200 245 195.01 240.01 200"/>
-        <polygon fill={d} points="240.01 200 245 195.01 240 190.01 240 200"/>
-        <polygon fill={e} points="210 180 220 180 215 175"/>
-        <polygon fill={g} points="210 170 210 180 215 175"/>
-        <polygon fill={i} points="220 180 220 170.01 215 175"/>
-        <polygon fill={h} points="215 175 220 170.01 219.99 170 210 170"/>
-        <polygon fill={f} points="220 190 230 190 225 185"/>
-        <polygon fill={i} points="220 180 220 190 225 185"/>
-        <polygon fill={g} points="230 190 230 180.01 225 185"/>
-        <polygon fill={e} points="225 185 230 180.01 229.99 180 220 180"/>
-        <polygon fill={d} points="230 200 240 200 235 195"/>
-        <polygon fill={g} points="230 190 230 200 235 195"/>
-        <polygon fill={i} points="240 200 240 190.01 235 195"/>
-        <polygon fill={f} points="235 195 240 190.01 239.99 190 230 190"/>
-        <polygon fill={h} points="240 210 250 210 245 205"/>
-        <polygon fill={i} points="240 200 240 210 245 205"/>
-        <polygon fill={g} points="250 210 250 200.01 245 205"/>
-        <polygon fill={d} points="245 205 250 200.01 249.99 200 240 200"/>
-        <polygon fill={b} points="20.05 230.05 20.05 230.05 20.04 230.06 20.05 230.05 10 220 10 250 25 235"/>
-        <polygon fill={c} points="30 240 25 235 10 250 40 250 30.03 240.03"/>
-        <polygon fill={b} points="39.94 229.95 39.95 229.95 39.95 229.94 39.95 229.95 49.99 240 49.99 210 34.99 225"/>
-        <polygon fill={c} points="29.99 220 34.99 225 49.99 210 19.99 210 29.97 219.97"/>
-        <polygon fill={d} points="35.01 245.01 40 250 40 240.01"/>
-        <polygon fill={i} points="40 240 30 240 30.03 240.03 35.01 245.01 40 240.01"/>
-        <rect fill={i} x="49.99" y="230.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="15 225 20 230 20 220"/>
-        <polygon fill={f} points="25 235 30 240 30 230.01"/>
-        <rect fill={i} x="49.99" y="210" width=".01" height="20.01"/>
-        <polygon fill={g} points="30 230 20 230 20.05 230.05 20.05 230.05 25 235 25 235 30 230.01"/>
-        <polygon fill={i} points="10 220 15 225 20 220"/>
-        <polygon fill={f} points="30.01 230 35 225.01 34.99 225 30 220.01 30 230"/>
-        <polygon fill={g} points="39.99 230 39.95 229.95 39.94 229.95 35 225.01 30.01 230"/>
-        <polygon fill={i} points="29.99 220 29.97 219.97 25 215 20 220"/>
-        <polygon fill={e} points="25 215 20 210.01 20 220"/>
-        <polygon fill={i} points="49.99 240 45 235.01 40.01 240"/>
-        <polygon fill={d} points="40.01 240 45 235.01 40 230.01 40 240"/>
-        <polygon fill={e} points="10 220 20 220 15 215"/>
-        <polygon fill={g} points="10 210 10 220 15 215"/>
-        <polygon fill={i} points="20 220 20 210.01 15 215"/>
-        <polygon fill={h} points="15 215 20 210.01 19.99 210 10 210"/>
-        <polygon fill={f} points="20 230 30 230 25 225"/>
-        <polygon fill={i} points="20 220 20 230 25 225"/>
-        <polygon fill={g} points="30 230 30 220.01 25 225"/>
-        <polygon fill={e} points="25 225 30 220.01 29.99 220 20 220"/>
-        <polygon fill={d} points="30 240 40 240 35 235"/>
-        <polygon fill={g} points="30 230 30 240 35 235"/>
-        <polygon fill={i} points="40 240 40 230.01 35 235"/>
-        <polygon fill={f} points="35 235 40 230.01 39.99 230 30 230"/>
-        <polygon fill={h} points="40 250 50 250 45 245"/>
-        <polygon fill={i} points="40 240 40 250 45 245"/>
-        <polygon fill={g} points="50 250 50 240.01 45 245"/>
-        <polygon fill={d} points="45 245 50 240.01 49.99 240 40 240"/>
-        <polygon fill={b} points="69.95 220.05 69.95 220.05 69.94 220.04 69.95 220.05 80 210 50 210 65 225"/>
-        <polygon fill={c} points="60 230 65 225 50 210 50 240 59.97 230.03"/>
-        <polygon fill={b} points="70.05 239.94 70.05 239.95 70.06 239.96 70.05 239.95 60 249.99 90 249.99 75 234.99"/>
-        <polygon fill={c} points="80 229.99 75 234.99 90 249.99 90 219.99 80.03 229.97"/>
-        <polygon fill={d} points="54.99 235.01 50 240 59.99 240"/>
-        <polygon fill={i} points="60 240 60 230 59.97 230.03 54.99 235.01 59.99 240"/>
-        <rect fill={i} x="60" y="249.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="75 215 70 220 80 220"/>
-        <polygon fill={f} points="65 225 60 230 69.99 230"/>
-        <rect fill={i} x="69.99" y="249.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="70 230 70 220 69.95 220.05 69.95 220.05 65 225 65 225 69.99 230"/>
-        <polygon fill={i} points="80 210 75 215 80 220"/>
-        <polygon fill={f} points="70 230.01 74.99 235 75 234.99 79.99 230 70 230"/>
-        <polygon fill={g} points="70 239.99 70.05 239.95 70.05 239.94 74.99 235 70 230.01"/>
-        <polygon fill={i} points="80 229.99 80.03 229.97 85 225 80 220"/>
-        <polygon fill={e} points="85 225 89.99 220 80 220"/>
-        <polygon fill={i} points="60 249.99 64.99 245 60 240.01"/>
-        <polygon fill={d} points="60 240.01 64.99 245 69.99 240 60 240"/>
-        <polygon fill={e} points="80 210 80 220 85 215"/>
-        <polygon fill={g} points="90 210 80 210 85 215"/>
-        <polygon fill={i} points="80 220 89.99 220 85 215"/>
-        <polygon fill={h} points="85 215 89.99 220 90 219.99 90 210"/>
-        <polygon fill={f} points="70 220 70 230 75 225"/>
-        <polygon fill={i} points="80 220 70 220 75 225"/>
-        <polygon fill={g} points="70 230 79.99 230 75 225"/>
-        <polygon fill={e} points="75 225 79.99 230 80 229.99 80 220"/>
-        <polygon fill={d} points="60 230 60 240 65 235"/>
-        <polygon fill={g} points="70 230 60 230 65 235"/>
-        <polygon fill={i} points="60 240 69.99 240 65 235"/>
-        <polygon fill={f} points="65 235 69.99 240 70 239.99 70 230"/>
-        <polygon fill={h} points="50 240 50 250 55 245"/>
-        <polygon fill={i} points="60 240 50 240 55 245"/>
-        <polygon fill={g} points="50 250 59.99 250 55 245"/>
-        <polygon fill={d} points="55 245 59.99 250 60 249.99 60 240"/>
-        <polygon fill={b} points="100.05 230.05 100.05 230.05 100.04 230.06 100.05 230.05 90 220 90 250 105 235"/>
-        <polygon fill={c} points="110 240 105 235 90 250 120 250 110.03 240.03"/>
-        <polygon fill={b} points="119.94 229.95 119.95 229.95 119.95 229.94 119.95 229.95 129.99 240 129.99 210 114.99 225"/>
-        <polygon fill={c} points="109.99 220 114.99 225 129.99 210 99.99 210 109.97 219.97"/>
-        <polygon fill={d} points="115.01 245.01 120 250 120 240.01"/>
-        <polygon fill={i} points="120 240 110 240 110.03 240.03 115.01 245.01 120 240.01"/>
-        <rect fill={i} x="129.99" y="230.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="95 225 100 230 100 220"/>
-        <polygon fill={f} points="105 235 110 240 110 230.01"/>
-        <rect fill={i} x="129.99" y="210" width=".01" height="20.01"/>
-        <polygon fill={g} points="110 230 100 230 100.05 230.05 100.05 230.05 105 235 105 235 110 230.01"/>
-        <polygon fill={i} points="90 220 95 225 100 220"/>
-        <polygon fill={f} points="110.01 230 115 225.01 114.99 225 110 220.01 110 230"/>
-        <polygon fill={g} points="119.99 230 119.95 229.95 119.94 229.95 115 225.01 110.01 230"/>
-        <polygon fill={i} points="109.99 220 109.97 219.97 105 215 100 220"/>
-        <polygon fill={e} points="105 215 100 210.01 100 220"/>
-        <polygon fill={i} points="129.99 240 125 235.01 120.01 240"/>
-        <polygon fill={d} points="120.01 240 125 235.01 120 230.01 120 240"/>
-        <polygon fill={e} points="90 220 100 220 95 215"/>
-        <polygon fill={g} points="90 210 90 220 95 215"/>
-        <polygon fill={i} points="100 220 100 210.01 95 215"/>
-        <polygon fill={h} points="95 215 100 210.01 99.99 210 90 210"/>
-        <polygon fill={f} points="100 230 110 230 105 225"/>
-        <polygon fill={i} points="100 220 100 230 105 225"/>
-        <polygon fill={g} points="110 230 110 220.01 105 225"/>
-        <polygon fill={e} points="105 225 110 220.01 109.99 220 100 220"/>
-        <polygon fill={d} points="110 240 120 240 115 235"/>
-        <polygon fill={g} points="110 230 110 240 115 235"/>
-        <polygon fill={i} points="120 240 120 230.01 115 235"/>
-        <polygon fill={f} points="115 235 120 230.01 119.99 230 110 230"/>
-        <polygon fill={h} points="120 250 130 250 125 245"/>
-        <polygon fill={i} points="120 240 120 250 125 245"/>
-        <polygon fill={g} points="130 250 130 240.01 125 245"/>
-        <polygon fill={d} points="125 245 130 240.01 129.99 240 120 240"/>
-        <polygon fill={b} points="149.95 220.05 149.95 220.05 149.94 220.04 149.95 220.05 160 210 130 210 145 225"/>
-        <polygon fill={c} points="140 230 145 225 130 210 130 240 139.97 230.03"/>
-        <polygon fill={b} points="150.05 239.94 150.05 239.95 150.06 239.96 150.05 239.95 140 249.99 170 249.99 155 234.99"/>
-        <polygon fill={c} points="160 229.99 155 234.99 170 249.99 170 219.99 160.03 229.97"/>
-        <polygon fill={d} points="134.99 235.01 130 240 139.99 240"/>
-        <polygon fill={i} points="140 240 140 230 139.97 230.03 134.99 235.01 139.99 240"/>
-        <rect fill={i} x="140" y="249.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="155 215 150 220 160 220"/>
-        <polygon fill={f} points="145 225 140 230 149.99 230"/>
-        <rect fill={i} x="149.99" y="249.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="150 230 150 220 149.95 220.05 149.95 220.05 145 225 145 225 149.99 230"/>
-        <polygon fill={i} points="160 210 155 215 160 220"/>
-        <polygon fill={f} points="150 230.01 154.99 235 155 234.99 159.99 230 150 230"/>
-        <polygon fill={g} points="150 239.99 150.05 239.95 150.05 239.94 154.99 235 150 230.01"/>
-        <polygon fill={i} points="160 229.99 160.03 229.97 165 225 160 220"/>
-        <polygon fill={e} points="165 225 169.99 220 160 220"/>
-        <polygon fill={i} points="140 249.99 144.99 245 140 240.01"/>
-        <polygon fill={d} points="140 240.01 144.99 245 149.99 240 140 240"/>
-        <polygon fill={e} points="160 210 160 220 165 215"/>
-        <polygon fill={g} points="170 210 160 210 165 215"/>
-        <polygon fill={i} points="160 220 169.99 220 165 215"/>
-        <polygon fill={h} points="165 215 169.99 220 170 219.99 170 210"/>
-        <polygon fill={f} points="150 220 150 230 155 225"/>
-        <polygon fill={i} points="160 220 150 220 155 225"/>
-        <polygon fill={g} points="150 230 159.99 230 155 225"/>
-        <polygon fill={e} points="155 225 159.99 230 160 229.99 160 220"/>
-        <polygon fill={d} points="140 230 140 240 145 235"/>
-        <polygon fill={g} points="150 230 140 230 145 235"/>
-        <polygon fill={i} points="140 240 149.99 240 145 235"/>
-        <polygon fill={f} points="145 235 149.99 240 150 239.99 150 230"/>
-        <polygon fill={h} points="130 240 130 250 135 245"/>
-        <polygon fill={i} points="140 240 130 240 135 245"/>
-        <polygon fill={g} points="130 250 139.99 250 135 245"/>
-        <polygon fill={d} points="135 245 139.99 250 140 249.99 140 240"/>
-        <polygon fill={b} points="180.05 230.05 180.05 230.05 180.04 230.06 180.05 230.05 170 220 170 250 185 235"/>
-        <polygon fill={c} points="190 240 185 235 170 250 200 250 190.03 240.03"/>
-        <polygon fill={b} points="199.94 229.95 199.95 229.95 199.96 229.94 199.95 229.95 209.99 240 209.99 210 194.99 225"/>
-        <polygon fill={c} points="189.99 220 194.99 225 209.99 210 179.99 210 189.97 219.97"/>
-        <polygon fill={d} points="195.01 245.01 200 250 200 240.01"/>
-        <polygon fill={i} points="200 240 190 240 190.03 240.03 195.01 245.01 200 240.01"/>
-        <rect fill={i} x="209.99" y="230.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="175 225 180 230 180 220"/>
-        <polygon fill={f} points="185 235 190 240 190 230.01"/>
-        <rect fill={i} x="209.99" y="210" width=".01" height="20.01"/>
-        <polygon fill={g} points="190 230 180 230 180.05 230.05 180.05 230.05 185 235 185 235 190 230.01"/>
-        <polygon fill={i} points="170 220 175 225 180 220"/>
-        <polygon fill={f} points="190.01 230 195 225.01 194.99 225 190 220.01 190 230"/>
-        <polygon fill={g} points="199.99 230 199.95 229.95 199.94 229.95 195 225.01 190.01 230"/>
-        <polygon fill={i} points="189.99 220 189.97 219.97 185 215 180 220"/>
-        <polygon fill={e} points="185 215 180 210.01 180 220"/>
-        <polygon fill={i} points="209.99 240 205 235.01 200.01 240"/>
-        <polygon fill={d} points="200.01 240 205 235.01 200 230.01 200 240"/>
-        <polygon fill={e} points="170 220 180 220 175 215"/>
-        <polygon fill={g} points="170 210 170 220 175 215"/>
-        <polygon fill={i} points="180 220 180 210.01 175 215"/>
-        <polygon fill={h} points="175 215 180 210.01 179.99 210 170 210"/>
-        <polygon fill={f} points="180 230 190 230 185 225"/>
-        <polygon fill={i} points="180 220 180 230 185 225"/>
-        <polygon fill={g} points="190 230 190 220.01 185 225"/>
-        <polygon fill={e} points="185 225 190 220.01 189.99 220 180 220"/>
-        <polygon fill={d} points="190 240 200 240 195 235"/>
-        <polygon fill={g} points="190 230 190 240 195 235"/>
-        <polygon fill={i} points="200 240 200 230.01 195 235"/>
-        <polygon fill={f} points="195 235 200 230.01 199.99 230 190 230"/>
-        <polygon fill={h} points="200 250 210 250 205 245"/>
-        <polygon fill={i} points="200 240 200 250 205 245"/>
-        <polygon fill={g} points="210 250 210 240.01 205 245"/>
-        <polygon fill={d} points="205 245 210 240.01 209.99 240 200 240"/>
-        <polygon fill={b} points="229.95 220.05 229.95 220.05 229.94 220.04 229.95 220.05 240 210 210 210 225 225"/>
-        <polygon fill={c} points="220 230 225 225 210 210 210 240 219.97 230.03"/>
-        <polygon fill={b} points="230.05 239.94 230.05 239.95 230.06 239.96 230.05 239.95 220 249.99 250 249.99 235 234.99"/>
-        <polygon fill={c} points="240 229.99 235 234.99 250 249.99 250 219.99 240.03 229.97"/>
-        <polygon fill={d} points="214.99 235.01 210 240 219.99 240"/>
-        <polygon fill={i} points="220 240 220 230 219.97 230.03 214.99 235.01 219.99 240"/>
-        <rect fill={i} x="220" y="249.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="235 215 230 220 240 220"/>
-        <polygon fill={f} points="225 225 220 230 229.99 230"/>
-        <rect fill={i} x="229.99" y="249.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="230 230 230 220 229.95 220.05 229.95 220.05 225 225 225 225 229.99 230"/>
-        <polygon fill={i} points="240 210 235 215 240 220"/>
-        <polygon fill={f} points="230 230.01 234.99 235 235 234.99 239.99 230 230 230"/>
-        <polygon fill={g} points="230 239.99 230.05 239.95 230.05 239.94 234.99 235 230 230.01"/>
-        <polygon fill={i} points="240 229.99 240.03 229.97 245 225 240 220"/>
-        <polygon fill={e} points="245 225 249.99 220 240 220"/>
-        <polygon fill={i} points="220 249.99 224.99 245 220 240.01"/>
-        <polygon fill={d} points="220 240.01 224.99 245 229.99 240 220 240"/>
-        <polygon fill={e} points="240 210 240 220 245 215"/>
-        <polygon fill={g} points="250 210 240 210 245 215"/>
-        <polygon fill={i} points="240 220 249.99 220 245 215"/>
-        <polygon fill={h} points="245 215 249.99 220 250 219.99 250 210"/>
-        <polygon fill={f} points="230 220 230 230 235 225"/>
-        <polygon fill={i} points="240 220 230 220 235 225"/>
-        <polygon fill={g} points="230 230 239.99 230 235 225"/>
-        <polygon fill={e} points="235 225 239.99 230 240 229.99 240 220"/>
-        <polygon fill={d} points="220 230 220 240 225 235"/>
-        <polygon fill={g} points="230 230 220 230 225 235"/>
-        <polygon fill={i} points="220 240 229.99 240 225 235"/>
-        <polygon fill={f} points="225 235 229.99 240 230 239.99 230 230"/>
-        <polygon fill={h} points="210 240 210 250 215 245"/>
-        <polygon fill={i} points="220 240 210 240 215 245"/>
-        <polygon fill={g} points="210 250 219.99 250 215 245"/>
-        <polygon fill={d} points="215 245 219.99 250 220 249.99 220 240"/>
-        <polygon fill={b} points="29.95 260.05 29.95 260.05 29.94 260.04 29.95 260.05 40 250 10 250 25 265"/>
-        <polygon fill={c} points="20 270 25 265 10 250 10 280 19.97 270.03"/>
-        <polygon fill={b} points="30.05 279.94 30.05 279.95 30.06 279.95 30.05 279.95 20 289.99 50 289.99 35 274.99"/>
-        <polygon fill={c} points="40 269.99 35 274.99 50 289.99 50 259.99 40.03 269.97"/>
-        <polygon fill={d} points="14.99 275.01 10 280 19.99 280"/>
-        <polygon fill={i} points="20 280 20 270 19.97 270.03 14.99 275.01 19.99 280"/>
-        <rect fill={i} x="20" y="289.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="35 255 30 260 40 260"/>
-        <polygon fill={f} points="25 265 20 270 29.99 270"/>
-        <rect fill={i} x="29.99" y="289.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="30 270 30 260 29.95 260.05 29.95 260.05 25 265 25 265 29.99 270"/>
-        <polygon fill={i} points="40 250 35 255 40 260"/>
-        <polygon fill={f} points="30 270.01 34.99 275 35 274.99 39.99 270 30 270"/>
-        <polygon fill={g} points="30 279.99 30.05 279.95 30.05 279.94 34.99 275 30 270.01"/>
-        <polygon fill={i} points="40 269.99 40.03 269.97 45 265 40 260"/>
-        <polygon fill={e} points="45 265 49.99 260 40 260"/>
-        <polygon fill={i} points="20 289.99 24.99 285 20 280.01"/>
-        <polygon fill={d} points="20 280.01 24.99 285 29.99 280 20 280"/>
-        <polygon fill={e} points="40 250 40 260 45 255"/>
-        <polygon fill={g} points="50 250 40 250 45 255"/>
-        <polygon fill={i} points="40 260 49.99 260 45 255"/>
-        <polygon fill={h} points="45 255 49.99 260 50 259.99 50 250"/>
-        <polygon fill={f} points="30 260 30 270 35 265"/>
-        <polygon fill={i} points="40 260 30 260 35 265"/>
-        <polygon fill={g} points="30 270 39.99 270 35 265"/>
-        <polygon fill={e} points="35 265 39.99 270 40 269.99 40 260"/>
-        <polygon fill={d} points="20 270 20 280 25 275"/>
-        <polygon fill={g} points="30 270 20 270 25 275"/>
-        <polygon fill={i} points="20 280 29.99 280 25 275"/>
-        <polygon fill={f} points="25 275 29.99 280 30 279.99 30 270"/>
-        <polygon fill={h} points="10 280 10 290 15 285"/>
-        <polygon fill={i} points="20 280 10 280 15 285"/>
-        <polygon fill={g} points="10 290 19.99 290 15 285"/>
-        <polygon fill={d} points="15 285 19.99 290 20 289.99 20 280"/>
-        <polygon fill={b} points="79.95 269.95 79.95 269.95 79.96 269.94 79.95 269.95 90 280 90 250 75 265"/>
-        <polygon fill={c} points="70 260 75 265 90 250 60 250 69.97 259.97"/>
-        <polygon fill={b} points="60.06 270.05 60.05 270.05 60.05 270.06 60.05 270.05 50.01 260 50.01 290 65.01 275"/>
-        <polygon fill={c} points="70.01 280 65.01 275 50.01 290 80.01 290 70.03 280.03"/>
-        <polygon fill={d} points="64.99 254.99 60 250 60 259.99"/>
-        <polygon fill={i} points="60 260 70 260 69.97 259.97 64.99 254.99 60 259.99"/>
-        <rect fill={i} x="50" y="260" width=".01" height="9.99"/>
-        <polygon fill={e} points="85 275 80 270 80 280"/>
-        <polygon fill={f} points="75 265 70 260 70 269.99"/>
-        <rect fill={i} x="50" y="269.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="70 270 80 270 79.95 269.95 79.95 269.95 75 265 75 265 70 269.99"/>
-        <polygon fill={i} points="90 280 85 275 80 280"/>
-        <polygon fill={f} points="69.99 270 65 274.99 65.01 275 70 279.99 70 270"/>
-        <polygon fill={g} points="60.01 270 60.05 270.05 60.06 270.05 65 274.99 69.99 270"/>
-        <polygon fill={i} points="70.01 280 70.03 280.03 75 285 80 280"/>
-        <polygon fill={e} points="75 285 80 289.99 80 280"/>
-        <polygon fill={i} points="50.01 260 55 264.99 59.99 260"/>
-        <polygon fill={d} points="59.99 260 55 264.99 60 269.99 60 260"/>
-        <polygon fill={e} points="90 280 80 280 85 285"/>
-        <polygon fill={g} points="90 290 90 280 85 285"/>
-        <polygon fill={i} points="80 280 80 289.99 85 285"/>
-        <polygon fill={h} points="85 285 80 289.99 80.01 290 90 290"/>
-        <polygon fill={f} points="80 270 70 270 75 275"/>
-        <polygon fill={i} points="80 280 80 270 75 275"/>
-        <polygon fill={g} points="70 270 70 279.99 75 275"/>
-        <polygon fill={e} points="75 275 70 279.99 70.01 280 80 280"/>
-        <polygon fill={d} points="70 260 60 260 65 265"/>
-        <polygon fill={g} points="70 270 70 260 65 265"/>
-        <polygon fill={i} points="60 260 60 269.99 65 265"/>
-        <polygon fill={f} points="65 265 60 269.99 60.01 270 70 270"/>
-        <polygon fill={h} points="60 250 50 250 55 255"/>
-        <polygon fill={i} points="60 260 60 250 55 255"/>
-        <polygon fill={g} points="50 250 50 259.99 55 255"/>
-        <polygon fill={d} points="55 255 50 259.99 50.01 260 60 260"/>
-        <polygon fill={b} points="109.95 260.05 109.95 260.05 109.94 260.04 109.95 260.05 120 250 90 250 105 265"/>
-        <polygon fill={c} points="100 270 105 265 90 250 90 280 99.97 270.03"/>
-        <polygon fill={b} points="110.05 279.94 110.05 279.95 110.06 279.95 110.05 279.95 100 289.99 130 289.99 115 274.99"/>
-        <polygon fill={c} points="120 269.99 115 274.99 130 289.99 130 259.99 120.03 269.97"/>
-        <polygon fill={d} points="94.99 275.01 90 280 99.99 280"/>
-        <polygon fill={i} points="100 280 100 270 99.97 270.03 94.99 275.01 99.99 280"/>
-        <rect fill={i} x="100" y="289.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="115 255 110 260 120 260"/>
-        <polygon fill={f} points="105 265 100 270 109.99 270"/>
-        <rect fill={i} x="109.99" y="289.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="110 270 110 260 109.95 260.05 109.95 260.05 105 265 105 265 109.99 270"/>
-        <polygon fill={i} points="120 250 115 255 120 260"/>
-        <polygon fill={f} points="110 270.01 114.99 275 115 274.99 119.99 270 110 270"/>
-        <polygon fill={g} points="110 279.99 110.05 279.95 110.05 279.94 114.99 275 110 270.01"/>
-        <polygon fill={i} points="120 269.99 120.03 269.97 125 265 120 260"/>
-        <polygon fill={e} points="125 265 129.99 260 120 260"/>
-        <polygon fill={i} points="100 289.99 104.99 285 100 280.01"/>
-        <polygon fill={d} points="100 280.01 104.99 285 109.99 280 100 280"/>
-        <polygon fill={e} points="120 250 120 260 125 255"/>
-        <polygon fill={g} points="130 250 120 250 125 255"/>
-        <polygon fill={i} points="120 260 129.99 260 125 255"/>
-        <polygon fill={h} points="125 255 129.99 260 130 259.99 130 250"/>
-        <polygon fill={f} points="110 260 110 270 115 265"/>
-        <polygon fill={i} points="120 260 110 260 115 265"/>
-        <polygon fill={g} points="110 270 119.99 270 115 265"/>
-        <polygon fill={e} points="115 265 119.99 270 120 269.99 120 260"/>
-        <polygon fill={d} points="100 270 100 280 105 275"/>
-        <polygon fill={g} points="110 270 100 270 105 275"/>
-        <polygon fill={i} points="100 280 109.99 280 105 275"/>
-        <polygon fill={f} points="105 275 109.99 280 110 279.99 110 270"/>
-        <polygon fill={h} points="90 280 90 290 95 285"/>
-        <polygon fill={i} points="100 280 90 280 95 285"/>
-        <polygon fill={g} points="90 290 99.99 290 95 285"/>
-        <polygon fill={d} points="95 285 99.99 290 100 289.99 100 280"/>
-        <polygon fill={b} points="159.95 269.95 159.95 269.95 159.96 269.94 159.95 269.95 170 280 170 250 155 265"/>
-        <polygon fill={c} points="150 260 155 265 170 250 140 250 149.97 259.97"/>
-        <polygon fill={b} points="140.06 270.05 140.05 270.05 140.04 270.06 140.05 270.05 130.01 260 130.01 290 145.01 275"/>
-        <polygon fill={c} points="150.01 280 145.01 275 130.01 290 160.01 290 150.03 280.03"/>
-        <polygon fill={d} points="144.99 254.99 140 250 140 259.99"/>
-        <polygon fill={i} points="140 260 150 260 149.97 259.97 144.99 254.99 140 259.99"/>
-        <rect fill={i} x="130" y="260" width=".01" height="9.99"/>
-        <polygon fill={e} points="165 275 160 270 160 280"/>
-        <polygon fill={f} points="155 265 150 260 150 269.99"/>
-        <rect fill={i} x="130" y="269.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="150 270 160 270 159.95 269.95 159.95 269.95 155 265 155 265 150 269.99"/>
-        <polygon fill={i} points="170 280 165 275 160 280"/>
-        <polygon fill={f} points="149.99 270 145 274.99 145.01 275 150 279.99 150 270"/>
-        <polygon fill={g} points="140.01 270 140.05 270.05 140.06 270.05 145 274.99 149.99 270"/>
-        <polygon fill={i} points="150.01 280 150.03 280.03 155 285 160 280"/>
-        <polygon fill={e} points="155 285 160 289.99 160 280"/>
-        <polygon fill={i} points="130.01 260 135 264.99 139.99 260"/>
-        <polygon fill={d} points="139.99 260 135 264.99 140 269.99 140 260"/>
-        <polygon fill={e} points="170 280 160 280 165 285"/>
-        <polygon fill={g} points="170 290 170 280 165 285"/>
-        <polygon fill={i} points="160 280 160 289.99 165 285"/>
-        <polygon fill={h} points="165 285 160 289.99 160.01 290 170 290"/>
-        <polygon fill={f} points="160 270 150 270 155 275"/>
-        <polygon fill={i} points="160 280 160 270 155 275"/>
-        <polygon fill={g} points="150 270 150 279.99 155 275"/>
-        <polygon fill={e} points="155 275 150 279.99 150.01 280 160 280"/>
-        <polygon fill={d} points="150 260 140 260 145 265"/>
-        <polygon fill={g} points="150 270 150 260 145 265"/>
-        <polygon fill={i} points="140 260 140 269.99 145 265"/>
-        <polygon fill={f} points="145 265 140 269.99 140.01 270 150 270"/>
-        <polygon fill={h} points="140 250 130 250 135 255"/>
-        <polygon fill={i} points="140 260 140 250 135 255"/>
-        <polygon fill={g} points="130 250 130 259.99 135 255"/>
-        <polygon fill={d} points="135 255 130 259.99 130.01 260 140 260"/>
-        <polygon fill={b} points="189.95 260.05 189.95 260.05 189.94 260.04 189.95 260.05 200 250 170 250 185 265"/>
-        <polygon fill={c} points="180 270 185 265 170 250 170 280 179.97 270.03"/>
-        <polygon fill={b} points="190.05 279.94 190.05 279.95 190.06 279.95 190.05 279.95 180 289.99 210 289.99 195 274.99"/>
-        <polygon fill={c} points="200 269.99 195 274.99 210 289.99 210 259.99 200.03 269.97"/>
-        <polygon fill={d} points="174.99 275.01 170 280 179.99 280"/>
-        <polygon fill={i} points="180 280 180 270 179.97 270.03 174.99 275.01 179.99 280"/>
-        <rect fill={i} x="180" y="289.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="195 255 190 260 200 260"/>
-        <polygon fill={f} points="185 265 180 270 189.99 270"/>
-        <rect fill={i} x="189.99" y="289.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="190 270 190 260 189.95 260.05 189.95 260.05 185 265 185 265 189.99 270"/>
-        <polygon fill={i} points="200 250 195 255 200 260"/>
-        <polygon fill={f} points="190 270.01 194.99 275 195 274.99 199.99 270 190 270"/>
-        <polygon fill={g} points="190 279.99 190.05 279.95 190.05 279.94 194.99 275 190 270.01"/>
-        <polygon fill={i} points="200 269.99 200.03 269.97 205 265 200 260"/>
-        <polygon fill={e} points="205 265 209.99 260 200 260"/>
-        <polygon fill={i} points="180 289.99 184.99 285 180 280.01"/>
-        <polygon fill={d} points="180 280.01 184.99 285 189.99 280 180 280"/>
-        <polygon fill={e} points="200 250 200 260 205 255"/>
-        <polygon fill={g} points="210 250 200 250 205 255"/>
-        <polygon fill={i} points="200 260 209.99 260 205 255"/>
-        <polygon fill={h} points="205 255 209.99 260 210 259.99 210 250"/>
-        <polygon fill={f} points="190 260 190 270 195 265"/>
-        <polygon fill={i} points="200 260 190 260 195 265"/>
-        <polygon fill={g} points="190 270 199.99 270 195 265"/>
-        <polygon fill={e} points="195 265 199.99 270 200 269.99 200 260"/>
-        <polygon fill={d} points="180 270 180 280 185 275"/>
-        <polygon fill={g} points="190 270 180 270 185 275"/>
-        <polygon fill={i} points="180 280 189.99 280 185 275"/>
-        <polygon fill={f} points="185 275 189.99 280 190 279.99 190 270"/>
-        <polygon fill={h} points="170 280 170 290 175 285"/>
-        <polygon fill={i} points="180 280 170 280 175 285"/>
-        <polygon fill={g} points="170 290 179.99 290 175 285"/>
-        <polygon fill={d} points="175 285 179.99 290 180 289.99 180 280"/>
-        <polygon fill={b} points="239.95 269.95 239.95 269.95 239.96 269.94 239.95 269.95 250 280 250 250 235 265"/>
-        <polygon fill={c} points="230 260 235 265 250 250 220 250 229.97 259.97"/>
-        <polygon fill={b} points="220.06 270.05 220.05 270.05 220.04 270.06 220.05 270.05 210.01 260 210.01 290 225.01 275"/>
-        <polygon fill={c} points="230.01 280 225.01 275 210.01 290 240.01 290 230.03 280.03"/>
-        <polygon fill={d} points="224.99 254.99 220 250 220 259.99"/>
-        <polygon fill={i} points="220 260 230 260 229.97 259.97 224.99 254.99 220 259.99"/>
-        <rect fill={i} x="210" y="260" width=".01" height="9.99"/>
-        <polygon fill={e} points="245 275 240 270 240 280"/>
-        <polygon fill={f} points="235 265 230 260 230 269.99"/>
-        <rect fill={i} x="210" y="269.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="230 270 240 270 239.95 269.95 239.95 269.95 235 265 235 265 230 269.99"/>
-        <polygon fill={i} points="250 280 245 275 240 280"/>
-        <polygon fill={f} points="229.99 270 225 274.99 225.01 275 230 279.99 230 270"/>
-        <polygon fill={g} points="220.01 270 220.05 270.05 220.06 270.05 225 274.99 229.99 270"/>
-        <polygon fill={i} points="230.01 280 230.03 280.03 235 285 240 280"/>
-        <polygon fill={e} points="235 285 240 289.99 240 280"/>
-        <polygon fill={i} points="210.01 260 215 264.99 219.99 260"/>
-        <polygon fill={d} points="219.99 260 215 264.99 220 269.99 220 260"/>
-        <polygon fill={e} points="250 280 240 280 245 285"/>
-        <polygon fill={g} points="250 290 250 280 245 285"/>
-        <polygon fill={i} points="240 280 240 289.99 245 285"/>
-        <polygon fill={h} points="245 285 240 289.99 240.01 290 250 290"/>
-        <polygon fill={f} points="240 270 230 270 235 275"/>
-        <polygon fill={i} points="240 280 240 270 235 275"/>
-        <polygon fill={g} points="230 270 230 279.99 235 275"/>
-        <polygon fill={e} points="235 275 230 279.99 230.01 280 240 280"/>
-        <polygon fill={d} points="230 260 220 260 225 265"/>
-        <polygon fill={g} points="230 270 230 260 225 265"/>
-        <polygon fill={i} points="220 260 220 269.99 225 265"/>
-        <polygon fill={f} points="225 265 220 269.99 220.01 270 230 270"/>
-        <polygon fill={h} points="220 250 210 250 215 255"/>
-        <polygon fill={i} points="220 260 220 250 215 255"/>
-        <polygon fill={g} points="210 250 210 259.99 215 255"/>
-        <polygon fill={d} points="215 255 210 259.99 210.01 260 220 260"/>
-        <polygon fill={b} points="20.05 310.05 20.05 310.05 20.04 310.06 20.05 310.05 10 300 10 330 25 315"/>
-        <polygon fill={c} points="30 320 25 315 10 330 40 330 30.03 320.03"/>
-        <polygon fill={b} points="39.94 309.95 39.95 309.95 39.95 309.94 39.95 309.95 49.99 320 49.99 290 34.99 305"/>
-        <polygon fill={c} points="29.99 300 34.99 305 49.99 290 19.99 290 29.97 299.97"/>
-        <polygon fill={d} points="35.01 325.01 40 330 40 320.01"/>
-        <polygon fill={i} points="40 320 30 320 30.03 320.03 35.01 325.01 40 320.01"/>
-        <rect fill={i} x="49.99" y="310.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="15 305 20 310 20 300"/>
-        <polygon fill={f} points="25 315 30 320 30 310.01"/>
-        <rect fill={i} x="49.99" y="290" width=".01" height="20.01"/>
-        <polygon fill={g} points="30 310 20 310 20.05 310.05 20.05 310.05 25 315 25 315 30 310.01"/>
-        <polygon fill={i} points="10 300 15 305 20 300"/>
-        <polygon fill={f} points="30.01 310 35 305.01 34.99 305 30 300.01 30 310"/>
-        <polygon fill={g} points="39.99 310 39.95 309.95 39.94 309.95 35 305.01 30.01 310"/>
-        <polygon fill={i} points="29.99 300 29.97 299.97 25 295 20 300"/>
-        <polygon fill={e} points="25 295 20 290.01 20 300"/>
-        <polygon fill={i} points="49.99 320 45 315.01 40.01 320"/>
-        <polygon fill={d} points="40.01 320 45 315.01 40 310.01 40 320"/>
-        <polygon fill={e} points="10 300 20 300 15 295"/>
-        <polygon fill={g} points="10 290 10 300 15 295"/>
-        <polygon fill={i} points="20 300 20 290.01 15 295"/>
-        <polygon fill={h} points="15 295 20 290.01 19.99 290 10 290"/>
-        <polygon fill={f} points="20 310 30 310 25 305"/>
-        <polygon fill={i} points="20 300 20 310 25 305"/>
-        <polygon fill={g} points="30 310 30 300.01 25 305"/>
-        <polygon fill={e} points="25 305 30 300.01 29.99 300 20 300"/>
-        <polygon fill={d} points="30 320 40 320 35 315"/>
-        <polygon fill={g} points="30 310 30 320 35 315"/>
-        <polygon fill={i} points="40 320 40 310.01 35 315"/>
-        <polygon fill={f} points="35 315 40 310.01 39.99 310 30 310"/>
-        <polygon fill={h} points="40 330 50 330 45 325"/>
-        <polygon fill={i} points="40 320 40 330 45 325"/>
-        <polygon fill={g} points="50 330 50 320.01 45 325"/>
-        <polygon fill={d} points="45 325 50 320.01 49.99 320 40 320"/>
-        <polygon fill={b} points="69.95 300.05 69.95 300.05 69.94 300.04 69.95 300.05 80 290 50 290 65 305"/>
-        <polygon fill={c} points="60 310 65 305 50 290 50 320 59.97 310.03"/>
-        <polygon fill={b} points="70.05 319.94 70.05 319.95 70.06 319.95 70.05 319.95 60 329.99 90 329.99 75 314.99"/>
-        <polygon fill={c} points="80 309.99 75 314.99 90 329.99 90 299.99 80.03 309.97"/>
-        <polygon fill={d} points="54.99 315.01 50 320 59.99 320"/>
-        <polygon fill={i} points="60 320 60 310 59.97 310.03 54.99 315.01 59.99 320"/>
-        <rect fill={i} x="60" y="329.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="75 295 70 300 80 300"/>
-        <polygon fill={f} points="65 305 60 310 69.99 310"/>
-        <rect fill={i} x="69.99" y="329.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="70 310 70 300 69.95 300.05 69.95 300.05 65 305 65 305 69.99 310"/>
-        <polygon fill={i} points="80 290 75 295 80 300"/>
-        <polygon fill={f} points="70 310.01 74.99 315 75 314.99 79.99 310 70 310"/>
-        <polygon fill={g} points="70 319.99 70.05 319.95 70.05 319.94 74.99 315 70 310.01"/>
-        <polygon fill={i} points="80 309.99 80.03 309.97 85 305 80 300"/>
-        <polygon fill={e} points="85 305 89.99 300 80 300"/>
-        <polygon fill={i} points="60 329.99 64.99 325 60 320.01"/>
-        <polygon fill={d} points="60 320.01 64.99 325 69.99 320 60 320"/>
-        <polygon fill={e} points="80 290 80 300 85 295"/>
-        <polygon fill={g} points="90 290 80 290 85 295"/>
-        <polygon fill={i} points="80 300 89.99 300 85 295"/>
-        <polygon fill={h} points="85 295 89.99 300 90 299.99 90 290"/>
-        <polygon fill={f} points="70 300 70 310 75 305"/>
-        <polygon fill={i} points="80 300 70 300 75 305"/>
-        <polygon fill={g} points="70 310 79.99 310 75 305"/>
-        <polygon fill={e} points="75 305 79.99 310 80 309.99 80 300"/>
-        <polygon fill={d} points="60 310 60 320 65 315"/>
-        <polygon fill={g} points="70 310 60 310 65 315"/>
-        <polygon fill={i} points="60 320 69.99 320 65 315"/>
-        <polygon fill={f} points="65 315 69.99 320 70 319.99 70 310"/>
-        <polygon fill={h} points="50 320 50 330 55 325"/>
-        <polygon fill={i} points="60 320 50 320 55 325"/>
-        <polygon fill={g} points="50 330 59.99 330 55 325"/>
-        <polygon fill={d} points="55 325 59.99 330 60 329.99 60 320"/>
-        <polygon fill={b} points="100.05 310.05 100.05 310.05 100.04 310.06 100.05 310.05 90 300 90 330 105 315"/>
-        <polygon fill={c} points="110 320 105 315 90 330 120 330 110.03 320.03"/>
-        <polygon fill={b} points="119.94 309.95 119.95 309.95 119.95 309.94 119.95 309.95 129.99 320 129.99 290 114.99 305"/>
-        <polygon fill={c} points="109.99 300 114.99 305 129.99 290 99.99 290 109.97 299.97"/>
-        <polygon fill={d} points="115.01 325.01 120 330 120 320.01"/>
-        <polygon fill={i} points="120 320 110 320 110.03 320.03 115.01 325.01 120 320.01"/>
-        <rect fill={i} x="129.99" y="310.01" width=".01" height="9.99"/>
-        <polygon fill={e} points="95 305 100 310 100 300"/>
-        <polygon fill={f} points="105 315 110 320 110 310.01"/>
-        <rect fill={i} x="129.99" y="290" width=".01" height="20.01"/>
-        <polygon fill={g} points="110 310 100 310 100.05 310.05 100.05 310.05 105 315 105 315 110 310.01"/>
-        <polygon fill={i} points="90 300 95 305 100 300"/>
-        <polygon fill={f} points="110.01 310 115 305.01 114.99 305 110 300.01 110 310"/>
-        <polygon fill={g} points="119.99 310 119.95 309.95 119.94 309.95 115 305.01 110.01 310"/>
-        <polygon fill={i} points="109.99 300 109.97 299.97 105 295 100 300"/>
-        <polygon fill={e} points="105 295 100 290.01 100 300"/>
-        <polygon fill={i} points="129.99 320 125 315.01 120.01 320"/>
-        <polygon fill={d} points="120.01 320 125 315.01 120 310.01 120 320"/>
-        <polygon fill={e} points="90 300 100 300 95 295"/>
-        <polygon fill={g} points="90 290 90 300 95 295"/>
-        <polygon fill={i} points="100 300 100 290.01 95 295"/>
-        <polygon fill={h} points="95 295 100 290.01 99.99 290 90 290"/>
-        <polygon fill={f} points="100 310 110 310 105 305"/>
-        <polygon fill={i} points="100 300 100 310 105 305"/>
-        <polygon fill={g} points="110 310 110 300.01 105 305"/>
-        <polygon fill={e} points="105 305 110 300.01 109.99 300 100 300"/>
-        <polygon fill={d} points="110 320 120 320 115 315"/>
-        <polygon fill={g} points="110 310 110 320 115 315"/>
-        <polygon fill={i} points="120 320 120 310.01 115 315"/>
-        <polygon fill={f} points="115 315 120 310.01 119.99 310 110 310"/>
-        <polygon fill={h} points="120 330 130 330 125 325"/>
-        <polygon fill={i} points="120 320 120 330 125 325"/>
-        <polygon fill={g} points="130 330 130 320.01 125 325"/>
-        <polygon fill={d} points="125 325 130 320.01 129.99 320 120 320"/>
-        <polygon fill={b} points="149.95 300.05 149.95 300.05 149.94 300.04 149.95 300.05 160 290 130 290 145 305"/>
-        <polygon fill={c} points="140 310 145 305 130 290 130 320 139.97 310.03"/>
-        <polygon fill={b} points="150.05 319.94 150.05 319.95 150.06 319.95 150.05 319.95 140 329.99 170 329.99 155 314.99"/>
-        <polygon fill={c} points="160 309.99 155 314.99 170 329.99 170 299.99 160.03 309.97"/>
-        <polygon fill={d} points="134.99 315.01 130 320 139.99 320"/>
-        <polygon fill={i} points="140 320 140 310 139.97 310.03 134.99 315.01 139.99 320"/>
-        <rect fill={i} x="140" y="329.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="155 295 150 300 160 300"/>
-        <polygon fill={f} points="145 305 140 310 149.99 310"/>
-        <rect fill={i} x="149.99" y="329.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="150 310 150 300 149.95 300.05 149.95 300.05 145 305 145 305 149.99 310"/>
-        <polygon fill={i} points="160 290 155 295 160 300"/>
-        <polygon fill={f} points="150 310.01 154.99 315 155 314.99 159.99 310 150 310"/>
-        <polygon fill={g} points="150 319.99 150.05 319.95 150.05 319.94 154.99 315 150 310.01"/>
-        <polygon fill={i} points="160 309.99 160.03 309.97 165 305 160 300"/>
-        <polygon fill={e} points="165 305 169.99 300 160 300"/>
-        <polygon fill={i} points="140 329.99 144.99 325 140 320.01"/>
-        <polygon fill={d} points="140 320.01 144.99 325 149.99 320 140 320"/>
-        <polygon fill={e} points="160 290 160 300 165 295"/>
-        <polygon fill={g} points="170 290 160 290 165 295"/>
-        <polygon fill={i} points="160 300 169.99 300 165 295"/>
-        <polygon fill={h} points="165 295 169.99 300 170 299.99 170 290"/>
-        <polygon fill={f} points="150 300 150 310 155 305"/>
-        <polygon fill={i} points="160 300 150 300 155 305"/>
-        <polygon fill={g} points="150 310 159.99 310 155 305"/>
-        <polygon fill={e} points="155 305 159.99 310 160 309.99 160 300"/>
-        <polygon fill={d} points="140 310 140 320 145 315"/>
-        <polygon fill={g} points="150 310 140 310 145 315"/>
-        <polygon fill={i} points="140 320 149.99 320 145 315"/>
-        <polygon fill={f} points="145 315 149.99 320 150 319.99 150 310"/>
-        <polygon fill={h} points="130 320 130 330 135 325"/>
-        <polygon fill={i} points="140 320 130 320 135 325"/>
-        <polygon fill={g} points="130 330 139.99 330 135 325"/>
-        <polygon fill={d} points="135 325 139.99 330 140 329.99 140 320"/>
-        <polygon fill={b} points="199.95 309.95 199.95 309.95 199.96 309.94 199.95 309.95 210 320 210 290 195 305"/>
-        <polygon fill={c} points="190 300 195 305 210 290 180 290 189.97 299.97"/>
-        <polygon fill={b} points="180.06 310.05 180.05 310.05 180.04 310.06 180.05 310.05 170.01 300 170.01 330 185.01 315"/>
-        <polygon fill={c} points="190.01 320 185.01 315 170.01 330 200.01 330 190.03 320.03"/>
-        <polygon fill={d} points="184.99 294.99 180 290 180 299.99"/>
-        <polygon fill={i} points="180 300 190 300 189.97 299.97 184.99 294.99 180 299.99"/>
-        <rect fill={i} x="170" y="300" width=".01" height="9.99"/>
-        <polygon fill={e} points="205 315 200 310 200 320"/>
-        <polygon fill={f} points="195 305 190 300 190 309.99"/>
-        <rect fill={i} x="170" y="309.99" width=".01" height="20.01"/>
-        <polygon fill={g} points="190 310 200 310 199.95 309.95 199.95 309.95 195 305 195 305 190 309.99"/>
-        <polygon fill={i} points="210 320 205 315 200 320"/>
-        <polygon fill={f} points="189.99 310 185 314.99 185.01 315 190 319.99 190 310"/>
-        <polygon fill={g} points="180.01 310 180.05 310.05 180.06 310.05 185 314.99 189.99 310"/>
-        <polygon fill={i} points="190.01 320 190.03 320.03 195 325 200 320"/>
-        <polygon fill={e} points="195 325 200 329.99 200 320"/>
-        <polygon fill={i} points="170.01 300 175 304.99 179.99 300"/>
-        <polygon fill={d} points="179.99 300 175 304.99 180 309.99 180 300"/>
-        <polygon fill={e} points="210 320 200 320 205 325"/>
-        <polygon fill={g} points="210 330 210 320 205 325"/>
-        <polygon fill={i} points="200 320 200 329.99 205 325"/>
-        <polygon fill={h} points="205 325 200 329.99 200.01 330 210 330"/>
-        <polygon fill={f} points="200 310 190 310 195 315"/>
-        <polygon fill={i} points="200 320 200 310 195 315"/>
-        <polygon fill={g} points="190 310 190 319.99 195 315"/>
-        <polygon fill={e} points="195 315 190 319.99 190.01 320 200 320"/>
-        <polygon fill={d} points="190 300 180 300 185 305"/>
-        <polygon fill={g} points="190 310 190 300 185 305"/>
-        <polygon fill={i} points="180 300 180 309.99 185 305"/>
-        <polygon fill={f} points="185 305 180 309.99 180.01 310 190 310"/>
-        <polygon fill={h} points="180 290 170 290 175 295"/>
-        <polygon fill={i} points="180 300 180 290 175 295"/>
-        <polygon fill={g} points="170 290 170 299.99 175 295"/>
-        <polygon fill={d} points="175 295 170 299.99 170.01 300 180 300"/>
-        <polygon fill={b} points="229.95 300.05 229.95 300.05 229.94 300.04 229.95 300.05 240 290 210 290 225 305"/>
-        <polygon fill={c} points="220 310 225 305 210 290 210 320 219.97 310.03"/>
-        <polygon fill={b} points="230.05 319.94 230.05 319.95 230.06 319.95 230.05 319.95 220 329.99 250 329.99 235 314.99"/>
-        <polygon fill={c} points="240 309.99 235 314.99 250 329.99 250 299.99 240.03 309.97"/>
-        <polygon fill={d} points="214.99 315.01 210 320 219.99 320"/>
-        <polygon fill={i} points="220 320 220 310 219.97 310.03 214.99 315.01 219.99 320"/>
-        <rect fill={i} x="220" y="329.99" width="9.99" height=".01"/>
-        <polygon fill={e} points="235 295 230 300 240 300"/>
-        <polygon fill={f} points="225 305 220 310 229.99 310"/>
-        <rect fill={i} x="229.99" y="329.99" width="20.01" height=".01"/>
-        <polygon fill={g} points="230 310 230 300 229.95 300.05 229.95 300.05 225 305 225 305 229.99 310"/>
-        <polygon fill={i} points="240 290 235 295 240 300"/>
-        <polygon fill={f} points="230 310.01 234.99 315 235 314.99 239.99 310 230 310"/>
-        <polygon fill={g} points="230 319.99 230.05 319.95 230.05 319.94 234.99 315 230 310.01"/>
-        <polygon fill={i} points="240 309.99 240.03 309.97 245 305 240 300"/>
-        <polygon fill={e} points="245 305 249.99 300 240 300"/>
-        <polygon fill={i} points="220 329.99 224.99 325 220 320.01"/>
-        <polygon fill={d} points="220 320.01 224.99 325 229.99 320 220 320"/>
-        <polygon fill={e} points="240 290 240 300 245 295"/>
-        <polygon fill={g} points="250 290 240 290 245 295"/>
-        <polygon fill={i} points="240 300 249.99 300 245 295"/>
-        <polygon fill={h} points="245 295 249.99 300 250 299.99 250 290"/>
-        <polygon fill={f} points="230 300 230 310 235 305"/>
-        <polygon fill={i} points="240 300 230 300 235 305"/>
-        <polygon fill={g} points="230 310 239.99 310 235 305"/>
-        <polygon fill={e} points="235 305 239.99 310 240 309.99 240 300"/>
-        <polygon fill={d} points="220 310 220 320 225 315"/>
-        <polygon fill={g} points="230 310 220 310 225 315"/>
-        <polygon fill={i} points="220 320 229.99 320 225 315"/>
-        <polygon fill={f} points="225 315 229.99 320 230 319.99 230 310"/>
-        <polygon fill={h} points="210 320 210 330 215 325"/>
-        <polygon fill={i} points="220 320 210 320 215 325"/>
-        <polygon fill={g} points="210 330 219.99 330 215 325"/>
-        <polygon fill={d} points="215 325 219.99 330 220 329.99 220 320"/>
-        <polygon fill={h} points="44.99 5 39.99 10 49.99 10"/>
-        <polygon fill={g} points="49.99 0 44.99 5 49.99 10"/>
-        <polygon fill={h} points="49.99 0 49.99 10 54.99 5"/>
-        <polygon fill={g} points="49.99 10 59.99 10 54.99 5"/>
-        <polygon fill={h} points="125 5 120 10 130 10"/>
-        <polygon fill={g} points="130 0 125 5 130 10"/>
-        <polygon fill={h} points="130 0 130 10 135 5"/>
-        <polygon fill={g} points="130 10 139.99 10 135 5"/>
-        <polygon fill={h} points="205 5 200 10 210 10"/>
-        <polygon fill={g} points="210 0 205 5 210 10"/>
-        <polygon fill={h} points="210 0 210 10 215 5"/>
-        <polygon fill={g} points="210 10 220 10 215 5"/>
-        <polygon fill={g} points="44.99 335 39.99 330 49.99 330"/>
-        <polygon fill={h} points="49.99 340 44.99 335 49.99 330"/>
-        <polygon fill={g} points="49.99 340 49.99 330 54.99 335"/>
-        <polygon fill={h} points="49.99 330 59.99 330 54.99 335"/>
-        <polygon fill={g} points="125 335 120 330 130 330"/>
-        <polygon fill={h} points="130 340 125 335 130 330"/>
-        <polygon fill={g} points="130 340 130 330 135 335"/>
-        <polygon fill={h} points="130 330 139.99 330 135 335"/>
-        <polygon fill={g} points="205 335 200 330 210 330"/>
-        <polygon fill={h} points="210 340 205 335 210 330"/>
-        <polygon fill={g} points="210 340 210 330 215 335"/>
-        <polygon fill={h} points="210 330 220 330 215 335"/>
-        <polygon fill={g} points="5 45 10 40 10 50"/>
-        <polygon fill={h} points="0 50 5 45 10 50"/>
-        <polygon fill={g} points="0 50 10 50 5 55"/>
-        <polygon fill={h} points="10 50 10 59.99 5 55"/>
-        <polygon fill={g} points="5 125 10 120 10 130"/>
-        <polygon fill={h} points="0 130 5 125 10 130"/>
-        <polygon fill={g} points="0 130 10 130 5 135"/>
-        <polygon fill={h} points="10 130 10 140 5 135"/>
-        <polygon fill={g} points="5 205.01 10 200.01 10 210.01"/>
-        <polygon fill={h} points="0 210.01 5 205.01 10 210.01"/>
-        <polygon fill={g} points="0 210.01 10 210.01 5 215.01"/>
-        <polygon fill={h} points="10 210.01 10 220 5 215.01"/>
-        <polygon fill={g} points="5 285.01 10 280.01 10 290.01"/>
-        <polygon fill={h} points="0 290.01 5 285.01 10 290.01"/>
-        <polygon fill={g} points="0 290.01 10 290.01 5 295"/>
-        <polygon fill={h} points="10 290.01 10 300 5 295"/>
-        <polygon fill={h} points="255 45 250 40 250 50"/>
-        <polygon fill={g} points="260 50 255 45 250 50"/>
-        <polygon fill={h} points="260 50 250 50 255 55"/>
-        <polygon fill={g} points="250 50 250 59.99 255 55"/>
-        <polygon fill={h} points="255 125 250 120 250 130"/>
-        <polygon fill={g} points="260 130 255 125 250 130"/>
-        <polygon fill={h} points="260 130 250 130 255 135"/>
-        <polygon fill={g} points="250 130 250 140 255 135"/>
-        <polygon fill={h} points="255 205.01 250 200.01 250 210.01"/>
-        <polygon fill={g} points="260 210.01 255 205.01 250 210.01"/>
-        <polygon fill={h} points="260 210.01 250 210.01 255 215.01"/>
-        <polygon fill={g} points="250 210.01 250 220 255 215.01"/>
-        <polygon fill={h} points="255 285.01 250 280.01 250 290.01"/>
-        <polygon fill={g} points="260 290.01 255 285.01 250 290.01"/>
-        <polygon fill={h} points="260 290.01 250 290.01 255 295"/>
-        <polygon fill={g} points="250 290.01 250 300 255 295"/>
+  <rect fill={a} width="320" height="400"/>
+  <rect fill={b} x="25" y="25" width="270" height="350"/>
+  <rect fill={c} x="30" y="30" width="260" height="340"/>
+  <polygon fill={a} points="59.95 50.05 59.95 50.05 59.94 50.04 59.95 50.05 70 40 40 40 55 55 59.95 50.05"/>
+  <polygon fill={b} points="50 60 55 55 40 40 40 70 49.97 60.03 50 60"/>
+  <polygon fill={a} points="60.05 69.94 60.05 69.95 60.06 69.95 60.05 69.95 50 79.99 80 79.99 65 64.99 60.05 69.94"/>
+  <polygon fill={b} points="70 59.99 65 64.99 80 79.99 80 49.99 70.03 59.97 70 59.99"/>
+  <polygon fill={d} points="44.99 65.01 40 70 49.99 70 44.99 65.01"/>
+  <polygon fill={c} points="50 70 50 60 49.97 60.03 44.99 65.01 49.99 70 50 70"/>
+  <rect fill={c} x="50" y="79.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="65 45 60 50 70 50 65 45"/>
+  <polygon fill={f} points="55 55 50 60 59.99 60 55 55"/>
+  <rect fill={c} x="59.99" y="79.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="60 60 60 50 59.95 50.05 59.95 50.05 55 55 55 55 59.99 60 60 60"/>
+  <polygon fill={c} points="70 40 65 45 70 50 70 40"/>
+  <polygon fill={f} points="60 60.01 64.99 65 65 64.99 69.99 60 60 60 60 60.01"/>
+  <polygon fill={g} points="60 69.99 60.05 69.95 60.05 69.94 64.99 65 60 60.01 60 69.99"/>
+  <polygon fill={c} points="70 59.99 70.03 59.97 75 55 70 50 70 59.99"/>
+  <polygon fill={e} points="75 55 79.99 50 70 50 75 55"/>
+  <polygon fill={c} points="50 79.99 54.99 75 50 70.01 50 79.99"/>
+  <polygon fill={d} points="50 70.01 54.99 75 59.99 70 50 70 50 70.01"/>
+  <polygon fill={e} points="70 40 70 50 75 45 70 40"/>
+  <polygon fill={g} points="80 40 70 40 75 45 80 40"/>
+  <polygon fill={c} points="70 50 79.99 50 75 45 70 50"/>
+  <polygon fill={h} points="75 45 79.99 50 80 49.99 80 40 75 45"/>
+  <polygon fill={f} points="60 50 60 60 65 55 60 50"/>
+  <polygon fill={c} points="70 50 60 50 65 55 70 50"/>
+  <polygon fill={g} points="60 60 69.99 60 65 55 60 60"/>
+  <polygon fill={e} points="65 55 69.99 60 70 59.99 70 50 65 55"/>
+  <polygon fill={d} points="50 60 50 70 55 65 50 60"/>
+  <polygon fill={g} points="60 60 50 60 55 65 60 60"/>
+  <polygon fill={c} points="50 70 59.99 70 55 65 50 70"/>
+  <polygon fill={f} points="55 65 59.99 70 60 69.99 60 60 55 65"/>
+  <polygon fill={h} points="40 70 40 80 45 75 40 70"/>
+  <polygon fill={c} points="50 70 40 70 45 75 50 70"/>
+  <polygon fill={g} points="40 80 49.99 80 45 75 40 80"/>
+  <polygon fill={d} points="45 75 49.99 80 50 79.99 50 70 45 75"/>
+  <polygon fill={a} points="90.05 60.05 90.05 60.05 90.04 60.06 90.05 60.05 80 50 80 80 95 65 90.05 60.05"/>
+  <polygon fill={b} points="100 70 95 65 80 80 110 80 100.03 70.03 100 70"/>
+  <polygon fill={a} points="109.94 59.95 109.95 59.95 109.95 59.94 109.95 59.95 119.99 70 119.99 40 104.99 55 109.94 59.95"/>
+  <polygon fill={b} points="99.99 50 104.99 55 119.99 40 89.99 40 99.97 49.97 99.99 50"/>
+  <polygon fill={d} points="105.01 75.01 110 80 110 70.01 105.01 75.01"/>
+  <polygon fill={c} points="110 70 100 70 100.03 70.03 105.01 75.01 110 70.01 110 70"/>
+  <rect fill={c} x="119.99" y="60.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="85 55 90 60 90 50 85 55"/>
+  <polygon fill={f} points="95 65 100 70 100 60.01 95 65"/>
+  <rect fill={c} x="119.99" y="40" width="0.01" height="20.01"/>
+  <polygon fill={g} points="100 60 90 60 90.05 60.05 90.05 60.05 95 65 95 65 100 60.01 100 60"/>
+  <polygon fill={c} points="80 50 85 55 90 50 80 50"/>
+  <polygon fill={f} points="100.01 60 105 55.01 104.99 55 100 50.01 100 60 100.01 60"/>
+  <polygon fill={g} points="109.99 60 109.95 59.95 109.94 59.95 105 55.01 100.01 60 109.99 60"/>
+  <polygon fill={c} points="99.99 50 99.97 49.97 95 45 90 50 99.99 50"/>
+  <polygon fill={e} points="95 45 90 40.01 90 50 95 45"/>
+  <polygon fill={c} points="119.99 70 115 65.01 110.01 70 119.99 70"/>
+  <polygon fill={d} points="110.01 70 115 65.01 110 60.01 110 70 110.01 70"/>
+  <polygon fill={e} points="80 50 90 50 85 45 80 50"/>
+  <polygon fill={g} points="80 40 80 50 85 45 80 40"/>
+  <polygon fill={c} points="90 50 90 40.01 85 45 90 50"/>
+  <polygon fill={h} points="85 45 90 40.01 89.99 40 80 40 85 45"/>
+  <polygon fill={f} points="90 60 100 60 95 55 90 60"/>
+  <polygon fill={c} points="90 50 90 60 95 55 90 50"/>
+  <polygon fill={g} points="100 60 100 50.01 95 55 100 60"/>
+  <polygon fill={e} points="95 55 100 50.01 99.99 50 90 50 95 55"/>
+  <polygon fill={d} points="100 70 110 70 105 65 100 70"/>
+  <polygon fill={g} points="100 60 100 70 105 65 100 60"/>
+  <polygon fill={c} points="110 70 110 60.01 105 65 110 70"/>
+  <polygon fill={f} points="105 65 110 60.01 109.99 60 100 60 105 65"/>
+  <polygon fill={h} points="110 80 120 80 115 75 110 80"/>
+  <polygon fill={c} points="110 70 110 80 115 75 110 70"/>
+  <polygon fill={g} points="120 80 120 70.01 115 75 120 80"/>
+  <polygon fill={d} points="115 75 120 70.01 119.99 70 110 70 115 75"/>
+  <polygon fill={a} points="139.95 50.05 139.95 50.05 139.94 50.04 139.95 50.05 150 40 120 40 135 55 139.95 50.05"/>
+  <polygon fill={b} points="130 60 135 55 120 40 120 70 129.97 60.03 130 60"/>
+  <polygon fill={a} points="140.05 69.94 140.05 69.95 140.06 69.95 140.05 69.95 130 79.99 160 79.99 145 64.99 140.05 69.94"/>
+  <polygon fill={b} points="150 59.99 145 64.99 160 79.99 160 49.99 150.03 59.97 150 59.99"/>
+  <polygon fill={d} points="124.99 65.01 120 70 129.99 70 124.99 65.01"/>
+  <polygon fill={c} points="130 70 130 60 129.97 60.03 124.99 65.01 129.99 70 130 70"/>
+  <rect fill={c} x="130" y="79.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="145 45 140 50 150 50 145 45"/>
+  <polygon fill={f} points="135 55 130 60 139.99 60 135 55"/>
+  <rect fill={c} x="139.99" y="79.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="140 60 140 50 139.95 50.05 139.95 50.05 135 55 135 55 139.99 60 140 60"/>
+  <polygon fill={c} points="150 40 145 45 150 50 150 40"/>
+  <polygon fill={f} points="140 60.01 144.99 65 145 64.99 149.99 60 140 60 140 60.01"/>
+  <polygon fill={g} points="140 69.99 140.05 69.95 140.05 69.94 144.99 65 140 60.01 140 69.99"/>
+  <polygon fill={c} points="150 59.99 150.03 59.97 155 55 150 50 150 59.99"/>
+  <polygon fill={e} points="155 55 159.99 50 150 50 155 55"/>
+  <polygon fill={c} points="130 79.99 134.99 75 130 70.01 130 79.99"/>
+  <polygon fill={d} points="130 70.01 134.99 75 139.99 70 130 70 130 70.01"/>
+  <polygon fill={e} points="150 40 150 50 155 45 150 40"/>
+  <polygon fill={g} points="160 40 150 40 155 45 160 40"/>
+  <polygon fill={c} points="150 50 159.99 50 155 45 150 50"/>
+  <polygon fill={h} points="155 45 159.99 50 160 49.99 160 40 155 45"/>
+  <polygon fill={f} points="140 50 140 60 145 55 140 50"/>
+  <polygon fill={c} points="150 50 140 50 145 55 150 50"/>
+  <polygon fill={g} points="140 60 149.99 60 145 55 140 60"/>
+  <polygon fill={e} points="145 55 149.99 60 150 59.99 150 50 145 55"/>
+  <polygon fill={d} points="130 60 130 70 135 65 130 60"/>
+  <polygon fill={g} points="140 60 130 60 135 65 140 60"/>
+  <polygon fill={c} points="130 70 139.99 70 135 65 130 70"/>
+  <polygon fill={f} points="135 65 139.99 70 140 69.99 140 60 135 65"/>
+  <polygon fill={h} points="120 70 120 80 125 75 120 70"/>
+  <polygon fill={c} points="130 70 120 70 125 75 130 70"/>
+  <polygon fill={g} points="120 80 129.99 80 125 75 120 80"/>
+  <polygon fill={d} points="125 75 129.99 80 130 79.99 130 70 125 75"/>
+  <polygon fill={a} points="189.95 59.95 189.95 59.95 189.96 59.94 189.95 59.95 200 70 200 40 185 55 189.95 59.95"/>
+  <polygon fill={b} points="180 50 185 55 200 40 170 40 179.97 49.97 180 50"/>
+  <polygon fill={a} points="170.06 60.05 170.05 60.05 170.04 60.06 170.05 60.05 160.01 50 160.01 80 175.01 65 170.06 60.05"/>
+  <polygon fill={b} points="180.01 70 175.01 65 160.01 80 190.01 80 180.03 70.03 180.01 70"/>
+  <polygon fill={d} points="174.99 44.99 170 40 170 49.99 174.99 44.99"/>
+  <polygon fill={c} points="170 50 180 50 179.97 49.97 174.99 44.99 170 49.99 170 50"/>
+  <rect fill={c} x="160" y="50" width="0.01" height="9.99"/>
+  <polygon fill={e} points="195 65 190 60 190 70 195 65"/>
+  <polygon fill={f} points="185 55 180 50 180 59.99 185 55"/>
+  <rect fill={c} x="160" y="59.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="180 60 190 60 189.95 59.95 189.95 59.95 185 55 185 55 180 59.99 180 60"/>
+  <polygon fill={c} points="200 70 195 65 190 70 200 70"/>
+  <polygon fill={f} points="179.99 60 175 64.99 175.01 65 180 69.99 180 60 179.99 60"/>
+  <polygon fill={g} points="170.01 60 170.05 60.05 170.06 60.05 175 64.99 179.99 60 170.01 60"/>
+  <polygon fill={c} points="180.01 70 180.03 70.03 185 75 190 70 180.01 70"/>
+  <polygon fill={e} points="185 75 190 79.99 190 70 185 75"/>
+  <polygon fill={c} points="160.01 50 165 54.99 169.99 50 160.01 50"/>
+  <polygon fill={d} points="169.99 50 165 54.99 170 59.99 170 50 169.99 50"/>
+  <polygon fill={e} points="200 70 190 70 195 75 200 70"/>
+  <polygon fill={g} points="200 80 200 70 195 75 200 80"/>
+  <polygon fill={c} points="190 70 190 79.99 195 75 190 70"/>
+  <polygon fill={h} points="195 75 190 79.99 190.01 80 200 80 195 75"/>
+  <polygon fill={f} points="190 60 180 60 185 65 190 60"/>
+  <polygon fill={c} points="190 70 190 60 185 65 190 70"/>
+  <polygon fill={g} points="180 60 180 69.99 185 65 180 60"/>
+  <polygon fill={e} points="185 65 180 69.99 180.01 70 190 70 185 65"/>
+  <polygon fill={d} points="180 50 170 50 175 55 180 50"/>
+  <polygon fill={g} points="180 60 180 50 175 55 180 60"/>
+  <polygon fill={c} points="170 50 170 59.99 175 55 170 50"/>
+  <polygon fill={f} points="175 55 170 59.99 170.01 60 180 60 175 55"/>
+  <polygon fill={h} points="170 40 160 40 165 45 170 40"/>
+  <polygon fill={c} points="170 50 170 40 165 45 170 50"/>
+  <polygon fill={g} points="160 40 160 49.99 165 45 160 40"/>
+  <polygon fill={d} points="165 45 160 49.99 160.01 50 170 50 165 45"/>
+  <polygon fill={a} points="219.95 50.05 219.95 50.05 219.94 50.04 219.95 50.05 230 40 200 40 215 55 219.95 50.05"/>
+  <polygon fill={b} points="210 60 215 55 200 40 200 70 209.97 60.03 210 60"/>
+  <polygon fill={a} points="220.05 69.94 220.05 69.95 220.06 69.95 220.05 69.95 210 79.99 240 79.99 225 64.99 220.05 69.94"/>
+  <polygon fill={b} points="230 59.99 225 64.99 240 79.99 240 49.99 230.03 59.97 230 59.99"/>
+  <polygon fill={d} points="204.99 65.01 200 70 209.99 70 204.99 65.01"/>
+  <polygon fill={c} points="210 70 210 60 209.97 60.03 204.99 65.01 209.99 70 210 70"/>
+  <rect fill={c} x="210" y="79.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="225 45 220 50 230 50 225 45"/>
+  <polygon fill={f} points="215 55 210 60 219.99 60 215 55"/>
+  <rect fill={c} x="219.99" y="79.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="220 60 220 50 219.95 50.05 219.95 50.05 215 55 215 55 219.99 60 220 60"/>
+  <polygon fill={c} points="230 40 225 45 230 50 230 40"/>
+  <polygon fill={f} points="220 60.01 224.99 65 225 64.99 229.99 60 220 60 220 60.01"/>
+  <polygon fill={g} points="220 69.99 220.05 69.95 220.05 69.94 224.99 65 220 60.01 220 69.99"/>
+  <polygon fill={c} points="230 59.99 230.03 59.97 235 55 230 50 230 59.99"/>
+  <polygon fill={e} points="235 55 239.99 50 230 50 235 55"/>
+  <polygon fill={c} points="210 79.99 214.99 75 210 70.01 210 79.99"/>
+  <polygon fill={d} points="210 70.01 214.99 75 219.99 70 210 70 210 70.01"/>
+  <polygon fill={e} points="230 40 230 50 235 45 230 40"/>
+  <polygon fill={g} points="240 40 230 40 235 45 240 40"/>
+  <polygon fill={c} points="230 50 239.99 50 235 45 230 50"/>
+  <polygon fill={h} points="235 45 239.99 50 240 49.99 240 40 235 45"/>
+  <polygon fill={f} points="220 50 220 60 225 55 220 50"/>
+  <polygon fill={c} points="230 50 220 50 225 55 230 50"/>
+  <polygon fill={g} points="220 60 229.99 60 225 55 220 60"/>
+  <polygon fill={e} points="225 55 229.99 60 230 59.99 230 50 225 55"/>
+  <polygon fill={d} points="210 60 210 70 215 65 210 60"/>
+  <polygon fill={g} points="220 60 210 60 215 65 220 60"/>
+  <polygon fill={c} points="210 70 219.99 70 215 65 210 70"/>
+  <polygon fill={f} points="215 65 219.99 70 220 69.99 220 60 215 65"/>
+  <polygon fill={h} points="200 70 200 80 205 75 200 70"/>
+  <polygon fill={c} points="210 70 200 70 205 75 210 70"/>
+  <polygon fill={g} points="200 80 209.99 80 205 75 200 80"/>
+  <polygon fill={d} points="205 75 209.99 80 210 79.99 210 70 205 75"/>
+  <polygon fill={a} points="250.05 60.05 250.05 60.05 250.04 60.06 250.05 60.05 240 50 240 80 255 65 250.05 60.05"/>
+  <polygon fill={b} points="260 70 255 65 240 80 270 80 260.03 70.03 260 70"/>
+  <polygon fill={a} points="269.94 59.95 269.95 59.95 269.95 59.94 269.95 59.95 279.99 70 279.99 40 264.99 55 269.94 59.95"/>
+  <polygon fill={b} points="259.99 50 264.99 55 279.99 40 249.99 40 259.97 49.97 259.99 50"/>
+  <polygon fill={d} points="265.01 75.01 270 80 270 70.01 265.01 75.01"/>
+  <polygon fill={c} points="270 70 260 70 260.03 70.03 265.01 75.01 270 70.01 270 70"/>
+  <rect fill={c} x="279.99" y="60.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="245 55 250 60 250 50 245 55"/>
+  <polygon fill={f} points="255 65 260 70 260 60.01 255 65"/>
+  <rect fill={c} x="279.99" y="40" width="0.01" height="20.01"/>
+  <polygon fill={g} points="260 60 250 60 250.05 60.05 250.05 60.05 255 65 255 65 260 60.01 260 60"/>
+  <polygon fill={c} points="240 50 245 55 250 50 240 50"/>
+  <polygon fill={f} points="260.01 60 265 55.01 264.99 55 260 50.01 260 60 260.01 60"/>
+  <polygon fill={g} points="269.99 60 269.95 59.95 269.94 59.95 265 55.01 260.01 60 269.99 60"/>
+  <polygon fill={c} points="259.99 50 259.97 49.97 255 45 250 50 259.99 50"/>
+  <polygon fill={e} points="255 45 250 40.01 250 50 255 45"/>
+  <polygon fill={c} points="279.99 70 275 65.01 270.01 70 279.99 70"/>
+  <polygon fill={d} points="270.01 70 275 65.01 270 60.01 270 70 270.01 70"/>
+  <polygon fill={e} points="240 50 250 50 245 45 240 50"/>
+  <polygon fill={g} points="240 40 240 50 245 45 240 40"/>
+  <polygon fill={c} points="250 50 250 40.01 245 45 250 50"/>
+  <polygon fill={h} points="245 45 250 40.01 249.99 40 240 40 245 45"/>
+  <polygon fill={f} points="250 60 260 60 255 55 250 60"/>
+  <polygon fill={c} points="250 50 250 60 255 55 250 50"/>
+  <polygon fill={g} points="260 60 260 50.01 255 55 260 60"/>
+  <polygon fill={e} points="255 55 260 50.01 259.99 50 250 50 255 55"/>
+  <polygon fill={d} points="260 70 270 70 265 65 260 70"/>
+  <polygon fill={g} points="260 60 260 70 265 65 260 60"/>
+  <polygon fill={c} points="270 70 270 60.01 265 65 270 70"/>
+  <polygon fill={f} points="265 65 270 60.01 269.99 60 260 60 265 65"/>
+  <polygon fill={h} points="270 80 280 80 275 75 270 80"/>
+  <polygon fill={c} points="270 70 270 80 275 75 270 70"/>
+  <polygon fill={g} points="280 80 280 70.01 275 75 280 80"/>
+  <polygon fill={d} points="275 75 280 70.01 279.99 70 270 70 275 75"/>
+  <polygon fill={a} points="50.05 100.05 50.05 100.05 50.04 100.06 50.05 100.05 40 90 40 120 55 105 50.05 100.05"/>
+  <polygon fill={b} points="60 110 55 105 40 120 70 120 60.03 110.03 60 110"/>
+  <polygon fill={a} points="69.94 99.95 69.95 99.95 69.95 99.94 69.95 99.95 79.99 110 79.99 80 64.99 95 69.94 99.95"/>
+  <polygon fill={b} points="59.99 90 64.99 95 79.99 80 49.99 80 59.97 89.97 59.99 90"/>
+  <polygon fill={d} points="65.01 115.01 70 120 70 110.01 65.01 115.01"/>
+  <polygon fill={c} points="70 110 60 110 60.03 110.03 65.01 115.01 70 110.01 70 110"/>
+  <rect fill={c} x="79.99" y="100.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="45 95 50 100 50 90 45 95"/>
+  <polygon fill={f} points="55 105 60 110 60 100.01 55 105"/>
+  <rect fill={c} x="79.99" y="80" width="0.01" height="20.01"/>
+  <polygon fill={g} points="60 100 50 100 50.05 100.05 50.05 100.05 55 105 55 105 60 100.01 60 100"/>
+  <polygon fill={c} points="40 90 45 95 50 90 40 90"/>
+  <polygon fill={f} points="60.01 100 65 95.01 64.99 95 60 90.01 60 100 60.01 100"/>
+  <polygon fill={g} points="69.99 100 69.95 99.95 69.94 99.95 65 95.01 60.01 100 69.99 100"/>
+  <polygon fill={c} points="59.99 90 59.97 89.97 55 85 50 90 59.99 90"/>
+  <polygon fill={e} points="55 85 50 80.01 50 90 55 85"/>
+  <polygon fill={c} points="79.99 110 75 105.01 70.01 110 79.99 110"/>
+  <polygon fill={d} points="70.01 110 75 105.01 70 100.01 70 110 70.01 110"/>
+  <polygon fill={e} points="40 90 50 90 45 85 40 90"/>
+  <polygon fill={g} points="40 80 40 90 45 85 40 80"/>
+  <polygon fill={c} points="50 90 50 80.01 45 85 50 90"/>
+  <polygon fill={h} points="45 85 50 80.01 49.99 80 40 80 45 85"/>
+  <polygon fill={f} points="50 100 60 100 55 95 50 100"/>
+  <polygon fill={c} points="50 90 50 100 55 95 50 90"/>
+  <polygon fill={g} points="60 100 60 90.01 55 95 60 100"/>
+  <polygon fill={e} points="55 95 60 90.01 59.99 90 50 90 55 95"/>
+  <polygon fill={d} points="60 110 70 110 65 105 60 110"/>
+  <polygon fill={g} points="60 100 60 110 65 105 60 100"/>
+  <polygon fill={c} points="70 110 70 100.01 65 105 70 110"/>
+  <polygon fill={f} points="65 105 70 100.01 69.99 100 60 100 65 105"/>
+  <polygon fill={h} points="70 120 80 120 75 115 70 120"/>
+  <polygon fill={c} points="70 110 70 120 75 115 70 110"/>
+  <polygon fill={g} points="80 120 80 110.01 75 115 80 120"/>
+  <polygon fill={d} points="75 115 80 110.01 79.99 110 70 110 75 115"/>
+  <polygon fill={a} points="99.95 90.05 99.95 90.05 99.94 90.04 99.95 90.05 110 80 80 80 95 95 99.95 90.05"/>
+  <polygon fill={b} points="90 100 95 95 80 80 80 110 89.97 100.03 90 100"/>
+  <polygon fill={a} points="100.05 109.94 100.05 109.95 100.06 109.95 100.05 109.95 90 119.99 120 119.99 105 104.99 100.05 109.94"/>
+  <polygon fill={b} points="110 99.99 105 104.99 120 119.99 120 89.99 110.03 99.97 110 99.99"/>
+  <polygon fill={d} points="84.99 105.01 80 110 89.99 110 84.99 105.01"/>
+  <polygon fill={c} points="90 110 90 100 89.97 100.03 84.99 105.01 89.99 110 90 110"/>
+  <rect fill={c} x="90" y="119.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="105 85 100 90 110 90 105 85"/>
+  <polygon fill={f} points="95 95 90 100 99.99 100 95 95"/>
+  <rect fill={c} x="99.99" y="119.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="100 100 100 90 99.95 90.05 99.95 90.05 95 95 95 95 99.99 100 100 100"/>
+  <polygon fill={c} points="110 80 105 85 110 90 110 80"/>
+  <polygon fill={f} points="100 100.01 104.99 105 105 104.99 109.99 100 100 100 100 100.01"/>
+  <polygon fill={g} points="100 109.99 100.05 109.95 100.05 109.94 104.99 105 100 100.01 100 109.99"/>
+  <polygon fill={c} points="110 99.99 110.03 99.97 115 95 110 90 110 99.99"/>
+  <polygon fill={e} points="115 95 119.99 90 110 90 115 95"/>
+  <polygon fill={c} points="90 119.99 94.99 115 90 110.01 90 119.99"/>
+  <polygon fill={d} points="90 110.01 94.99 115 99.99 110 90 110 90 110.01"/>
+  <polygon fill={e} points="110 80 110 90 115 85 110 80"/>
+  <polygon fill={g} points="120 80 110 80 115 85 120 80"/>
+  <polygon fill={c} points="110 90 119.99 90 115 85 110 90"/>
+  <polygon fill={h} points="115 85 119.99 90 120 89.99 120 80 115 85"/>
+  <polygon fill={f} points="100 90 100 100 105 95 100 90"/>
+  <polygon fill={c} points="110 90 100 90 105 95 110 90"/>
+  <polygon fill={g} points="100 100 109.99 100 105 95 100 100"/>
+  <polygon fill={e} points="105 95 109.99 100 110 99.99 110 90 105 95"/>
+  <polygon fill={d} points="90 100 90 110 95 105 90 100"/>
+  <polygon fill={g} points="100 100 90 100 95 105 100 100"/>
+  <polygon fill={c} points="90 110 99.99 110 95 105 90 110"/>
+  <polygon fill={f} points="95 105 99.99 110 100 109.99 100 100 95 105"/>
+  <polygon fill={h} points="80 110 80 120 85 115 80 110"/>
+  <polygon fill={c} points="90 110 80 110 85 115 90 110"/>
+  <polygon fill={g} points="80 120 89.99 120 85 115 80 120"/>
+  <polygon fill={d} points="85 115 89.99 120 90 119.99 90 110 85 115"/>
+  <polygon fill={a} points="130.05 100.05 130.05 100.05 130.04 100.06 130.05 100.05 120 90 120 120 135 105 130.05 100.05"/>
+  <polygon fill={b} points="140 110 135 105 120 120 150 120 140.03 110.03 140 110"/>
+  <polygon fill={a} points="149.94 99.95 149.95 99.95 149.96 99.94 149.95 99.95 159.99 110 159.99 80 144.99 95 149.94 99.95"/>
+  <polygon fill={b} points="139.99 90 144.99 95 159.99 80 129.99 80 139.97 89.97 139.99 90"/>
+  <polygon fill={d} points="145.01 115.01 150 120 150 110.01 145.01 115.01"/>
+  <polygon fill={c} points="150 110 140 110 140.03 110.03 145.01 115.01 150 110.01 150 110"/>
+  <rect fill={c} x="159.99" y="100.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="125 95 130 100 130 90 125 95"/>
+  <polygon fill={f} points="135 105 140 110 140 100.01 135 105"/>
+  <rect fill={c} x="159.99" y="80" width="0.01" height="20.01"/>
+  <polygon fill={g} points="140 100 130 100 130.05 100.05 130.05 100.05 135 105 135 105 140 100.01 140 100"/>
+  <polygon fill={c} points="120 90 125 95 130 90 120 90"/>
+  <polygon fill={f} points="140.01 100 145 95.01 144.99 95 140 90.01 140 100 140.01 100"/>
+  <polygon fill={g} points="149.99 100 149.95 99.95 149.94 99.95 145 95.01 140.01 100 149.99 100"/>
+  <polygon fill={c} points="139.99 90 139.97 89.97 135 85 130 90 139.99 90"/>
+  <polygon fill={e} points="135 85 130 80.01 130 90 135 85"/>
+  <polygon fill={c} points="159.99 110 155 105.01 150.01 110 159.99 110"/>
+  <polygon fill={d} points="150.01 110 155 105.01 150 100.01 150 110 150.01 110"/>
+  <polygon fill={e} points="120 90 130 90 125 85 120 90"/>
+  <polygon fill={g} points="120 80 120 90 125 85 120 80"/>
+  <polygon fill={c} points="130 90 130 80.01 125 85 130 90"/>
+  <polygon fill={h} points="125 85 130 80.01 129.99 80 120 80 125 85"/>
+  <polygon fill={f} points="130 100 140 100 135 95 130 100"/>
+  <polygon fill={c} points="130 90 130 100 135 95 130 90"/>
+  <polygon fill={g} points="140 100 140 90.01 135 95 140 100"/>
+  <polygon fill={e} points="135 95 140 90.01 139.99 90 130 90 135 95"/>
+  <polygon fill={d} points="140 110 150 110 145 105 140 110"/>
+  <polygon fill={g} points="140 100 140 110 145 105 140 100"/>
+  <polygon fill={c} points="150 110 150 100.01 145 105 150 110"/>
+  <polygon fill={f} points="145 105 150 100.01 149.99 100 140 100 145 105"/>
+  <polygon fill={h} points="150 120 160 120 155 115 150 120"/>
+  <polygon fill={c} points="150 110 150 120 155 115 150 110"/>
+  <polygon fill={g} points="160 120 160 110.01 155 115 160 120"/>
+  <polygon fill={d} points="155 115 160 110.01 159.99 110 150 110 155 115"/>
+  <polygon fill={a} points="179.95 90.05 179.95 90.05 179.94 90.04 179.95 90.05 190 80 160 80 175 95 179.95 90.05"/>
+  <polygon fill={b} points="170 100 175 95 160 80 160 110 169.97 100.03 170 100"/>
+  <polygon fill={a} points="180.05 109.94 180.05 109.95 180.06 109.95 180.05 109.95 170 119.99 200 119.99 185 104.99 180.05 109.94"/>
+  <polygon fill={b} points="190 99.99 185 104.99 200 119.99 200 89.99 190.03 99.97 190 99.99"/>
+  <polygon fill={d} points="164.99 105.01 160 110 169.99 110 164.99 105.01"/>
+  <polygon fill={c} points="170 110 170 100 169.97 100.03 164.99 105.01 169.99 110 170 110"/>
+  <rect fill={c} x="170" y="119.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="185 85 180 90 190 90 185 85"/>
+  <polygon fill={f} points="175 95 170 100 179.99 100 175 95"/>
+  <rect fill={c} x="179.99" y="119.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="180 100 180 90 179.95 90.05 179.95 90.05 175 95 175 95 179.99 100 180 100"/>
+  <polygon fill={c} points="190 80 185 85 190 90 190 80"/>
+  <polygon fill={f} points="180 100.01 184.99 105 185 104.99 189.99 100 180 100 180 100.01"/>
+  <polygon fill={g} points="180 109.99 180.05 109.95 180.05 109.94 184.99 105 180 100.01 180 109.99"/>
+  <polygon fill={c} points="190 99.99 190.03 99.97 195 95 190 90 190 99.99"/>
+  <polygon fill={e} points="195 95 199.99 90 190 90 195 95"/>
+  <polygon fill={c} points="170 119.99 174.99 115 170 110.01 170 119.99"/>
+  <polygon fill={d} points="170 110.01 174.99 115 179.99 110 170 110 170 110.01"/>
+  <polygon fill={e} points="190 80 190 90 195 85 190 80"/>
+  <polygon fill={g} points="200 80 190 80 195 85 200 80"/>
+  <polygon fill={c} points="190 90 199.99 90 195 85 190 90"/>
+  <polygon fill={h} points="195 85 199.99 90 200 89.99 200 80 195 85"/>
+  <polygon fill={f} points="180 90 180 100 185 95 180 90"/>
+  <polygon fill={c} points="190 90 180 90 185 95 190 90"/>
+  <polygon fill={g} points="180 100 189.99 100 185 95 180 100"/>
+  <polygon fill={e} points="185 95 189.99 100 190 99.99 190 90 185 95"/>
+  <polygon fill={d} points="170 100 170 110 175 105 170 100"/>
+  <polygon fill={g} points="180 100 170 100 175 105 180 100"/>
+  <polygon fill={c} points="170 110 179.99 110 175 105 170 110"/>
+  <polygon fill={f} points="175 105 179.99 110 180 109.99 180 100 175 105"/>
+  <polygon fill={h} points="160 110 160 120 165 115 160 110"/>
+  <polygon fill={c} points="170 110 160 110 165 115 170 110"/>
+  <polygon fill={g} points="160 120 169.99 120 165 115 160 120"/>
+  <polygon fill={d} points="165 115 169.99 120 170 119.99 170 110 165 115"/>
+  <polygon fill={a} points="210.05 100.05 210.05 100.05 210.04 100.06 210.05 100.05 200 90 200 120 215 105 210.05 100.05"/>
+  <polygon fill={b} points="220 110 215 105 200 120 230 120 220.03 110.03 220 110"/>
+  <polygon fill={a} points="229.94 99.95 229.95 99.95 229.96 99.94 229.95 99.95 239.99 110 239.99 80 224.99 95 229.94 99.95"/>
+  <polygon fill={b} points="219.99 90 224.99 95 239.99 80 209.99 80 219.97 89.97 219.99 90"/>
+  <polygon fill={d} points="225.01 115.01 230 120 230 110.01 225.01 115.01"/>
+  <polygon fill={c} points="230 110 220 110 220.03 110.03 225.01 115.01 230 110.01 230 110"/>
+  <rect fill={c} x="239.99" y="100.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="205 95 210 100 210 90 205 95"/>
+  <polygon fill={f} points="215 105 220 110 220 100.01 215 105"/>
+  <rect fill={c} x="239.99" y="80" width="0.01" height="20.01"/>
+  <polygon fill={g} points="220 100 210 100 210.05 100.05 210.05 100.05 215 105 215 105 220 100.01 220 100"/>
+  <polygon fill={c} points="200 90 205 95 210 90 200 90"/>
+  <polygon fill={f} points="220.01 100 225 95.01 224.99 95 220 90.01 220 100 220.01 100"/>
+  <polygon fill={g} points="229.99 100 229.95 99.95 229.94 99.95 225 95.01 220.01 100 229.99 100"/>
+  <polygon fill={c} points="219.99 90 219.97 89.97 215 85 210 90 219.99 90"/>
+  <polygon fill={e} points="215 85 210 80.01 210 90 215 85"/>
+  <polygon fill={c} points="239.99 110 235 105.01 230.01 110 239.99 110"/>
+  <polygon fill={d} points="230.01 110 235 105.01 230 100.01 230 110 230.01 110"/>
+  <polygon fill={e} points="200 90 210 90 205 85 200 90"/>
+  <polygon fill={g} points="200 80 200 90 205 85 200 80"/>
+  <polygon fill={c} points="210 90 210 80.01 205 85 210 90"/>
+  <polygon fill={h} points="205 85 210 80.01 209.99 80 200 80 205 85"/>
+  <polygon fill={f} points="210 100 220 100 215 95 210 100"/>
+  <polygon fill={c} points="210 90 210 100 215 95 210 90"/>
+  <polygon fill={g} points="220 100 220 90.01 215 95 220 100"/>
+  <polygon fill={e} points="215 95 220 90.01 219.99 90 210 90 215 95"/>
+  <polygon fill={d} points="220 110 230 110 225 105 220 110"/>
+  <polygon fill={g} points="220 100 220 110 225 105 220 100"/>
+  <polygon fill={c} points="230 110 230 100.01 225 105 230 110"/>
+  <polygon fill={f} points="225 105 230 100.01 229.99 100 220 100 225 105"/>
+  <polygon fill={h} points="230 120 240 120 235 115 230 120"/>
+  <polygon fill={c} points="230 110 230 120 235 115 230 110"/>
+  <polygon fill={g} points="240 120 240 110.01 235 115 240 120"/>
+  <polygon fill={d} points="235 115 240 110.01 239.99 110 230 110 235 115"/>
+  <polygon fill={a} points="259.95 90.05 259.95 90.05 259.94 90.04 259.95 90.05 270 80 240 80 255 95 259.95 90.05"/>
+  <polygon fill={b} points="250 100 255 95 240 80 240 110 249.97 100.03 250 100"/>
+  <polygon fill={a} points="260.05 109.94 260.05 109.95 260.06 109.95 260.05 109.95 250 119.99 280 119.99 265 104.99 260.05 109.94"/>
+  <polygon fill={b} points="270 99.99 265 104.99 280 119.99 280 89.99 270.03 99.97 270 99.99"/>
+  <polygon fill={d} points="244.99 105.01 240 110 249.99 110 244.99 105.01"/>
+  <polygon fill={c} points="250 110 250 100 249.97 100.03 244.99 105.01 249.99 110 250 110"/>
+  <rect fill={c} x="250" y="119.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="265 85 260 90 270 90 265 85"/>
+  <polygon fill={f} points="255 95 250 100 259.99 100 255 95"/>
+  <rect fill={c} x="259.99" y="119.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="260 100 260 90 259.95 90.05 259.95 90.05 255 95 255 95 259.99 100 260 100"/>
+  <polygon fill={c} points="270 80 265 85 270 90 270 80"/>
+  <polygon fill={f} points="260 100.01 264.99 105 265 104.99 269.99 100 260 100 260 100.01"/>
+  <polygon fill={g} points="260 109.99 260.05 109.95 260.05 109.94 264.99 105 260 100.01 260 109.99"/>
+  <polygon fill={c} points="270 99.99 270.03 99.97 275 95 270 90 270 99.99"/>
+  <polygon fill={e} points="275 95 279.99 90 270 90 275 95"/>
+  <polygon fill={c} points="250 119.99 254.99 115 250 110.01 250 119.99"/>
+  <polygon fill={d} points="250 110.01 254.99 115 259.99 110 250 110 250 110.01"/>
+  <polygon fill={e} points="270 80 270 90 275 85 270 80"/>
+  <polygon fill={g} points="280 80 270 80 275 85 280 80"/>
+  <polygon fill={c} points="270 90 279.99 90 275 85 270 90"/>
+  <polygon fill={h} points="275 85 279.99 90 280 89.99 280 80 275 85"/>
+  <polygon fill={f} points="260 90 260 100 265 95 260 90"/>
+  <polygon fill={c} points="270 90 260 90 265 95 270 90"/>
+  <polygon fill={g} points="260 100 269.99 100 265 95 260 100"/>
+  <polygon fill={e} points="265 95 269.99 100 270 99.99 270 90 265 95"/>
+  <polygon fill={d} points="250 100 250 110 255 105 250 100"/>
+  <polygon fill={g} points="260 100 250 100 255 105 260 100"/>
+  <polygon fill={c} points="250 110 259.99 110 255 105 250 110"/>
+  <polygon fill={f} points="255 105 259.99 110 260 109.99 260 100 255 105"/>
+  <polygon fill={h} points="240 110 240 120 245 115 240 110"/>
+  <polygon fill={c} points="250 110 240 110 245 115 250 110"/>
+  <polygon fill={g} points="240 120 249.99 120 245 115 240 120"/>
+  <polygon fill={d} points="245 115 249.99 120 250 119.99 250 110 245 115"/>
+  <polygon fill={a} points="59.95 130.05 59.95 130.05 59.94 130.04 59.95 130.05 70 120 40 120 55 135 59.95 130.05"/>
+  <polygon fill={b} points="50 140 55 135 40 120 40 150 49.97 140.03 50 140"/>
+  <polygon fill={a} points="60.05 149.94 60.05 149.95 60.06 149.96 60.05 149.95 50 159.99 80 159.99 65 144.99 60.05 149.94"/>
+  <polygon fill={b} points="70 139.99 65 144.99 80 159.99 80 129.99 70.03 139.97 70 139.99"/>
+  <polygon fill={d} points="44.99 145.01 40 150 49.99 150 44.99 145.01"/>
+  <polygon fill={c} points="50 150 50 140 49.97 140.03 44.99 145.01 49.99 150 50 150"/>
+  <rect fill={c} x="50" y="159.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="65 125 60 130 70 130 65 125"/>
+  <polygon fill={f} points="55 135 50 140 59.99 140 55 135"/>
+  <rect fill={c} x="59.99" y="159.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="60 140 60 130 59.95 130.05 59.95 130.05 55 135 55 135 59.99 140 60 140"/>
+  <polygon fill={c} points="70 120 65 125 70 130 70 120"/>
+  <polygon fill={f} points="60 140.01 64.99 145 65 144.99 69.99 140 60 140 60 140.01"/>
+  <polygon fill={g} points="60 149.99 60.05 149.95 60.05 149.94 64.99 145 60 140.01 60 149.99"/>
+  <polygon fill={c} points="70 139.99 70.03 139.97 75 135 70 130 70 139.99"/>
+  <polygon fill={e} points="75 135 79.99 130 70 130 75 135"/>
+  <polygon fill={c} points="50 159.99 54.99 155 50 150.01 50 159.99"/>
+  <polygon fill={d} points="50 150.01 54.99 155 59.99 150 50 150 50 150.01"/>
+  <polygon fill={e} points="70 120 70 130 75 125 70 120"/>
+  <polygon fill={g} points="80 120 70 120 75 125 80 120"/>
+  <polygon fill={c} points="70 130 79.99 130 75 125 70 130"/>
+  <polygon fill={h} points="75 125 79.99 130 80 129.99 80 120 75 125"/>
+  <polygon fill={f} points="60 130 60 140 65 135 60 130"/>
+  <polygon fill={c} points="70 130 60 130 65 135 70 130"/>
+  <polygon fill={g} points="60 140 69.99 140 65 135 60 140"/>
+  <polygon fill={e} points="65 135 69.99 140 70 139.99 70 130 65 135"/>
+  <polygon fill={d} points="50 140 50 150 55 145 50 140"/>
+  <polygon fill={g} points="60 140 50 140 55 145 60 140"/>
+  <polygon fill={c} points="50 150 59.99 150 55 145 50 150"/>
+  <polygon fill={f} points="55 145 59.99 150 60 149.99 60 140 55 145"/>
+  <polygon fill={h} points="40 150 40 160 45 155 40 150"/>
+  <polygon fill={c} points="50 150 40 150 45 155 50 150"/>
+  <polygon fill={g} points="40 160 49.99 160 45 155 40 160"/>
+  <polygon fill={d} points="45 155 49.99 160 50 159.99 50 150 45 155"/>
+  <polygon fill={a} points="90.05 140.05 90.05 140.05 90.04 140.06 90.05 140.05 80 130 80 160 95 145 90.05 140.05"/>
+  <polygon fill={b} points="100 150 95 145 80 160 110 160 100.03 150.03 100 150"/>
+  <polygon fill={a} points="109.94 139.95 109.95 139.95 109.95 139.94 109.95 139.95 119.99 150 119.99 120 104.99 135 109.94 139.95"/>
+  <polygon fill={b} points="99.99 130 104.99 135 119.99 120 89.99 120 99.97 129.97 99.99 130"/>
+  <polygon fill={d} points="105.01 155.01 110 160 110 150.01 105.01 155.01"/>
+  <polygon fill={c} points="110 150 100 150 100.03 150.03 105.01 155.01 110 150.01 110 150"/>
+  <rect fill={c} x="119.99" y="140.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="85 135 90 140 90 130 85 135"/>
+  <polygon fill={f} points="95 145 100 150 100 140.01 95 145"/>
+  <rect fill={c} x="119.99" y="120" width="0.01" height="20.01"/>
+  <polygon fill={g} points="100 140 90 140 90.05 140.05 90.05 140.05 95 145 95 145 100 140.01 100 140"/>
+  <polygon fill={c} points="80 130 85 135 90 130 80 130"/>
+  <polygon fill={f} points="100.01 140 105 135.01 104.99 135 100 130.01 100 140 100.01 140"/>
+  <polygon fill={g} points="109.99 140 109.95 139.95 109.94 139.95 105 135.01 100.01 140 109.99 140"/>
+  <polygon fill={c} points="99.99 130 99.97 129.97 95 125 90 130 99.99 130"/>
+  <polygon fill={e} points="95 125 90 120.01 90 130 95 125"/>
+  <polygon fill={c} points="119.99 150 115 145.01 110.01 150 119.99 150"/>
+  <polygon fill={d} points="110.01 150 115 145.01 110 140.01 110 150 110.01 150"/>
+  <polygon fill={e} points="80 130 90 130 85 125 80 130"/>
+  <polygon fill={g} points="80 120 80 130 85 125 80 120"/>
+  <polygon fill={c} points="90 130 90 120.01 85 125 90 130"/>
+  <polygon fill={h} points="85 125 90 120.01 89.99 120 80 120 85 125"/>
+  <polygon fill={f} points="90 140 100 140 95 135 90 140"/>
+  <polygon fill={c} points="90 130 90 140 95 135 90 130"/>
+  <polygon fill={g} points="100 140 100 130.01 95 135 100 140"/>
+  <polygon fill={e} points="95 135 100 130.01 99.99 130 90 130 95 135"/>
+  <polygon fill={d} points="100 150 110 150 105 145 100 150"/>
+  <polygon fill={g} points="100 140 100 150 105 145 100 140"/>
+  <polygon fill={c} points="110 150 110 140.01 105 145 110 150"/>
+  <polygon fill={f} points="105 145 110 140.01 109.99 140 100 140 105 145"/>
+  <polygon fill={h} points="110 160 120 160 115 155 110 160"/>
+  <polygon fill={c} points="110 150 110 160 115 155 110 150"/>
+  <polygon fill={g} points="120 160 120 150.01 115 155 120 160"/>
+  <polygon fill={d} points="115 155 120 150.01 119.99 150 110 150 115 155"/>
+  <polygon fill={a} points="139.95 130.05 139.95 130.05 139.94 130.04 139.95 130.05 150 120 120 120 135 135 139.95 130.05"/>
+  <polygon fill={b} points="130 140 135 135 120 120 120 150 129.97 140.03 130 140"/>
+  <polygon fill={a} points="140.05 149.94 140.05 149.95 140.06 149.96 140.05 149.95 130 159.99 160 159.99 145 144.99 140.05 149.94"/>
+  <polygon fill={b} points="150 139.99 145 144.99 160 159.99 160 129.99 150.03 139.97 150 139.99"/>
+  <polygon fill={d} points="124.99 145.01 120 150 129.99 150 124.99 145.01"/>
+  <polygon fill={c} points="130 150 130 140 129.97 140.03 124.99 145.01 129.99 150 130 150"/>
+  <rect fill={c} x="130" y="159.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="145 125 140 130 150 130 145 125"/>
+  <polygon fill={f} points="135 135 130 140 139.99 140 135 135"/>
+  <rect fill={c} x="139.99" y="159.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="140 140 140 130 139.95 130.05 139.95 130.05 135 135 135 135 139.99 140 140 140"/>
+  <polygon fill={c} points="150 120 145 125 150 130 150 120"/>
+  <polygon fill={f} points="140 140.01 144.99 145 145 144.99 149.99 140 140 140 140 140.01"/>
+  <polygon fill={g} points="140 149.99 140.05 149.95 140.05 149.94 144.99 145 140 140.01 140 149.99"/>
+  <polygon fill={c} points="150 139.99 150.03 139.97 155 135 150 130 150 139.99"/>
+  <polygon fill={e} points="155 135 159.99 130 150 130 155 135"/>
+  <polygon fill={c} points="130 159.99 134.99 155 130 150.01 130 159.99"/>
+  <polygon fill={d} points="130 150.01 134.99 155 139.99 150 130 150 130 150.01"/>
+  <polygon fill={e} points="150 120 150 130 155 125 150 120"/>
+  <polygon fill={g} points="160 120 150 120 155 125 160 120"/>
+  <polygon fill={c} points="150 130 159.99 130 155 125 150 130"/>
+  <polygon fill={h} points="155 125 159.99 130 160 129.99 160 120 155 125"/>
+  <polygon fill={f} points="140 130 140 140 145 135 140 130"/>
+  <polygon fill={c} points="150 130 140 130 145 135 150 130"/>
+  <polygon fill={g} points="140 140 149.99 140 145 135 140 140"/>
+  <polygon fill={e} points="145 135 149.99 140 150 139.99 150 130 145 135"/>
+  <polygon fill={d} points="130 140 130 150 135 145 130 140"/>
+  <polygon fill={g} points="140 140 130 140 135 145 140 140"/>
+  <polygon fill={c} points="130 150 139.99 150 135 145 130 150"/>
+  <polygon fill={f} points="135 145 139.99 150 140 149.99 140 140 135 145"/>
+  <polygon fill={h} points="120 150 120 160 125 155 120 150"/>
+  <polygon fill={c} points="130 150 120 150 125 155 130 150"/>
+  <polygon fill={g} points="120 160 129.99 160 125 155 120 160"/>
+  <polygon fill={d} points="125 155 129.99 160 130 159.99 130 150 125 155"/>
+  <polygon fill={a} points="170.05 140.05 170.05 140.05 170.04 140.06 170.05 140.05 160 130 160 160 175 145 170.05 140.05"/>
+  <polygon fill={b} points="180 150 175 145 160 160 190 160 180.03 150.03 180 150"/>
+  <polygon fill={a} points="189.94 139.95 189.95 139.95 189.96 139.94 189.95 139.95 199.99 150 199.99 120 184.99 135 189.94 139.95"/>
+  <polygon fill={b} points="179.99 130 184.99 135 199.99 120 169.99 120 179.97 129.97 179.99 130"/>
+  <polygon fill={d} points="185.01 155.01 190 160 190 150.01 185.01 155.01"/>
+  <polygon fill={c} points="190 150 180 150 180.03 150.03 185.01 155.01 190 150.01 190 150"/>
+  <rect fill={c} x="199.99" y="140.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="165 135 170 140 170 130 165 135"/>
+  <polygon fill={f} points="175 145 180 150 180 140.01 175 145"/>
+  <rect fill={c} x="199.99" y="120" width="0.01" height="20.01"/>
+  <polygon fill={g} points="180 140 170 140 170.05 140.05 170.05 140.05 175 145 175 145 180 140.01 180 140"/>
+  <polygon fill={c} points="160 130 165 135 170 130 160 130"/>
+  <polygon fill={f} points="180.01 140 185 135.01 184.99 135 180 130.01 180 140 180.01 140"/>
+  <polygon fill={g} points="189.99 140 189.95 139.95 189.94 139.95 185 135.01 180.01 140 189.99 140"/>
+  <polygon fill={c} points="179.99 130 179.97 129.97 175 125 170 130 179.99 130"/>
+  <polygon fill={e} points="175 125 170 120.01 170 130 175 125"/>
+  <polygon fill={c} points="199.99 150 195 145.01 190.01 150 199.99 150"/>
+  <polygon fill={d} points="190.01 150 195 145.01 190 140.01 190 150 190.01 150"/>
+  <polygon fill={e} points="160 130 170 130 165 125 160 130"/>
+  <polygon fill={g} points="160 120 160 130 165 125 160 120"/>
+  <polygon fill={c} points="170 130 170 120.01 165 125 170 130"/>
+  <polygon fill={h} points="165 125 170 120.01 169.99 120 160 120 165 125"/>
+  <polygon fill={f} points="170 140 180 140 175 135 170 140"/>
+  <polygon fill={c} points="170 130 170 140 175 135 170 130"/>
+  <polygon fill={g} points="180 140 180 130.01 175 135 180 140"/>
+  <polygon fill={e} points="175 135 180 130.01 179.99 130 170 130 175 135"/>
+  <polygon fill={d} points="180 150 190 150 185 145 180 150"/>
+  <polygon fill={g} points="180 140 180 150 185 145 180 140"/>
+  <polygon fill={c} points="190 150 190 140.01 185 145 190 150"/>
+  <polygon fill={f} points="185 145 190 140.01 189.99 140 180 140 185 145"/>
+  <polygon fill={h} points="190 160 200 160 195 155 190 160"/>
+  <polygon fill={c} points="190 150 190 160 195 155 190 150"/>
+  <polygon fill={g} points="200 160 200 150.01 195 155 200 160"/>
+  <polygon fill={d} points="195 155 200 150.01 199.99 150 190 150 195 155"/>
+  <polygon fill={a} points="219.95 130.05 219.95 130.05 219.94 130.04 219.95 130.05 230 120 200 120 215 135 219.95 130.05"/>
+  <polygon fill={b} points="210 140 215 135 200 120 200 150 209.97 140.03 210 140"/>
+  <polygon fill={a} points="220.05 149.94 220.05 149.95 220.06 149.96 220.05 149.95 210 159.99 240 159.99 225 144.99 220.05 149.94"/>
+  <polygon fill={b} points="230 139.99 225 144.99 240 159.99 240 129.99 230.03 139.97 230 139.99"/>
+  <polygon fill={d} points="204.99 145.01 200 150 209.99 150 204.99 145.01"/>
+  <polygon fill={c} points="210 150 210 140 209.97 140.03 204.99 145.01 209.99 150 210 150"/>
+  <rect fill={c} x="210" y="159.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="225 125 220 130 230 130 225 125"/>
+  <polygon fill={f} points="215 135 210 140 219.99 140 215 135"/>
+  <rect fill={c} x="219.99" y="159.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="220 140 220 130 219.95 130.05 219.95 130.05 215 135 215 135 219.99 140 220 140"/>
+  <polygon fill={c} points="230 120 225 125 230 130 230 120"/>
+  <polygon fill={f} points="220 140.01 224.99 145 225 144.99 229.99 140 220 140 220 140.01"/>
+  <polygon fill={g} points="220 149.99 220.05 149.95 220.05 149.94 224.99 145 220 140.01 220 149.99"/>
+  <polygon fill={c} points="230 139.99 230.03 139.97 235 135 230 130 230 139.99"/>
+  <polygon fill={e} points="235 135 239.99 130 230 130 235 135"/>
+  <polygon fill={c} points="210 159.99 214.99 155 210 150.01 210 159.99"/>
+  <polygon fill={d} points="210 150.01 214.99 155 219.99 150 210 150 210 150.01"/>
+  <polygon fill={e} points="230 120 230 130 235 125 230 120"/>
+  <polygon fill={g} points="240 120 230 120 235 125 240 120"/>
+  <polygon fill={c} points="230 130 239.99 130 235 125 230 130"/>
+  <polygon fill={h} points="235 125 239.99 130 240 129.99 240 120 235 125"/>
+  <polygon fill={f} points="220 130 220 140 225 135 220 130"/>
+  <polygon fill={c} points="230 130 220 130 225 135 230 130"/>
+  <polygon fill={g} points="220 140 229.99 140 225 135 220 140"/>
+  <polygon fill={e} points="225 135 229.99 140 230 139.99 230 130 225 135"/>
+  <polygon fill={d} points="210 140 210 150 215 145 210 140"/>
+  <polygon fill={g} points="220 140 210 140 215 145 220 140"/>
+  <polygon fill={c} points="210 150 219.99 150 215 145 210 150"/>
+  <polygon fill={f} points="215 145 219.99 150 220 149.99 220 140 215 145"/>
+  <polygon fill={h} points="200 150 200 160 205 155 200 150"/>
+  <polygon fill={c} points="210 150 200 150 205 155 210 150"/>
+  <polygon fill={g} points="200 160 209.99 160 205 155 200 160"/>
+  <polygon fill={d} points="205 155 209.99 160 210 159.99 210 150 205 155"/>
+  <polygon fill={a} points="250.05 140.05 250.05 140.05 250.04 140.06 250.05 140.05 240 130 240 160 255 145 250.05 140.05"/>
+  <polygon fill={b} points="260 150 255 145 240 160 270 160 260.03 150.03 260 150"/>
+  <polygon fill={a} points="269.94 139.95 269.95 139.95 269.95 139.94 269.95 139.95 279.99 150 279.99 120 264.99 135 269.94 139.95"/>
+  <polygon fill={b} points="259.99 130 264.99 135 279.99 120 249.99 120 259.97 129.97 259.99 130"/>
+  <polygon fill={d} points="265.01 155.01 270 160 270 150.01 265.01 155.01"/>
+  <polygon fill={c} points="270 150 260 150 260.03 150.03 265.01 155.01 270 150.01 270 150"/>
+  <rect fill={c} x="279.99" y="140.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="245 135 250 140 250 130 245 135"/>
+  <polygon fill={f} points="255 145 260 150 260 140.01 255 145"/>
+  <rect fill={c} x="279.99" y="120" width="0.01" height="20.01"/>
+  <polygon fill={g} points="260 140 250 140 250.05 140.05 250.05 140.05 255 145 255 145 260 140.01 260 140"/>
+  <polygon fill={c} points="240 130 245 135 250 130 240 130"/>
+  <polygon fill={f} points="260.01 140 265 135.01 264.99 135 260 130.01 260 140 260.01 140"/>
+  <polygon fill={g} points="269.99 140 269.95 139.95 269.94 139.95 265 135.01 260.01 140 269.99 140"/>
+  <polygon fill={c} points="259.99 130 259.97 129.97 255 125 250 130 259.99 130"/>
+  <polygon fill={e} points="255 125 250 120.01 250 130 255 125"/>
+  <polygon fill={c} points="279.99 150 275 145.01 270.01 150 279.99 150"/>
+  <polygon fill={d} points="270.01 150 275 145.01 270 140.01 270 150 270.01 150"/>
+  <polygon fill={e} points="240 130 250 130 245 125 240 130"/>
+  <polygon fill={g} points="240 120 240 130 245 125 240 120"/>
+  <polygon fill={c} points="250 130 250 120.01 245 125 250 130"/>
+  <polygon fill={h} points="245 125 250 120.01 249.99 120 240 120 245 125"/>
+  <polygon fill={f} points="250 140 260 140 255 135 250 140"/>
+  <polygon fill={c} points="250 130 250 140 255 135 250 130"/>
+  <polygon fill={g} points="260 140 260 130.01 255 135 260 140"/>
+  <polygon fill={e} points="255 135 260 130.01 259.99 130 250 130 255 135"/>
+  <polygon fill={d} points="260 150 270 150 265 145 260 150"/>
+  <polygon fill={g} points="260 140 260 150 265 145 260 140"/>
+  <polygon fill={c} points="270 150 270 140.01 265 145 270 150"/>
+  <polygon fill={f} points="265 145 270 140.01 269.99 140 260 140 265 145"/>
+  <polygon fill={h} points="270 160 280 160 275 155 270 160"/>
+  <polygon fill={c} points="270 150 270 160 275 155 270 150"/>
+  <polygon fill={g} points="280 160 280 150.01 275 155 280 160"/>
+  <polygon fill={d} points="275 155 280 150.01 279.99 150 270 150 275 155"/>
+  <polygon fill={a} points="69.95 179.95 69.95 179.95 69.96 179.94 69.95 179.95 80 190 80 160 65 175 69.95 179.95"/>
+  <polygon fill={b} points="60 170 65 175 80 160 50 160 59.97 169.97 60 170"/>
+  <polygon fill={a} points="50.06 180.05 50.05 180.05 50.05 180.06 50.05 180.05 40.01 170 40.01 200 55.01 185 50.06 180.05"/>
+  <polygon fill={b} points="60.01 190 55.01 185 40.01 200 70.01 200 60.03 190.03 60.01 190"/>
+  <polygon fill={d} points="54.99 164.99 50 160 50 169.99 54.99 164.99"/>
+  <polygon fill={c} points="50 170 60 170 59.97 169.97 54.99 164.99 50 169.99 50 170"/>
+  <rect fill={c} x="40" y="170" width="0.01" height="9.99"/>
+  <polygon fill={e} points="75 185 70 180 70 190 75 185"/>
+  <polygon fill={f} points="65 175 60 170 60 179.99 65 175"/>
+  <rect fill={c} x="40" y="179.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="60 180 70 180 69.95 179.95 69.95 179.95 65 175 65 175 60 179.99 60 180"/>
+  <polygon fill={c} points="80 190 75 185 70 190 80 190"/>
+  <polygon fill={f} points="59.99 180 55 184.99 55.01 185 60 189.99 60 180 59.99 180"/>
+  <polygon fill={g} points="50.01 180 50.05 180.05 50.06 180.05 55 184.99 59.99 180 50.01 180"/>
+  <polygon fill={c} points="60.01 190 60.03 190.03 65 195 70 190 60.01 190"/>
+  <polygon fill={e} points="65 195 70 199.99 70 190 65 195"/>
+  <polygon fill={c} points="40.01 170 45 174.99 49.99 170 40.01 170"/>
+  <polygon fill={d} points="49.99 170 45 174.99 50 179.99 50 170 49.99 170"/>
+  <polygon fill={e} points="80 190 70 190 75 195 80 190"/>
+  <polygon fill={g} points="80 200 80 190 75 195 80 200"/>
+  <polygon fill={c} points="70 190 70 199.99 75 195 70 190"/>
+  <polygon fill={h} points="75 195 70 199.99 70.01 200 80 200 75 195"/>
+  <polygon fill={f} points="70 180 60 180 65 185 70 180"/>
+  <polygon fill={c} points="70 190 70 180 65 185 70 190"/>
+  <polygon fill={g} points="60 180 60 189.99 65 185 60 180"/>
+  <polygon fill={e} points="65 185 60 189.99 60.01 190 70 190 65 185"/>
+  <polygon fill={d} points="60 170 50 170 55 175 60 170"/>
+  <polygon fill={g} points="60 180 60 170 55 175 60 180"/>
+  <polygon fill={c} points="50 170 50 179.99 55 175 50 170"/>
+  <polygon fill={f} points="55 175 50 179.99 50.01 180 60 180 55 175"/>
+  <polygon fill={h} points="50 160 40 160 45 165 50 160"/>
+  <polygon fill={c} points="50 170 50 160 45 165 50 170"/>
+  <polygon fill={g} points="40 160 40 169.99 45 165 40 160"/>
+  <polygon fill={d} points="45 165 40 169.99 40.01 170 50 170 45 165"/>
+  <polygon fill={a} points="99.95 170.05 99.95 170.05 99.94 170.04 99.95 170.05 110 160 80 160 95 175 99.95 170.05"/>
+  <polygon fill={b} points="90 180 95 175 80 160 80 190 89.97 180.03 90 180"/>
+  <polygon fill={a} points="100.05 189.94 100.05 189.95 100.06 189.96 100.05 189.95 90 199.99 120 199.99 105 184.99 100.05 189.94"/>
+  <polygon fill={b} points="110 179.99 105 184.99 120 199.99 120 169.99 110.03 179.97 110 179.99"/>
+  <polygon fill={d} points="84.99 185.01 80 190 89.99 190 84.99 185.01"/>
+  <polygon fill={c} points="90 190 90 180 89.97 180.03 84.99 185.01 89.99 190 90 190"/>
+  <rect fill={c} x="90" y="199.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="105 165 100 170 110 170 105 165"/>
+  <polygon fill={f} points="95 175 90 180 99.99 180 95 175"/>
+  <rect fill={c} x="99.99" y="199.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="100 180 100 170 99.95 170.05 99.95 170.05 95 175 95 175 99.99 180 100 180"/>
+  <polygon fill={c} points="110 160 105 165 110 170 110 160"/>
+  <polygon fill={f} points="100 180.01 104.99 185 105 184.99 109.99 180 100 180 100 180.01"/>
+  <polygon fill={g} points="100 189.99 100.05 189.95 100.05 189.94 104.99 185 100 180.01 100 189.99"/>
+  <polygon fill={c} points="110 179.99 110.03 179.97 115 175 110 170 110 179.99"/>
+  <polygon fill={e} points="115 175 119.99 170 110 170 115 175"/>
+  <polygon fill={c} points="90 199.99 94.99 195 90 190.01 90 199.99"/>
+  <polygon fill={d} points="90 190.01 94.99 195 99.99 190 90 190 90 190.01"/>
+  <polygon fill={e} points="110 160 110 170 115 165 110 160"/>
+  <polygon fill={g} points="120 160 110 160 115 165 120 160"/>
+  <polygon fill={c} points="110 170 119.99 170 115 165 110 170"/>
+  <polygon fill={h} points="115 165 119.99 170 120 169.99 120 160 115 165"/>
+  <polygon fill={f} points="100 170 100 180 105 175 100 170"/>
+  <polygon fill={c} points="110 170 100 170 105 175 110 170"/>
+  <polygon fill={g} points="100 180 109.99 180 105 175 100 180"/>
+  <polygon fill={e} points="105 175 109.99 180 110 179.99 110 170 105 175"/>
+  <polygon fill={d} points="90 180 90 190 95 185 90 180"/>
+  <polygon fill={g} points="100 180 90 180 95 185 100 180"/>
+  <polygon fill={c} points="90 190 99.99 190 95 185 90 190"/>
+  <polygon fill={f} points="95 185 99.99 190 100 189.99 100 180 95 185"/>
+  <polygon fill={h} points="80 190 80 200 85 195 80 190"/>
+  <polygon fill={c} points="90 190 80 190 85 195 90 190"/>
+  <polygon fill={g} points="80 200 89.99 200 85 195 80 200"/>
+  <polygon fill={d} points="85 195 89.99 200 90 199.99 90 190 85 195"/>
+  <polygon fill={a} points="149.95 179.95 149.95 179.95 149.96 179.94 149.95 179.95 160 190 160 160 145 175 149.95 179.95"/>
+  <polygon fill={b} points="140 170 145 175 160 160 130 160 139.97 169.97 140 170"/>
+  <polygon fill={a} points="130.06 180.05 130.05 180.05 130.04 180.06 130.05 180.05 120.01 170 120.01 200 135.01 185 130.06 180.05"/>
+  <polygon fill={b} points="140.01 190 135.01 185 120.01 200 150.01 200 140.03 190.03 140.01 190"/>
+  <polygon fill={d} points="134.99 164.99 130 160 130 169.99 134.99 164.99"/>
+  <polygon fill={c} points="130 170 140 170 139.97 169.97 134.99 164.99 130 169.99 130 170"/>
+  <rect fill={c} x="120" y="170" width="0.01" height="9.99"/>
+  <polygon fill={e} points="155 185 150 180 150 190 155 185"/>
+  <polygon fill={f} points="145 175 140 170 140 179.99 145 175"/>
+  <rect fill={c} x="120" y="179.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="140 180 150 180 149.95 179.95 149.95 179.95 145 175 145 175 140 179.99 140 180"/>
+  <polygon fill={c} points="160 190 155 185 150 190 160 190"/>
+  <polygon fill={f} points="139.99 180 135 184.99 135.01 185 140 189.99 140 180 139.99 180"/>
+  <polygon fill={g} points="130.01 180 130.05 180.05 130.06 180.05 135 184.99 139.99 180 130.01 180"/>
+  <polygon fill={c} points="140.01 190 140.03 190.03 145 195 150 190 140.01 190"/>
+  <polygon fill={e} points="145 195 150 199.99 150 190 145 195"/>
+  <polygon fill={c} points="120.01 170 125 174.99 129.99 170 120.01 170"/>
+  <polygon fill={d} points="129.99 170 125 174.99 130 179.99 130 170 129.99 170"/>
+  <polygon fill={e} points="160 190 150 190 155 195 160 190"/>
+  <polygon fill={g} points="160 200 160 190 155 195 160 200"/>
+  <polygon fill={c} points="150 190 150 199.99 155 195 150 190"/>
+  <polygon fill={h} points="155 195 150 199.99 150.01 200 160 200 155 195"/>
+  <polygon fill={f} points="150 180 140 180 145 185 150 180"/>
+  <polygon fill={c} points="150 190 150 180 145 185 150 190"/>
+  <polygon fill={g} points="140 180 140 189.99 145 185 140 180"/>
+  <polygon fill={e} points="145 185 140 189.99 140.01 190 150 190 145 185"/>
+  <polygon fill={d} points="140 170 130 170 135 175 140 170"/>
+  <polygon fill={g} points="140 180 140 170 135 175 140 180"/>
+  <polygon fill={c} points="130 170 130 179.99 135 175 130 170"/>
+  <polygon fill={f} points="135 175 130 179.99 130.01 180 140 180 135 175"/>
+  <polygon fill={h} points="130 160 120 160 125 165 130 160"/>
+  <polygon fill={c} points="130 170 130 160 125 165 130 170"/>
+  <polygon fill={g} points="120 160 120 169.99 125 165 120 160"/>
+  <polygon fill={d} points="125 165 120 169.99 120.01 170 130 170 125 165"/>
+  <polygon fill={a} points="179.95 170.05 179.95 170.05 179.94 170.04 179.95 170.05 190 160 160 160 175 175 179.95 170.05"/>
+  <polygon fill={b} points="170 180 175 175 160 160 160 190 169.97 180.03 170 180"/>
+  <polygon fill={a} points="180.05 189.94 180.05 189.95 180.06 189.96 180.05 189.95 170 199.99 200 199.99 185 184.99 180.05 189.94"/>
+  <polygon fill={b} points="190 179.99 185 184.99 200 199.99 200 169.99 190.03 179.97 190 179.99"/>
+  <polygon fill={d} points="164.99 185.01 160 190 169.99 190 164.99 185.01"/>
+  <polygon fill={c} points="170 190 170 180 169.97 180.03 164.99 185.01 169.99 190 170 190"/>
+  <rect fill={c} x="170" y="199.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="185 165 180 170 190 170 185 165"/>
+  <polygon fill={f} points="175 175 170 180 179.99 180 175 175"/>
+  <rect fill={c} x="179.99" y="199.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="180 180 180 170 179.95 170.05 179.95 170.05 175 175 175 175 179.99 180 180 180"/>
+  <polygon fill={c} points="190 160 185 165 190 170 190 160"/>
+  <polygon fill={f} points="180 180.01 184.99 185 185 184.99 189.99 180 180 180 180 180.01"/>
+  <polygon fill={g} points="180 189.99 180.05 189.95 180.05 189.94 184.99 185 180 180.01 180 189.99"/>
+  <polygon fill={c} points="190 179.99 190.03 179.97 195 175 190 170 190 179.99"/>
+  <polygon fill={e} points="195 175 199.99 170 190 170 195 175"/>
+  <polygon fill={c} points="170 199.99 174.99 195 170 190.01 170 199.99"/>
+  <polygon fill={d} points="170 190.01 174.99 195 179.99 190 170 190 170 190.01"/>
+  <polygon fill={e} points="190 160 190 170 195 165 190 160"/>
+  <polygon fill={g} points="200 160 190 160 195 165 200 160"/>
+  <polygon fill={c} points="190 170 199.99 170 195 165 190 170"/>
+  <polygon fill={h} points="195 165 199.99 170 200 169.99 200 160 195 165"/>
+  <polygon fill={f} points="180 170 180 180 185 175 180 170"/>
+  <polygon fill={c} points="190 170 180 170 185 175 190 170"/>
+  <polygon fill={g} points="180 180 189.99 180 185 175 180 180"/>
+  <polygon fill={e} points="185 175 189.99 180 190 179.99 190 170 185 175"/>
+  <polygon fill={d} points="170 180 170 190 175 185 170 180"/>
+  <polygon fill={g} points="180 180 170 180 175 185 180 180"/>
+  <polygon fill={c} points="170 190 179.99 190 175 185 170 190"/>
+  <polygon fill={f} points="175 185 179.99 190 180 189.99 180 180 175 185"/>
+  <polygon fill={h} points="160 190 160 200 165 195 160 190"/>
+  <polygon fill={c} points="170 190 160 190 165 195 170 190"/>
+  <polygon fill={g} points="160 200 169.99 200 165 195 160 200"/>
+  <polygon fill={d} points="165 195 169.99 200 170 199.99 170 190 165 195"/>
+  <polygon fill={a} points="229.95 179.95 229.95 179.95 229.96 179.94 229.95 179.95 240 190 240 160 225 175 229.95 179.95"/>
+  <polygon fill={b} points="220 170 225 175 240 160 210 160 219.97 169.97 220 170"/>
+  <polygon fill={a} points="210.06 180.05 210.05 180.05 210.04 180.06 210.05 180.05 200.01 170 200.01 200 215.01 185 210.06 180.05"/>
+  <polygon fill={b} points="220.01 190 215.01 185 200.01 200 230.01 200 220.03 190.03 220.01 190"/>
+  <polygon fill={d} points="214.99 164.99 210 160 210 169.99 214.99 164.99"/>
+  <polygon fill={c} points="210 170 220 170 219.97 169.97 214.99 164.99 210 169.99 210 170"/>
+  <rect fill={c} x="200" y="170" width="0.01" height="9.99"/>
+  <polygon fill={e} points="235 185 230 180 230 190 235 185"/>
+  <polygon fill={f} points="225 175 220 170 220 179.99 225 175"/>
+  <rect fill={c} x="200" y="179.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="220 180 230 180 229.95 179.95 229.95 179.95 225 175 225 175 220 179.99 220 180"/>
+  <polygon fill={c} points="240 190 235 185 230 190 240 190"/>
+  <polygon fill={f} points="219.99 180 215 184.99 215.01 185 220 189.99 220 180 219.99 180"/>
+  <polygon fill={g} points="210.01 180 210.05 180.05 210.06 180.05 215 184.99 219.99 180 210.01 180"/>
+  <polygon fill={c} points="220.01 190 220.03 190.03 225 195 230 190 220.01 190"/>
+  <polygon fill={e} points="225 195 230 199.99 230 190 225 195"/>
+  <polygon fill={c} points="200.01 170 205 174.99 209.99 170 200.01 170"/>
+  <polygon fill={d} points="209.99 170 205 174.99 210 179.99 210 170 209.99 170"/>
+  <polygon fill={e} points="240 190 230 190 235 195 240 190"/>
+  <polygon fill={g} points="240 200 240 190 235 195 240 200"/>
+  <polygon fill={c} points="230 190 230 199.99 235 195 230 190"/>
+  <polygon fill={h} points="235 195 230 199.99 230.01 200 240 200 235 195"/>
+  <polygon fill={f} points="230 180 220 180 225 185 230 180"/>
+  <polygon fill={c} points="230 190 230 180 225 185 230 190"/>
+  <polygon fill={g} points="220 180 220 189.99 225 185 220 180"/>
+  <polygon fill={e} points="225 185 220 189.99 220.01 190 230 190 225 185"/>
+  <polygon fill={d} points="220 170 210 170 215 175 220 170"/>
+  <polygon fill={g} points="220 180 220 170 215 175 220 180"/>
+  <polygon fill={c} points="210 170 210 179.99 215 175 210 170"/>
+  <polygon fill={f} points="215 175 210 179.99 210.01 180 220 180 215 175"/>
+  <polygon fill={h} points="210 160 200 160 205 165 210 160"/>
+  <polygon fill={c} points="210 170 210 160 205 165 210 170"/>
+  <polygon fill={g} points="200 160 200 169.99 205 165 200 160"/>
+  <polygon fill={d} points="205 165 200 169.99 200.01 170 210 170 205 165"/>
+  <polygon fill={a} points="259.95 170.05 259.95 170.05 259.94 170.04 259.95 170.05 270 160 240 160 255 175 259.95 170.05"/>
+  <polygon fill={b} points="250 180 255 175 240 160 240 190 249.97 180.03 250 180"/>
+  <polygon fill={a} points="260.05 189.94 260.05 189.95 260.06 189.96 260.05 189.95 250 199.99 280 199.99 265 184.99 260.05 189.94"/>
+  <polygon fill={b} points="270 179.99 265 184.99 280 199.99 280 169.99 270.03 179.97 270 179.99"/>
+  <polygon fill={d} points="244.99 185.01 240 190 249.99 190 244.99 185.01"/>
+  <polygon fill={c} points="250 190 250 180 249.97 180.03 244.99 185.01 249.99 190 250 190"/>
+  <rect fill={c} x="250" y="199.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="265 165 260 170 270 170 265 165"/>
+  <polygon fill={f} points="255 175 250 180 259.99 180 255 175"/>
+  <rect fill={c} x="259.99" y="199.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="260 180 260 170 259.95 170.05 259.95 170.05 255 175 255 175 259.99 180 260 180"/>
+  <polygon fill={c} points="270 160 265 165 270 170 270 160"/>
+  <polygon fill={f} points="260 180.01 264.99 185 265 184.99 269.99 180 260 180 260 180.01"/>
+  <polygon fill={g} points="260 189.99 260.05 189.95 260.05 189.94 264.99 185 260 180.01 260 189.99"/>
+  <polygon fill={c} points="270 179.99 270.03 179.97 275 175 270 170 270 179.99"/>
+  <polygon fill={e} points="275 175 279.99 170 270 170 275 175"/>
+  <polygon fill={c} points="250 199.99 254.99 195 250 190.01 250 199.99"/>
+  <polygon fill={d} points="250 190.01 254.99 195 259.99 190 250 190 250 190.01"/>
+  <polygon fill={e} points="270 160 270 170 275 165 270 160"/>
+  <polygon fill={g} points="280 160 270 160 275 165 280 160"/>
+  <polygon fill={c} points="270 170 279.99 170 275 165 270 170"/>
+  <polygon fill={h} points="275 165 279.99 170 280 169.99 280 160 275 165"/>
+  <polygon fill={f} points="260 170 260 180 265 175 260 170"/>
+  <polygon fill={c} points="270 170 260 170 265 175 270 170"/>
+  <polygon fill={g} points="260 180 269.99 180 265 175 260 180"/>
+  <polygon fill={e} points="265 175 269.99 180 270 179.99 270 170 265 175"/>
+  <polygon fill={d} points="250 180 250 190 255 185 250 180"/>
+  <polygon fill={g} points="260 180 250 180 255 185 260 180"/>
+  <polygon fill={c} points="250 190 259.99 190 255 185 250 190"/>
+  <polygon fill={f} points="255 185 259.99 190 260 189.99 260 180 255 185"/>
+  <polygon fill={h} points="240 190 240 200 245 195 240 190"/>
+  <polygon fill={c} points="250 190 240 190 245 195 250 190"/>
+  <polygon fill={g} points="240 200 249.99 200 245 195 240 200"/>
+  <polygon fill={d} points="245 195 249.99 200 250 199.99 250 190 245 195"/>
+  <polygon fill={a} points="59.95 210.05 59.95 210.05 59.94 210.04 59.95 210.05 70 200 40 200 55 215 59.95 210.05"/>
+  <polygon fill={b} points="50 220 55 215 40 200 40 230 49.97 220.03 50 220"/>
+  <polygon fill={a} points="60.05 229.94 60.05 229.95 60.06 229.96 60.05 229.95 50 239.99 80 239.99 65 224.99 60.05 229.94"/>
+  <polygon fill={b} points="70 219.99 65 224.99 80 239.99 80 209.99 70.03 219.97 70 219.99"/>
+  <polygon fill={d} points="44.99 225.01 40 230 49.99 230 44.99 225.01"/>
+  <polygon fill={c} points="50 230 50 220 49.97 220.03 44.99 225.01 49.99 230 50 230"/>
+  <rect fill={c} x="50" y="239.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="65 205 60 210 70 210 65 205"/>
+  <polygon fill={f} points="55 215 50 220 59.99 220 55 215"/>
+  <rect fill={c} x="59.99" y="239.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="60 220 60 210 59.95 210.05 59.95 210.05 55 215 55 215 59.99 220 60 220"/>
+  <polygon fill={c} points="70 200 65 205 70 210 70 200"/>
+  <polygon fill={f} points="60 220.01 64.99 225 65 224.99 69.99 220 60 220 60 220.01"/>
+  <polygon fill={g} points="60 229.99 60.05 229.95 60.05 229.94 64.99 225 60 220.01 60 229.99"/>
+  <polygon fill={c} points="70 219.99 70.03 219.97 75 215 70 210 70 219.99"/>
+  <polygon fill={e} points="75 215 79.99 210 70 210 75 215"/>
+  <polygon fill={c} points="50 239.99 54.99 235 50 230.01 50 239.99"/>
+  <polygon fill={d} points="50 230.01 54.99 235 59.99 230 50 230 50 230.01"/>
+  <polygon fill={e} points="70 200 70 210 75 205 70 200"/>
+  <polygon fill={g} points="80 200 70 200 75 205 80 200"/>
+  <polygon fill={c} points="70 210 79.99 210 75 205 70 210"/>
+  <polygon fill={h} points="75 205 79.99 210 80 209.99 80 200 75 205"/>
+  <polygon fill={f} points="60 210 60 220 65 215 60 210"/>
+  <polygon fill={c} points="70 210 60 210 65 215 70 210"/>
+  <polygon fill={g} points="60 220 69.99 220 65 215 60 220"/>
+  <polygon fill={e} points="65 215 69.99 220 70 219.99 70 210 65 215"/>
+  <polygon fill={d} points="50 220 50 230 55 225 50 220"/>
+  <polygon fill={g} points="60 220 50 220 55 225 60 220"/>
+  <polygon fill={c} points="50 230 59.99 230 55 225 50 230"/>
+  <polygon fill={f} points="55 225 59.99 230 60 229.99 60 220 55 225"/>
+  <polygon fill={h} points="40 230 40 240 45 235 40 230"/>
+  <polygon fill={c} points="50 230 40 230 45 235 50 230"/>
+  <polygon fill={g} points="40 240 49.99 240 45 235 40 240"/>
+  <polygon fill={d} points="45 235 49.99 240 50 239.99 50 230 45 235"/>
+  <polygon fill={a} points="90.05 220.05 90.05 220.05 90.04 220.06 90.05 220.05 80 210 80 240 95 225 90.05 220.05"/>
+  <polygon fill={b} points="100 230 95 225 80 240 110 240 100.03 230.03 100 230"/>
+  <polygon fill={a} points="109.94 219.95 109.95 219.95 109.95 219.94 109.95 219.95 119.99 230 119.99 200 104.99 215 109.94 219.95"/>
+  <polygon fill={b} points="99.99 210 104.99 215 119.99 200 89.99 200 99.97 209.97 99.99 210"/>
+  <polygon fill={d} points="105.01 235.01 110 240 110 230.01 105.01 235.01"/>
+  <polygon fill={c} points="110 230 100 230 100.03 230.03 105.01 235.01 110 230.01 110 230"/>
+  <rect fill={c} x="119.99" y="220.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="85 215 90 220 90 210 85 215"/>
+  <polygon fill={f} points="95 225 100 230 100 220.01 95 225"/>
+  <rect fill={c} x="119.99" y="200" width="0.01" height="20.01"/>
+  <polygon fill={g} points="100 220 90 220 90.05 220.05 90.05 220.05 95 225 95 225 100 220.01 100 220"/>
+  <polygon fill={c} points="80 210 85 215 90 210 80 210"/>
+  <polygon fill={f} points="100.01 220 105 215.01 104.99 215 100 210.01 100 220 100.01 220"/>
+  <polygon fill={g} points="109.99 220 109.95 219.95 109.94 219.95 105 215.01 100.01 220 109.99 220"/>
+  <polygon fill={c} points="99.99 210 99.97 209.97 95 205 90 210 99.99 210"/>
+  <polygon fill={e} points="95 205 90 200.01 90 210 95 205"/>
+  <polygon fill={c} points="119.99 230 115 225.01 110.01 230 119.99 230"/>
+  <polygon fill={d} points="110.01 230 115 225.01 110 220.01 110 230 110.01 230"/>
+  <polygon fill={e} points="80 210 90 210 85 205 80 210"/>
+  <polygon fill={g} points="80 200 80 210 85 205 80 200"/>
+  <polygon fill={c} points="90 210 90 200.01 85 205 90 210"/>
+  <polygon fill={h} points="85 205 90 200.01 89.99 200 80 200 85 205"/>
+  <polygon fill={f} points="90 220 100 220 95 215 90 220"/>
+  <polygon fill={c} points="90 210 90 220 95 215 90 210"/>
+  <polygon fill={g} points="100 220 100 210.01 95 215 100 220"/>
+  <polygon fill={e} points="95 215 100 210.01 99.99 210 90 210 95 215"/>
+  <polygon fill={d} points="100 230 110 230 105 225 100 230"/>
+  <polygon fill={g} points="100 220 100 230 105 225 100 220"/>
+  <polygon fill={c} points="110 230 110 220.01 105 225 110 230"/>
+  <polygon fill={f} points="105 225 110 220.01 109.99 220 100 220 105 225"/>
+  <polygon fill={h} points="110 240 120 240 115 235 110 240"/>
+  <polygon fill={c} points="110 230 110 240 115 235 110 230"/>
+  <polygon fill={g} points="120 240 120 230.01 115 235 120 240"/>
+  <polygon fill={d} points="115 235 120 230.01 119.99 230 110 230 115 235"/>
+  <polygon fill={a} points="139.95 210.05 139.95 210.05 139.94 210.04 139.95 210.05 150 200 120 200 135 215 139.95 210.05"/>
+  <polygon fill={b} points="130 220 135 215 120 200 120 230 129.97 220.03 130 220"/>
+  <polygon fill={a} points="140.05 229.94 140.05 229.95 140.06 229.96 140.05 229.95 130 239.99 160 239.99 145 224.99 140.05 229.94"/>
+  <polygon fill={b} points="150 219.99 145 224.99 160 239.99 160 209.99 150.03 219.97 150 219.99"/>
+  <polygon fill={d} points="124.99 225.01 120 230 129.99 230 124.99 225.01"/>
+  <polygon fill={c} points="130 230 130 220 129.97 220.03 124.99 225.01 129.99 230 130 230"/>
+  <rect fill={c} x="130" y="239.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="145 205 140 210 150 210 145 205"/>
+  <polygon fill={f} points="135 215 130 220 139.99 220 135 215"/>
+  <rect fill={c} x="139.99" y="239.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="140 220 140 210 139.95 210.05 139.95 210.05 135 215 135 215 139.99 220 140 220"/>
+  <polygon fill={c} points="150 200 145 205 150 210 150 200"/>
+  <polygon fill={f} points="140 220.01 144.99 225 145 224.99 149.99 220 140 220 140 220.01"/>
+  <polygon fill={g} points="140 229.99 140.05 229.95 140.05 229.94 144.99 225 140 220.01 140 229.99"/>
+  <polygon fill={c} points="150 219.99 150.03 219.97 155 215 150 210 150 219.99"/>
+  <polygon fill={e} points="155 215 159.99 210 150 210 155 215"/>
+  <polygon fill={c} points="130 239.99 134.99 235 130 230.01 130 239.99"/>
+  <polygon fill={d} points="130 230.01 134.99 235 139.99 230 130 230 130 230.01"/>
+  <polygon fill={e} points="150 200 150 210 155 205 150 200"/>
+  <polygon fill={g} points="160 200 150 200 155 205 160 200"/>
+  <polygon fill={c} points="150 210 159.99 210 155 205 150 210"/>
+  <polygon fill={h} points="155 205 159.99 210 160 209.99 160 200 155 205"/>
+  <polygon fill={f} points="140 210 140 220 145 215 140 210"/>
+  <polygon fill={c} points="150 210 140 210 145 215 150 210"/>
+  <polygon fill={g} points="140 220 149.99 220 145 215 140 220"/>
+  <polygon fill={e} points="145 215 149.99 220 150 219.99 150 210 145 215"/>
+  <polygon fill={d} points="130 220 130 230 135 225 130 220"/>
+  <polygon fill={g} points="140 220 130 220 135 225 140 220"/>
+  <polygon fill={c} points="130 230 139.99 230 135 225 130 230"/>
+  <polygon fill={f} points="135 225 139.99 230 140 229.99 140 220 135 225"/>
+  <polygon fill={h} points="120 230 120 240 125 235 120 230"/>
+  <polygon fill={c} points="130 230 120 230 125 235 130 230"/>
+  <polygon fill={g} points="120 240 129.99 240 125 235 120 240"/>
+  <polygon fill={d} points="125 235 129.99 240 130 239.99 130 230 125 235"/>
+  <polygon fill={a} points="170.05 220.05 170.05 220.05 170.04 220.06 170.05 220.05 160 210 160 240 175 225 170.05 220.05"/>
+  <polygon fill={b} points="180 230 175 225 160 240 190 240 180.03 230.03 180 230"/>
+  <polygon fill={a} points="189.94 219.95 189.95 219.95 189.96 219.94 189.95 219.95 199.99 230 199.99 200 184.99 215 189.94 219.95"/>
+  <polygon fill={b} points="179.99 210 184.99 215 199.99 200 169.99 200 179.97 209.97 179.99 210"/>
+  <polygon fill={d} points="185.01 235.01 190 240 190 230.01 185.01 235.01"/>
+  <polygon fill={c} points="190 230 180 230 180.03 230.03 185.01 235.01 190 230.01 190 230"/>
+  <rect fill={c} x="199.99" y="220.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="165 215 170 220 170 210 165 215"/>
+  <polygon fill={f} points="175 225 180 230 180 220.01 175 225"/>
+  <rect fill={c} x="199.99" y="200" width="0.01" height="20.01"/>
+  <polygon fill={g} points="180 220 170 220 170.05 220.05 170.05 220.05 175 225 175 225 180 220.01 180 220"/>
+  <polygon fill={c} points="160 210 165 215 170 210 160 210"/>
+  <polygon fill={f} points="180.01 220 185 215.01 184.99 215 180 210.01 180 220 180.01 220"/>
+  <polygon fill={g} points="189.99 220 189.95 219.95 189.94 219.95 185 215.01 180.01 220 189.99 220"/>
+  <polygon fill={c} points="179.99 210 179.97 209.97 175 205 170 210 179.99 210"/>
+  <polygon fill={e} points="175 205 170 200.01 170 210 175 205"/>
+  <polygon fill={c} points="199.99 230 195 225.01 190.01 230 199.99 230"/>
+  <polygon fill={d} points="190.01 230 195 225.01 190 220.01 190 230 190.01 230"/>
+  <polygon fill={e} points="160 210 170 210 165 205 160 210"/>
+  <polygon fill={g} points="160 200 160 210 165 205 160 200"/>
+  <polygon fill={c} points="170 210 170 200.01 165 205 170 210"/>
+  <polygon fill={h} points="165 205 170 200.01 169.99 200 160 200 165 205"/>
+  <polygon fill={f} points="170 220 180 220 175 215 170 220"/>
+  <polygon fill={c} points="170 210 170 220 175 215 170 210"/>
+  <polygon fill={g} points="180 220 180 210.01 175 215 180 220"/>
+  <polygon fill={e} points="175 215 180 210.01 179.99 210 170 210 175 215"/>
+  <polygon fill={d} points="180 230 190 230 185 225 180 230"/>
+  <polygon fill={g} points="180 220 180 230 185 225 180 220"/>
+  <polygon fill={c} points="190 230 190 220.01 185 225 190 230"/>
+  <polygon fill={f} points="185 225 190 220.01 189.99 220 180 220 185 225"/>
+  <polygon fill={h} points="190 240 200 240 195 235 190 240"/>
+  <polygon fill={c} points="190 230 190 240 195 235 190 230"/>
+  <polygon fill={g} points="200 240 200 230.01 195 235 200 240"/>
+  <polygon fill={d} points="195 235 200 230.01 199.99 230 190 230 195 235"/>
+  <polygon fill={a} points="219.95 210.05 219.95 210.05 219.94 210.04 219.95 210.05 230 200 200 200 215 215 219.95 210.05"/>
+  <polygon fill={b} points="210 220 215 215 200 200 200 230 209.97 220.03 210 220"/>
+  <polygon fill={a} points="220.05 229.94 220.05 229.95 220.06 229.96 220.05 229.95 210 239.99 240 239.99 225 224.99 220.05 229.94"/>
+  <polygon fill={b} points="230 219.99 225 224.99 240 239.99 240 209.99 230.03 219.97 230 219.99"/>
+  <polygon fill={d} points="204.99 225.01 200 230 209.99 230 204.99 225.01"/>
+  <polygon fill={c} points="210 230 210 220 209.97 220.03 204.99 225.01 209.99 230 210 230"/>
+  <rect fill={c} x="210" y="239.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="225 205 220 210 230 210 225 205"/>
+  <polygon fill={f} points="215 215 210 220 219.99 220 215 215"/>
+  <rect fill={c} x="219.99" y="239.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="220 220 220 210 219.95 210.05 219.95 210.05 215 215 215 215 219.99 220 220 220"/>
+  <polygon fill={c} points="230 200 225 205 230 210 230 200"/>
+  <polygon fill={f} points="220 220.01 224.99 225 225 224.99 229.99 220 220 220 220 220.01"/>
+  <polygon fill={g} points="220 229.99 220.05 229.95 220.05 229.94 224.99 225 220 220.01 220 229.99"/>
+  <polygon fill={c} points="230 219.99 230.03 219.97 235 215 230 210 230 219.99"/>
+  <polygon fill={e} points="235 215 239.99 210 230 210 235 215"/>
+  <polygon fill={c} points="210 239.99 214.99 235 210 230.01 210 239.99"/>
+  <polygon fill={d} points="210 230.01 214.99 235 219.99 230 210 230 210 230.01"/>
+  <polygon fill={e} points="230 200 230 210 235 205 230 200"/>
+  <polygon fill={g} points="240 200 230 200 235 205 240 200"/>
+  <polygon fill={c} points="230 210 239.99 210 235 205 230 210"/>
+  <polygon fill={h} points="235 205 239.99 210 240 209.99 240 200 235 205"/>
+  <polygon fill={f} points="220 210 220 220 225 215 220 210"/>
+  <polygon fill={c} points="230 210 220 210 225 215 230 210"/>
+  <polygon fill={g} points="220 220 229.99 220 225 215 220 220"/>
+  <polygon fill={e} points="225 215 229.99 220 230 219.99 230 210 225 215"/>
+  <polygon fill={d} points="210 220 210 230 215 225 210 220"/>
+  <polygon fill={g} points="220 220 210 220 215 225 220 220"/>
+  <polygon fill={c} points="210 230 219.99 230 215 225 210 230"/>
+  <polygon fill={f} points="215 225 219.99 230 220 229.99 220 220 215 225"/>
+  <polygon fill={h} points="200 230 200 240 205 235 200 230"/>
+  <polygon fill={c} points="210 230 200 230 205 235 210 230"/>
+  <polygon fill={g} points="200 240 209.99 240 205 235 200 240"/>
+  <polygon fill={d} points="205 235 209.99 240 210 239.99 210 230 205 235"/>
+  <polygon fill={a} points="250.05 220.05 250.05 220.05 250.04 220.06 250.05 220.05 240 210 240 240 255 225 250.05 220.05"/>
+  <polygon fill={b} points="260 230 255 225 240 240 270 240 260.03 230.03 260 230"/>
+  <polygon fill={a} points="269.94 219.95 269.95 219.95 269.95 219.94 269.95 219.95 279.99 230 279.99 200 264.99 215 269.94 219.95"/>
+  <polygon fill={b} points="259.99 210 264.99 215 279.99 200 249.99 200 259.97 209.97 259.99 210"/>
+  <polygon fill={d} points="265.01 235.01 270 240 270 230.01 265.01 235.01"/>
+  <polygon fill={c} points="270 230 260 230 260.03 230.03 265.01 235.01 270 230.01 270 230"/>
+  <rect fill={c} x="279.99" y="220.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="245 215 250 220 250 210 245 215"/>
+  <polygon fill={f} points="255 225 260 230 260 220.01 255 225"/>
+  <rect fill={c} x="279.99" y="200" width="0.01" height="20.01"/>
+  <polygon fill={g} points="260 220 250 220 250.05 220.05 250.05 220.05 255 225 255 225 260 220.01 260 220"/>
+  <polygon fill={c} points="240 210 245 215 250 210 240 210"/>
+  <polygon fill={f} points="260.01 220 265 215.01 264.99 215 260 210.01 260 220 260.01 220"/>
+  <polygon fill={g} points="269.99 220 269.95 219.95 269.94 219.95 265 215.01 260.01 220 269.99 220"/>
+  <polygon fill={c} points="259.99 210 259.97 209.97 255 205 250 210 259.99 210"/>
+  <polygon fill={e} points="255 205 250 200.01 250 210 255 205"/>
+  <polygon fill={c} points="279.99 230 275 225.01 270.01 230 279.99 230"/>
+  <polygon fill={d} points="270.01 230 275 225.01 270 220.01 270 230 270.01 230"/>
+  <polygon fill={e} points="240 210 250 210 245 205 240 210"/>
+  <polygon fill={g} points="240 200 240 210 245 205 240 200"/>
+  <polygon fill={c} points="250 210 250 200.01 245 205 250 210"/>
+  <polygon fill={h} points="245 205 250 200.01 249.99 200 240 200 245 205"/>
+  <polygon fill={f} points="250 220 260 220 255 215 250 220"/>
+  <polygon fill={c} points="250 210 250 220 255 215 250 210"/>
+  <polygon fill={g} points="260 220 260 210.01 255 215 260 220"/>
+  <polygon fill={e} points="255 215 260 210.01 259.99 210 250 210 255 215"/>
+  <polygon fill={d} points="260 230 270 230 265 225 260 230"/>
+  <polygon fill={g} points="260 220 260 230 265 225 260 220"/>
+  <polygon fill={c} points="270 230 270 220.01 265 225 270 230"/>
+  <polygon fill={f} points="265 225 270 220.01 269.99 220 260 220 265 225"/>
+  <polygon fill={h} points="270 240 280 240 275 235 270 240"/>
+  <polygon fill={c} points="270 230 270 240 275 235 270 230"/>
+  <polygon fill={g} points="280 240 280 230.01 275 235 280 240"/>
+  <polygon fill={d} points="275 235 280 230.01 279.99 230 270 230 275 235"/>
+  <polygon fill={a} points="50.05 260.05 50.05 260.05 50.04 260.06 50.05 260.05 40 250 40 280 55 265 50.05 260.05"/>
+  <polygon fill={b} points="60 270 55 265 40 280 70 280 60.03 270.03 60 270"/>
+  <polygon fill={a} points="69.94 259.95 69.95 259.95 69.95 259.94 69.95 259.95 79.99 270 79.99 240 64.99 255 69.94 259.95"/>
+  <polygon fill={b} points="59.99 250 64.99 255 79.99 240 49.99 240 59.97 249.97 59.99 250"/>
+  <polygon fill={d} points="65.01 275.01 70 280 70 270.01 65.01 275.01"/>
+  <polygon fill={c} points="70 270 60 270 60.03 270.03 65.01 275.01 70 270.01 70 270"/>
+  <rect fill={c} x="79.99" y="260.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="45 255 50 260 50 250 45 255"/>
+  <polygon fill={f} points="55 265 60 270 60 260.01 55 265"/>
+  <rect fill={c} x="79.99" y="240" width="0.01" height="20.01"/>
+  <polygon fill={g} points="60 260 50 260 50.05 260.05 50.05 260.05 55 265 55 265 60 260.01 60 260"/>
+  <polygon fill={c} points="40 250 45 255 50 250 40 250"/>
+  <polygon fill={f} points="60.01 260 65 255.01 64.99 255 60 250.01 60 260 60.01 260"/>
+  <polygon fill={g} points="69.99 260 69.95 259.95 69.94 259.95 65 255.01 60.01 260 69.99 260"/>
+  <polygon fill={c} points="59.99 250 59.97 249.97 55 245 50 250 59.99 250"/>
+  <polygon fill={e} points="55 245 50 240.01 50 250 55 245"/>
+  <polygon fill={c} points="79.99 270 75 265.01 70.01 270 79.99 270"/>
+  <polygon fill={d} points="70.01 270 75 265.01 70 260.01 70 270 70.01 270"/>
+  <polygon fill={e} points="40 250 50 250 45 245 40 250"/>
+  <polygon fill={g} points="40 240 40 250 45 245 40 240"/>
+  <polygon fill={c} points="50 250 50 240.01 45 245 50 250"/>
+  <polygon fill={h} points="45 245 50 240.01 49.99 240 40 240 45 245"/>
+  <polygon fill={f} points="50 260 60 260 55 255 50 260"/>
+  <polygon fill={c} points="50 250 50 260 55 255 50 250"/>
+  <polygon fill={g} points="60 260 60 250.01 55 255 60 260"/>
+  <polygon fill={e} points="55 255 60 250.01 59.99 250 50 250 55 255"/>
+  <polygon fill={d} points="60 270 70 270 65 265 60 270"/>
+  <polygon fill={g} points="60 260 60 270 65 265 60 260"/>
+  <polygon fill={c} points="70 270 70 260.01 65 265 70 270"/>
+  <polygon fill={f} points="65 265 70 260.01 69.99 260 60 260 65 265"/>
+  <polygon fill={h} points="70 280 80 280 75 275 70 280"/>
+  <polygon fill={c} points="70 270 70 280 75 275 70 270"/>
+  <polygon fill={g} points="80 280 80 270.01 75 275 80 280"/>
+  <polygon fill={d} points="75 275 80 270.01 79.99 270 70 270 75 275"/>
+  <polygon fill={a} points="99.95 250.05 99.95 250.05 99.94 250.04 99.95 250.05 110 240 80 240 95 255 99.95 250.05"/>
+  <polygon fill={b} points="90 260 95 255 80 240 80 270 89.97 260.03 90 260"/>
+  <polygon fill={a} points="100.05 269.94 100.05 269.95 100.06 269.95 100.05 269.95 90 279.99 120 279.99 105 264.99 100.05 269.94"/>
+  <polygon fill={b} points="110 259.99 105 264.99 120 279.99 120 249.99 110.03 259.97 110 259.99"/>
+  <polygon fill={d} points="84.99 265.01 80 270 89.99 270 84.99 265.01"/>
+  <polygon fill={c} points="90 270 90 260 89.97 260.03 84.99 265.01 89.99 270 90 270"/>
+  <rect fill={c} x="90" y="279.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="105 245 100 250 110 250 105 245"/>
+  <polygon fill={f} points="95 255 90 260 99.99 260 95 255"/>
+  <rect fill={c} x="99.99" y="279.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="100 260 100 250 99.95 250.05 99.95 250.05 95 255 95 255 99.99 260 100 260"/>
+  <polygon fill={c} points="110 240 105 245 110 250 110 240"/>
+  <polygon fill={f} points="100 260.01 104.99 265 105 264.99 109.99 260 100 260 100 260.01"/>
+  <polygon fill={g} points="100 269.99 100.05 269.95 100.05 269.94 104.99 265 100 260.01 100 269.99"/>
+  <polygon fill={c} points="110 259.99 110.03 259.97 115 255 110 250 110 259.99"/>
+  <polygon fill={e} points="115 255 119.99 250 110 250 115 255"/>
+  <polygon fill={c} points="90 279.99 94.99 275 90 270.01 90 279.99"/>
+  <polygon fill={d} points="90 270.01 94.99 275 99.99 270 90 270 90 270.01"/>
+  <polygon fill={e} points="110 240 110 250 115 245 110 240"/>
+  <polygon fill={g} points="120 240 110 240 115 245 120 240"/>
+  <polygon fill={c} points="110 250 119.99 250 115 245 110 250"/>
+  <polygon fill={h} points="115 245 119.99 250 120 249.99 120 240 115 245"/>
+  <polygon fill={f} points="100 250 100 260 105 255 100 250"/>
+  <polygon fill={c} points="110 250 100 250 105 255 110 250"/>
+  <polygon fill={g} points="100 260 109.99 260 105 255 100 260"/>
+  <polygon fill={e} points="105 255 109.99 260 110 259.99 110 250 105 255"/>
+  <polygon fill={d} points="90 260 90 270 95 265 90 260"/>
+  <polygon fill={g} points="100 260 90 260 95 265 100 260"/>
+  <polygon fill={c} points="90 270 99.99 270 95 265 90 270"/>
+  <polygon fill={f} points="95 265 99.99 270 100 269.99 100 260 95 265"/>
+  <polygon fill={h} points="80 270 80 280 85 275 80 270"/>
+  <polygon fill={c} points="90 270 80 270 85 275 90 270"/>
+  <polygon fill={g} points="80 280 89.99 280 85 275 80 280"/>
+  <polygon fill={d} points="85 275 89.99 280 90 279.99 90 270 85 275"/>
+  <polygon fill={a} points="130.05 260.05 130.05 260.05 130.04 260.06 130.05 260.05 120 250 120 280 135 265 130.05 260.05"/>
+  <polygon fill={b} points="140 270 135 265 120 280 150 280 140.03 270.03 140 270"/>
+  <polygon fill={a} points="149.94 259.95 149.95 259.95 149.96 259.94 149.95 259.95 159.99 270 159.99 240 144.99 255 149.94 259.95"/>
+  <polygon fill={b} points="139.99 250 144.99 255 159.99 240 129.99 240 139.97 249.97 139.99 250"/>
+  <polygon fill={d} points="145.01 275.01 150 280 150 270.01 145.01 275.01"/>
+  <polygon fill={c} points="150 270 140 270 140.03 270.03 145.01 275.01 150 270.01 150 270"/>
+  <rect fill={c} x="159.99" y="260.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="125 255 130 260 130 250 125 255"/>
+  <polygon fill={f} points="135 265 140 270 140 260.01 135 265"/>
+  <rect fill={c} x="159.99" y="240" width="0.01" height="20.01"/>
+  <polygon fill={g} points="140 260 130 260 130.05 260.05 130.05 260.05 135 265 135 265 140 260.01 140 260"/>
+  <polygon fill={c} points="120 250 125 255 130 250 120 250"/>
+  <polygon fill={f} points="140.01 260 145 255.01 144.99 255 140 250.01 140 260 140.01 260"/>
+  <polygon fill={g} points="149.99 260 149.95 259.95 149.94 259.95 145 255.01 140.01 260 149.99 260"/>
+  <polygon fill={c} points="139.99 250 139.97 249.97 135 245 130 250 139.99 250"/>
+  <polygon fill={e} points="135 245 130 240.01 130 250 135 245"/>
+  <polygon fill={c} points="159.99 270 155 265.01 150.01 270 159.99 270"/>
+  <polygon fill={d} points="150.01 270 155 265.01 150 260.01 150 270 150.01 270"/>
+  <polygon fill={e} points="120 250 130 250 125 245 120 250"/>
+  <polygon fill={g} points="120 240 120 250 125 245 120 240"/>
+  <polygon fill={c} points="130 250 130 240.01 125 245 130 250"/>
+  <polygon fill={h} points="125 245 130 240.01 129.99 240 120 240 125 245"/>
+  <polygon fill={f} points="130 260 140 260 135 255 130 260"/>
+  <polygon fill={c} points="130 250 130 260 135 255 130 250"/>
+  <polygon fill={g} points="140 260 140 250.01 135 255 140 260"/>
+  <polygon fill={e} points="135 255 140 250.01 139.99 250 130 250 135 255"/>
+  <polygon fill={d} points="140 270 150 270 145 265 140 270"/>
+  <polygon fill={g} points="140 260 140 270 145 265 140 260"/>
+  <polygon fill={c} points="150 270 150 260.01 145 265 150 270"/>
+  <polygon fill={f} points="145 265 150 260.01 149.99 260 140 260 145 265"/>
+  <polygon fill={h} points="150 280 160 280 155 275 150 280"/>
+  <polygon fill={c} points="150 270 150 280 155 275 150 270"/>
+  <polygon fill={g} points="160 280 160 270.01 155 275 160 280"/>
+  <polygon fill={d} points="155 275 160 270.01 159.99 270 150 270 155 275"/>
+  <polygon fill={a} points="179.95 250.05 179.95 250.05 179.94 250.04 179.95 250.05 190 240 160 240 175 255 179.95 250.05"/>
+  <polygon fill={b} points="170 260 175 255 160 240 160 270 169.97 260.03 170 260"/>
+  <polygon fill={a} points="180.05 269.94 180.05 269.95 180.06 269.95 180.05 269.95 170 279.99 200 279.99 185 264.99 180.05 269.94"/>
+  <polygon fill={b} points="190 259.99 185 264.99 200 279.99 200 249.99 190.03 259.97 190 259.99"/>
+  <polygon fill={d} points="164.99 265.01 160 270 169.99 270 164.99 265.01"/>
+  <polygon fill={c} points="170 270 170 260 169.97 260.03 164.99 265.01 169.99 270 170 270"/>
+  <rect fill={c} x="170" y="279.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="185 245 180 250 190 250 185 245"/>
+  <polygon fill={f} points="175 255 170 260 179.99 260 175 255"/>
+  <rect fill={c} x="179.99" y="279.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="180 260 180 250 179.95 250.05 179.95 250.05 175 255 175 255 179.99 260 180 260"/>
+  <polygon fill={c} points="190 240 185 245 190 250 190 240"/>
+  <polygon fill={f} points="180 260.01 184.99 265 185 264.99 189.99 260 180 260 180 260.01"/>
+  <polygon fill={g} points="180 269.99 180.05 269.95 180.05 269.94 184.99 265 180 260.01 180 269.99"/>
+  <polygon fill={c} points="190 259.99 190.03 259.97 195 255 190 250 190 259.99"/>
+  <polygon fill={e} points="195 255 199.99 250 190 250 195 255"/>
+  <polygon fill={c} points="170 279.99 174.99 275 170 270.01 170 279.99"/>
+  <polygon fill={d} points="170 270.01 174.99 275 179.99 270 170 270 170 270.01"/>
+  <polygon fill={e} points="190 240 190 250 195 245 190 240"/>
+  <polygon fill={g} points="200 240 190 240 195 245 200 240"/>
+  <polygon fill={c} points="190 250 199.99 250 195 245 190 250"/>
+  <polygon fill={h} points="195 245 199.99 250 200 249.99 200 240 195 245"/>
+  <polygon fill={f} points="180 250 180 260 185 255 180 250"/>
+  <polygon fill={c} points="190 250 180 250 185 255 190 250"/>
+  <polygon fill={g} points="180 260 189.99 260 185 255 180 260"/>
+  <polygon fill={e} points="185 255 189.99 260 190 259.99 190 250 185 255"/>
+  <polygon fill={d} points="170 260 170 270 175 265 170 260"/>
+  <polygon fill={g} points="180 260 170 260 175 265 180 260"/>
+  <polygon fill={c} points="170 270 179.99 270 175 265 170 270"/>
+  <polygon fill={f} points="175 265 179.99 270 180 269.99 180 260 175 265"/>
+  <polygon fill={h} points="160 270 160 280 165 275 160 270"/>
+  <polygon fill={c} points="170 270 160 270 165 275 170 270"/>
+  <polygon fill={g} points="160 280 169.99 280 165 275 160 280"/>
+  <polygon fill={d} points="165 275 169.99 280 170 279.99 170 270 165 275"/>
+  <polygon fill={a} points="210.05 260.05 210.05 260.05 210.04 260.06 210.05 260.05 200 250 200 280 215 265 210.05 260.05"/>
+  <polygon fill={b} points="220 270 215 265 200 280 230 280 220.03 270.03 220 270"/>
+  <polygon fill={a} points="229.94 259.95 229.95 259.95 229.96 259.94 229.95 259.95 239.99 270 239.99 240 224.99 255 229.94 259.95"/>
+  <polygon fill={b} points="219.99 250 224.99 255 239.99 240 209.99 240 219.97 249.97 219.99 250"/>
+  <polygon fill={d} points="225.01 275.01 230 280 230 270.01 225.01 275.01"/>
+  <polygon fill={c} points="230 270 220 270 220.03 270.03 225.01 275.01 230 270.01 230 270"/>
+  <rect fill={c} x="239.99" y="260.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="205 255 210 260 210 250 205 255"/>
+  <polygon fill={f} points="215 265 220 270 220 260.01 215 265"/>
+  <rect fill={c} x="239.99" y="240" width="0.01" height="20.01"/>
+  <polygon fill={g} points="220 260 210 260 210.05 260.05 210.05 260.05 215 265 215 265 220 260.01 220 260"/>
+  <polygon fill={c} points="200 250 205 255 210 250 200 250"/>
+  <polygon fill={f} points="220.01 260 225 255.01 224.99 255 220 250.01 220 260 220.01 260"/>
+  <polygon fill={g} points="229.99 260 229.95 259.95 229.94 259.95 225 255.01 220.01 260 229.99 260"/>
+  <polygon fill={c} points="219.99 250 219.97 249.97 215 245 210 250 219.99 250"/>
+  <polygon fill={e} points="215 245 210 240.01 210 250 215 245"/>
+  <polygon fill={c} points="239.99 270 235 265.01 230.01 270 239.99 270"/>
+  <polygon fill={d} points="230.01 270 235 265.01 230 260.01 230 270 230.01 270"/>
+  <polygon fill={e} points="200 250 210 250 205 245 200 250"/>
+  <polygon fill={g} points="200 240 200 250 205 245 200 240"/>
+  <polygon fill={c} points="210 250 210 240.01 205 245 210 250"/>
+  <polygon fill={h} points="205 245 210 240.01 209.99 240 200 240 205 245"/>
+  <polygon fill={f} points="210 260 220 260 215 255 210 260"/>
+  <polygon fill={c} points="210 250 210 260 215 255 210 250"/>
+  <polygon fill={g} points="220 260 220 250.01 215 255 220 260"/>
+  <polygon fill={e} points="215 255 220 250.01 219.99 250 210 250 215 255"/>
+  <polygon fill={d} points="220 270 230 270 225 265 220 270"/>
+  <polygon fill={g} points="220 260 220 270 225 265 220 260"/>
+  <polygon fill={c} points="230 270 230 260.01 225 265 230 270"/>
+  <polygon fill={f} points="225 265 230 260.01 229.99 260 220 260 225 265"/>
+  <polygon fill={h} points="230 280 240 280 235 275 230 280"/>
+  <polygon fill={c} points="230 270 230 280 235 275 230 270"/>
+  <polygon fill={g} points="240 280 240 270.01 235 275 240 280"/>
+  <polygon fill={d} points="235 275 240 270.01 239.99 270 230 270 235 275"/>
+  <polygon fill={a} points="259.95 250.05 259.95 250.05 259.94 250.04 259.95 250.05 270 240 240 240 255 255 259.95 250.05"/>
+  <polygon fill={b} points="250 260 255 255 240 240 240 270 249.97 260.03 250 260"/>
+  <polygon fill={a} points="260.05 269.94 260.05 269.95 260.06 269.95 260.05 269.95 250 279.99 280 279.99 265 264.99 260.05 269.94"/>
+  <polygon fill={b} points="270 259.99 265 264.99 280 279.99 280 249.99 270.03 259.97 270 259.99"/>
+  <polygon fill={d} points="244.99 265.01 240 270 249.99 270 244.99 265.01"/>
+  <polygon fill={c} points="250 270 250 260 249.97 260.03 244.99 265.01 249.99 270 250 270"/>
+  <rect fill={c} x="250" y="279.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="265 245 260 250 270 250 265 245"/>
+  <polygon fill={f} points="255 255 250 260 259.99 260 255 255"/>
+  <rect fill={c} x="259.99" y="279.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="260 260 260 250 259.95 250.05 259.95 250.05 255 255 255 255 259.99 260 260 260"/>
+  <polygon fill={c} points="270 240 265 245 270 250 270 240"/>
+  <polygon fill={f} points="260 260.01 264.99 265 265 264.99 269.99 260 260 260 260 260.01"/>
+  <polygon fill={g} points="260 269.99 260.05 269.95 260.05 269.94 264.99 265 260 260.01 260 269.99"/>
+  <polygon fill={c} points="270 259.99 270.03 259.97 275 255 270 250 270 259.99"/>
+  <polygon fill={e} points="275 255 279.99 250 270 250 275 255"/>
+  <polygon fill={c} points="250 279.99 254.99 275 250 270.01 250 279.99"/>
+  <polygon fill={d} points="250 270.01 254.99 275 259.99 270 250 270 250 270.01"/>
+  <polygon fill={e} points="270 240 270 250 275 245 270 240"/>
+  <polygon fill={g} points="280 240 270 240 275 245 280 240"/>
+  <polygon fill={c} points="270 250 279.99 250 275 245 270 250"/>
+  <polygon fill={h} points="275 245 279.99 250 280 249.99 280 240 275 245"/>
+  <polygon fill={f} points="260 250 260 260 265 255 260 250"/>
+  <polygon fill={c} points="270 250 260 250 265 255 270 250"/>
+  <polygon fill={g} points="260 260 269.99 260 265 255 260 260"/>
+  <polygon fill={e} points="265 255 269.99 260 270 259.99 270 250 265 255"/>
+  <polygon fill={d} points="250 260 250 270 255 265 250 260"/>
+  <polygon fill={g} points="260 260 250 260 255 265 260 260"/>
+  <polygon fill={c} points="250 270 259.99 270 255 265 250 270"/>
+  <polygon fill={f} points="255 265 259.99 270 260 269.99 260 260 255 265"/>
+  <polygon fill={h} points="240 270 240 280 245 275 240 270"/>
+  <polygon fill={c} points="250 270 240 270 245 275 250 270"/>
+  <polygon fill={g} points="240 280 249.99 280 245 275 240 280"/>
+  <polygon fill={d} points="245 275 249.99 280 250 279.99 250 270 245 275"/>
+  <polygon fill={a} points="59.95 290.05 59.95 290.05 59.94 290.04 59.95 290.05 70 280 40 280 55 295 59.95 290.05"/>
+  <polygon fill={b} points="50 300 55 295 40 280 40 310 49.97 300.03 50 300"/>
+  <polygon fill={a} points="60.05 309.94 60.05 309.95 60.06 309.95 60.05 309.95 50 319.99 80 319.99 65 304.99 60.05 309.94"/>
+  <polygon fill={b} points="70 299.99 65 304.99 80 319.99 80 289.99 70.03 299.97 70 299.99"/>
+  <polygon fill={d} points="44.99 305.01 40 310 49.99 310 44.99 305.01"/>
+  <polygon fill={c} points="50 310 50 300 49.97 300.03 44.99 305.01 49.99 310 50 310"/>
+  <rect fill={c} x="50" y="319.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="65 285 60 290 70 290 65 285"/>
+  <polygon fill={f} points="55 295 50 300 59.99 300 55 295"/>
+  <rect fill={c} x="59.99" y="319.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="60 300 60 290 59.95 290.05 59.95 290.05 55 295 55 295 59.99 300 60 300"/>
+  <polygon fill={c} points="70 280 65 285 70 290 70 280"/>
+  <polygon fill={f} points="60 300.01 64.99 305 65 304.99 69.99 300 60 300 60 300.01"/>
+  <polygon fill={g} points="60 309.99 60.05 309.95 60.05 309.94 64.99 305 60 300.01 60 309.99"/>
+  <polygon fill={c} points="70 299.99 70.03 299.97 75 295 70 290 70 299.99"/>
+  <polygon fill={e} points="75 295 79.99 290 70 290 75 295"/>
+  <polygon fill={c} points="50 319.99 54.99 315 50 310.01 50 319.99"/>
+  <polygon fill={d} points="50 310.01 54.99 315 59.99 310 50 310 50 310.01"/>
+  <polygon fill={e} points="70 280 70 290 75 285 70 280"/>
+  <polygon fill={g} points="80 280 70 280 75 285 80 280"/>
+  <polygon fill={c} points="70 290 79.99 290 75 285 70 290"/>
+  <polygon fill={h} points="75 285 79.99 290 80 289.99 80 280 75 285"/>
+  <polygon fill={f} points="60 290 60 300 65 295 60 290"/>
+  <polygon fill={c} points="70 290 60 290 65 295 70 290"/>
+  <polygon fill={g} points="60 300 69.99 300 65 295 60 300"/>
+  <polygon fill={e} points="65 295 69.99 300 70 299.99 70 290 65 295"/>
+  <polygon fill={d} points="50 300 50 310 55 305 50 300"/>
+  <polygon fill={g} points="60 300 50 300 55 305 60 300"/>
+  <polygon fill={c} points="50 310 59.99 310 55 305 50 310"/>
+  <polygon fill={f} points="55 305 59.99 310 60 309.99 60 300 55 305"/>
+  <polygon fill={h} points="40 310 40 320 45 315 40 310"/>
+  <polygon fill={c} points="50 310 40 310 45 315 50 310"/>
+  <polygon fill={g} points="40 320 49.99 320 45 315 40 320"/>
+  <polygon fill={d} points="45 315 49.99 320 50 319.99 50 310 45 315"/>
+  <polygon fill={a} points="109.95 299.95 109.95 299.95 109.96 299.94 109.95 299.95 120 310 120 280 105 295 109.95 299.95"/>
+  <polygon fill={b} points="100 290 105 295 120 280 90 280 99.97 289.97 100 290"/>
+  <polygon fill={a} points="90.06 300.05 90.05 300.05 90.05 300.06 90.05 300.05 80.01 290 80.01 320 95.01 305 90.06 300.05"/>
+  <polygon fill={b} points="100.01 310 95.01 305 80.01 320 110.01 320 100.03 310.03 100.01 310"/>
+  <polygon fill={d} points="94.99 284.99 90 280 90 289.99 94.99 284.99"/>
+  <polygon fill={c} points="90 290 100 290 99.97 289.97 94.99 284.99 90 289.99 90 290"/>
+  <rect fill={c} x="80" y="290" width="0.01" height="9.99"/>
+  <polygon fill={e} points="115 305 110 300 110 310 115 305"/>
+  <polygon fill={f} points="105 295 100 290 100 299.99 105 295"/>
+  <rect fill={c} x="80" y="299.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="100 300 110 300 109.95 299.95 109.95 299.95 105 295 105 295 100 299.99 100 300"/>
+  <polygon fill={c} points="120 310 115 305 110 310 120 310"/>
+  <polygon fill={f} points="99.99 300 95 304.99 95.01 305 100 309.99 100 300 99.99 300"/>
+  <polygon fill={g} points="90.01 300 90.05 300.05 90.06 300.05 95 304.99 99.99 300 90.01 300"/>
+  <polygon fill={c} points="100.01 310 100.03 310.03 105 315 110 310 100.01 310"/>
+  <polygon fill={e} points="105 315 110 319.99 110 310 105 315"/>
+  <polygon fill={c} points="80.01 290 85 294.99 89.99 290 80.01 290"/>
+  <polygon fill={d} points="89.99 290 85 294.99 90 299.99 90 290 89.99 290"/>
+  <polygon fill={e} points="120 310 110 310 115 315 120 310"/>
+  <polygon fill={g} points="120 320 120 310 115 315 120 320"/>
+  <polygon fill={c} points="110 310 110 319.99 115 315 110 310"/>
+  <polygon fill={h} points="115 315 110 319.99 110.01 320 120 320 115 315"/>
+  <polygon fill={f} points="110 300 100 300 105 305 110 300"/>
+  <polygon fill={c} points="110 310 110 300 105 305 110 310"/>
+  <polygon fill={g} points="100 300 100 309.99 105 305 100 300"/>
+  <polygon fill={e} points="105 305 100 309.99 100.01 310 110 310 105 305"/>
+  <polygon fill={d} points="100 290 90 290 95 295 100 290"/>
+  <polygon fill={g} points="100 300 100 290 95 295 100 300"/>
+  <polygon fill={c} points="90 290 90 299.99 95 295 90 290"/>
+  <polygon fill={f} points="95 295 90 299.99 90.01 300 100 300 95 295"/>
+  <polygon fill={h} points="90 280 80 280 85 285 90 280"/>
+  <polygon fill={c} points="90 290 90 280 85 285 90 290"/>
+  <polygon fill={g} points="80 280 80 289.99 85 285 80 280"/>
+  <polygon fill={d} points="85 285 80 289.99 80.01 290 90 290 85 285"/>
+  <polygon fill={a} points="139.95 290.05 139.95 290.05 139.94 290.04 139.95 290.05 150 280 120 280 135 295 139.95 290.05"/>
+  <polygon fill={b} points="130 300 135 295 120 280 120 310 129.97 300.03 130 300"/>
+  <polygon fill={a} points="140.05 309.94 140.05 309.95 140.06 309.95 140.05 309.95 130 319.99 160 319.99 145 304.99 140.05 309.94"/>
+  <polygon fill={b} points="150 299.99 145 304.99 160 319.99 160 289.99 150.03 299.97 150 299.99"/>
+  <polygon fill={d} points="124.99 305.01 120 310 129.99 310 124.99 305.01"/>
+  <polygon fill={c} points="130 310 130 300 129.97 300.03 124.99 305.01 129.99 310 130 310"/>
+  <rect fill={c} x="130" y="319.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="145 285 140 290 150 290 145 285"/>
+  <polygon fill={f} points="135 295 130 300 139.99 300 135 295"/>
+  <rect fill={c} x="139.99" y="319.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="140 300 140 290 139.95 290.05 139.95 290.05 135 295 135 295 139.99 300 140 300"/>
+  <polygon fill={c} points="150 280 145 285 150 290 150 280"/>
+  <polygon fill={f} points="140 300.01 144.99 305 145 304.99 149.99 300 140 300 140 300.01"/>
+  <polygon fill={g} points="140 309.99 140.05 309.95 140.05 309.94 144.99 305 140 300.01 140 309.99"/>
+  <polygon fill={c} points="150 299.99 150.03 299.97 155 295 150 290 150 299.99"/>
+  <polygon fill={e} points="155 295 159.99 290 150 290 155 295"/>
+  <polygon fill={c} points="130 319.99 134.99 315 130 310.01 130 319.99"/>
+  <polygon fill={d} points="130 310.01 134.99 315 139.99 310 130 310 130 310.01"/>
+  <polygon fill={e} points="150 280 150 290 155 285 150 280"/>
+  <polygon fill={g} points="160 280 150 280 155 285 160 280"/>
+  <polygon fill={c} points="150 290 159.99 290 155 285 150 290"/>
+  <polygon fill={h} points="155 285 159.99 290 160 289.99 160 280 155 285"/>
+  <polygon fill={f} points="140 290 140 300 145 295 140 290"/>
+  <polygon fill={c} points="150 290 140 290 145 295 150 290"/>
+  <polygon fill={g} points="140 300 149.99 300 145 295 140 300"/>
+  <polygon fill={e} points="145 295 149.99 300 150 299.99 150 290 145 295"/>
+  <polygon fill={d} points="130 300 130 310 135 305 130 300"/>
+  <polygon fill={g} points="140 300 130 300 135 305 140 300"/>
+  <polygon fill={c} points="130 310 139.99 310 135 305 130 310"/>
+  <polygon fill={f} points="135 305 139.99 310 140 309.99 140 300 135 305"/>
+  <polygon fill={h} points="120 310 120 320 125 315 120 310"/>
+  <polygon fill={c} points="130 310 120 310 125 315 130 310"/>
+  <polygon fill={g} points="120 320 129.99 320 125 315 120 320"/>
+  <polygon fill={d} points="125 315 129.99 320 130 319.99 130 310 125 315"/>
+  <polygon fill={a} points="189.95 299.95 189.95 299.95 189.96 299.94 189.95 299.95 200 310 200 280 185 295 189.95 299.95"/>
+  <polygon fill={b} points="180 290 185 295 200 280 170 280 179.97 289.97 180 290"/>
+  <polygon fill={a} points="170.06 300.05 170.05 300.05 170.04 300.06 170.05 300.05 160.01 290 160.01 320 175.01 305 170.06 300.05"/>
+  <polygon fill={b} points="180.01 310 175.01 305 160.01 320 190.01 320 180.03 310.03 180.01 310"/>
+  <polygon fill={d} points="174.99 284.99 170 280 170 289.99 174.99 284.99"/>
+  <polygon fill={c} points="170 290 180 290 179.97 289.97 174.99 284.99 170 289.99 170 290"/>
+  <rect fill={c} x="160" y="290" width="0.01" height="9.99"/>
+  <polygon fill={e} points="195 305 190 300 190 310 195 305"/>
+  <polygon fill={f} points="185 295 180 290 180 299.99 185 295"/>
+  <rect fill={c} x="160" y="299.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="180 300 190 300 189.95 299.95 189.95 299.95 185 295 185 295 180 299.99 180 300"/>
+  <polygon fill={c} points="200 310 195 305 190 310 200 310"/>
+  <polygon fill={f} points="179.99 300 175 304.99 175.01 305 180 309.99 180 300 179.99 300"/>
+  <polygon fill={g} points="170.01 300 170.05 300.05 170.06 300.05 175 304.99 179.99 300 170.01 300"/>
+  <polygon fill={c} points="180.01 310 180.03 310.03 185 315 190 310 180.01 310"/>
+  <polygon fill={e} points="185 315 190 319.99 190 310 185 315"/>
+  <polygon fill={c} points="160.01 290 165 294.99 169.99 290 160.01 290"/>
+  <polygon fill={d} points="169.99 290 165 294.99 170 299.99 170 290 169.99 290"/>
+  <polygon fill={e} points="200 310 190 310 195 315 200 310"/>
+  <polygon fill={g} points="200 320 200 310 195 315 200 320"/>
+  <polygon fill={c} points="190 310 190 319.99 195 315 190 310"/>
+  <polygon fill={h} points="195 315 190 319.99 190.01 320 200 320 195 315"/>
+  <polygon fill={f} points="190 300 180 300 185 305 190 300"/>
+  <polygon fill={c} points="190 310 190 300 185 305 190 310"/>
+  <polygon fill={g} points="180 300 180 309.99 185 305 180 300"/>
+  <polygon fill={e} points="185 305 180 309.99 180.01 310 190 310 185 305"/>
+  <polygon fill={d} points="180 290 170 290 175 295 180 290"/>
+  <polygon fill={g} points="180 300 180 290 175 295 180 300"/>
+  <polygon fill={c} points="170 290 170 299.99 175 295 170 290"/>
+  <polygon fill={f} points="175 295 170 299.99 170.01 300 180 300 175 295"/>
+  <polygon fill={h} points="170 280 160 280 165 285 170 280"/>
+  <polygon fill={c} points="170 290 170 280 165 285 170 290"/>
+  <polygon fill={g} points="160 280 160 289.99 165 285 160 280"/>
+  <polygon fill={d} points="165 285 160 289.99 160.01 290 170 290 165 285"/>
+  <polygon fill={a} points="219.95 290.05 219.95 290.05 219.94 290.04 219.95 290.05 230 280 200 280 215 295 219.95 290.05"/>
+  <polygon fill={b} points="210 300 215 295 200 280 200 310 209.97 300.03 210 300"/>
+  <polygon fill={a} points="220.05 309.94 220.05 309.95 220.06 309.95 220.05 309.95 210 319.99 240 319.99 225 304.99 220.05 309.94"/>
+  <polygon fill={b} points="230 299.99 225 304.99 240 319.99 240 289.99 230.03 299.97 230 299.99"/>
+  <polygon fill={d} points="204.99 305.01 200 310 209.99 310 204.99 305.01"/>
+  <polygon fill={c} points="210 310 210 300 209.97 300.03 204.99 305.01 209.99 310 210 310"/>
+  <rect fill={c} x="210" y="319.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="225 285 220 290 230 290 225 285"/>
+  <polygon fill={f} points="215 295 210 300 219.99 300 215 295"/>
+  <rect fill={c} x="219.99" y="319.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="220 300 220 290 219.95 290.05 219.95 290.05 215 295 215 295 219.99 300 220 300"/>
+  <polygon fill={c} points="230 280 225 285 230 290 230 280"/>
+  <polygon fill={f} points="220 300.01 224.99 305 225 304.99 229.99 300 220 300 220 300.01"/>
+  <polygon fill={g} points="220 309.99 220.05 309.95 220.05 309.94 224.99 305 220 300.01 220 309.99"/>
+  <polygon fill={c} points="230 299.99 230.03 299.97 235 295 230 290 230 299.99"/>
+  <polygon fill={e} points="235 295 239.99 290 230 290 235 295"/>
+  <polygon fill={c} points="210 319.99 214.99 315 210 310.01 210 319.99"/>
+  <polygon fill={d} points="210 310.01 214.99 315 219.99 310 210 310 210 310.01"/>
+  <polygon fill={e} points="230 280 230 290 235 285 230 280"/>
+  <polygon fill={g} points="240 280 230 280 235 285 240 280"/>
+  <polygon fill={c} points="230 290 239.99 290 235 285 230 290"/>
+  <polygon fill={h} points="235 285 239.99 290 240 289.99 240 280 235 285"/>
+  <polygon fill={f} points="220 290 220 300 225 295 220 290"/>
+  <polygon fill={c} points="230 290 220 290 225 295 230 290"/>
+  <polygon fill={g} points="220 300 229.99 300 225 295 220 300"/>
+  <polygon fill={e} points="225 295 229.99 300 230 299.99 230 290 225 295"/>
+  <polygon fill={d} points="210 300 210 310 215 305 210 300"/>
+  <polygon fill={g} points="220 300 210 300 215 305 220 300"/>
+  <polygon fill={c} points="210 310 219.99 310 215 305 210 310"/>
+  <polygon fill={f} points="215 305 219.99 310 220 309.99 220 300 215 305"/>
+  <polygon fill={h} points="200 310 200 320 205 315 200 310"/>
+  <polygon fill={c} points="210 310 200 310 205 315 210 310"/>
+  <polygon fill={g} points="200 320 209.99 320 205 315 200 320"/>
+  <polygon fill={d} points="205 315 209.99 320 210 319.99 210 310 205 315"/>
+  <polygon fill={a} points="269.95 299.95 269.95 299.95 269.96 299.94 269.95 299.95 280 310 280 280 265 295 269.95 299.95"/>
+  <polygon fill={b} points="260 290 265 295 280 280 250 280 259.97 289.97 260 290"/>
+  <polygon fill={a} points="250.06 300.05 250.05 300.05 250.04 300.06 250.05 300.05 240.01 290 240.01 320 255.01 305 250.06 300.05"/>
+  <polygon fill={b} points="260.01 310 255.01 305 240.01 320 270.01 320 260.03 310.03 260.01 310"/>
+  <polygon fill={d} points="254.99 284.99 250 280 250 289.99 254.99 284.99"/>
+  <polygon fill={c} points="250 290 260 290 259.97 289.97 254.99 284.99 250 289.99 250 290"/>
+  <rect fill={c} x="240" y="290" width="0.01" height="9.99"/>
+  <polygon fill={e} points="275 305 270 300 270 310 275 305"/>
+  <polygon fill={f} points="265 295 260 290 260 299.99 265 295"/>
+  <rect fill={c} x="240" y="299.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="260 300 270 300 269.95 299.95 269.95 299.95 265 295 265 295 260 299.99 260 300"/>
+  <polygon fill={c} points="280 310 275 305 270 310 280 310"/>
+  <polygon fill={f} points="259.99 300 255 304.99 255.01 305 260 309.99 260 300 259.99 300"/>
+  <polygon fill={g} points="250.01 300 250.05 300.05 250.06 300.05 255 304.99 259.99 300 250.01 300"/>
+  <polygon fill={c} points="260.01 310 260.03 310.03 265 315 270 310 260.01 310"/>
+  <polygon fill={e} points="265 315 270 319.99 270 310 265 315"/>
+  <polygon fill={c} points="240.01 290 245 294.99 249.99 290 240.01 290"/>
+  <polygon fill={d} points="249.99 290 245 294.99 250 299.99 250 290 249.99 290"/>
+  <polygon fill={e} points="280 310 270 310 275 315 280 310"/>
+  <polygon fill={g} points="280 320 280 310 275 315 280 320"/>
+  <polygon fill={c} points="270 310 270 319.99 275 315 270 310"/>
+  <polygon fill={h} points="275 315 270 319.99 270.01 320 280 320 275 315"/>
+  <polygon fill={f} points="270 300 260 300 265 305 270 300"/>
+  <polygon fill={c} points="270 310 270 300 265 305 270 310"/>
+  <polygon fill={g} points="260 300 260 309.99 265 305 260 300"/>
+  <polygon fill={e} points="265 305 260 309.99 260.01 310 270 310 265 305"/>
+  <polygon fill={d} points="260 290 250 290 255 295 260 290"/>
+  <polygon fill={g} points="260 300 260 290 255 295 260 300"/>
+  <polygon fill={c} points="250 290 250 299.99 255 295 250 290"/>
+  <polygon fill={f} points="255 295 250 299.99 250.01 300 260 300 255 295"/>
+  <polygon fill={h} points="250 280 240 280 245 285 250 280"/>
+  <polygon fill={c} points="250 290 250 280 245 285 250 290"/>
+  <polygon fill={g} points="240 280 240 289.99 245 285 240 280"/>
+  <polygon fill={d} points="245 285 240 289.99 240.01 290 250 290 245 285"/>
+  <polygon fill={a} points="50.05 340.05 50.05 340.05 50.04 340.06 50.05 340.05 40 330 40 360 55 345 50.05 340.05"/>
+  <polygon fill={b} points="60 350 55 345 40 360 70 360 60.03 350.03 60 350"/>
+  <polygon fill={a} points="69.94 339.95 69.95 339.95 69.95 339.94 69.95 339.95 79.99 350 79.99 320 64.99 335 69.94 339.95"/>
+  <polygon fill={b} points="59.99 330 64.99 335 79.99 320 49.99 320 59.97 329.97 59.99 330"/>
+  <polygon fill={d} points="65.01 355.01 70 360 70 350.01 65.01 355.01"/>
+  <polygon fill={c} points="70 350 60 350 60.03 350.03 65.01 355.01 70 350.01 70 350"/>
+  <rect fill={c} x="79.99" y="340.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="45 335 50 340 50 330 45 335"/>
+  <polygon fill={f} points="55 345 60 350 60 340.01 55 345"/>
+  <rect fill={c} x="79.99" y="320" width="0.01" height="20.01"/>
+  <polygon fill={g} points="60 340 50 340 50.05 340.05 50.05 340.05 55 345 55 345 60 340.01 60 340"/>
+  <polygon fill={c} points="40 330 45 335 50 330 40 330"/>
+  <polygon fill={f} points="60.01 340 65 335.01 64.99 335 60 330.01 60 340 60.01 340"/>
+  <polygon fill={g} points="69.99 340 69.95 339.95 69.94 339.95 65 335.01 60.01 340 69.99 340"/>
+  <polygon fill={c} points="59.99 330 59.97 329.97 55 325 50 330 59.99 330"/>
+  <polygon fill={e} points="55 325 50 320.01 50 330 55 325"/>
+  <polygon fill={c} points="79.99 350 75 345.01 70.01 350 79.99 350"/>
+  <polygon fill={d} points="70.01 350 75 345.01 70 340.01 70 350 70.01 350"/>
+  <polygon fill={e} points="40 330 50 330 45 325 40 330"/>
+  <polygon fill={g} points="40 320 40 330 45 325 40 320"/>
+  <polygon fill={c} points="50 330 50 320.01 45 325 50 330"/>
+  <polygon fill={h} points="45 325 50 320.01 49.99 320 40 320 45 325"/>
+  <polygon fill={f} points="50 340 60 340 55 335 50 340"/>
+  <polygon fill={c} points="50 330 50 340 55 335 50 330"/>
+  <polygon fill={g} points="60 340 60 330.01 55 335 60 340"/>
+  <polygon fill={e} points="55 335 60 330.01 59.99 330 50 330 55 335"/>
+  <polygon fill={d} points="60 350 70 350 65 345 60 350"/>
+  <polygon fill={g} points="60 340 60 350 65 345 60 340"/>
+  <polygon fill={c} points="70 350 70 340.01 65 345 70 350"/>
+  <polygon fill={f} points="65 345 70 340.01 69.99 340 60 340 65 345"/>
+  <polygon fill={h} points="70 360 80 360 75 355 70 360"/>
+  <polygon fill={c} points="70 350 70 360 75 355 70 350"/>
+  <polygon fill={g} points="80 360 80 350.01 75 355 80 360"/>
+  <polygon fill={d} points="75 355 80 350.01 79.99 350 70 350 75 355"/>
+  <polygon fill={a} points="99.95 330.05 99.95 330.05 99.94 330.04 99.95 330.05 110 320 80 320 95 335 99.95 330.05"/>
+  <polygon fill={b} points="90 340 95 335 80 320 80 350 89.97 340.03 90 340"/>
+  <polygon fill={a} points="100.05 349.94 100.05 349.95 100.06 349.95 100.05 349.95 90 359.99 120 359.99 105 344.99 100.05 349.94"/>
+  <polygon fill={b} points="110 339.99 105 344.99 120 359.99 120 329.99 110.03 339.97 110 339.99"/>
+  <polygon fill={d} points="84.99 345.01 80 350 89.99 350 84.99 345.01"/>
+  <polygon fill={c} points="90 350 90 340 89.97 340.03 84.99 345.01 89.99 350 90 350"/>
+  <rect fill={c} x="90" y="359.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="105 325 100 330 110 330 105 325"/>
+  <polygon fill={f} points="95 335 90 340 99.99 340 95 335"/>
+  <rect fill={c} x="99.99" y="359.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="100 340 100 330 99.95 330.05 99.95 330.05 95 335 95 335 99.99 340 100 340"/>
+  <polygon fill={c} points="110 320 105 325 110 330 110 320"/>
+  <polygon fill={f} points="100 340.01 104.99 345 105 344.99 109.99 340 100 340 100 340.01"/>
+  <polygon fill={g} points="100 349.99 100.05 349.95 100.05 349.94 104.99 345 100 340.01 100 349.99"/>
+  <polygon fill={c} points="110 339.99 110.03 339.97 115 335 110 330 110 339.99"/>
+  <polygon fill={e} points="115 335 119.99 330 110 330 115 335"/>
+  <polygon fill={c} points="90 359.99 94.99 355 90 350.01 90 359.99"/>
+  <polygon fill={d} points="90 350.01 94.99 355 99.99 350 90 350 90 350.01"/>
+  <polygon fill={e} points="110 320 110 330 115 325 110 320"/>
+  <polygon fill={g} points="120 320 110 320 115 325 120 320"/>
+  <polygon fill={c} points="110 330 119.99 330 115 325 110 330"/>
+  <polygon fill={h} points="115 325 119.99 330 120 329.99 120 320 115 325"/>
+  <polygon fill={f} points="100 330 100 340 105 335 100 330"/>
+  <polygon fill={c} points="110 330 100 330 105 335 110 330"/>
+  <polygon fill={g} points="100 340 109.99 340 105 335 100 340"/>
+  <polygon fill={e} points="105 335 109.99 340 110 339.99 110 330 105 335"/>
+  <polygon fill={d} points="90 340 90 350 95 345 90 340"/>
+  <polygon fill={g} points="100 340 90 340 95 345 100 340"/>
+  <polygon fill={c} points="90 350 99.99 350 95 345 90 350"/>
+  <polygon fill={f} points="95 345 99.99 350 100 349.99 100 340 95 345"/>
+  <polygon fill={h} points="80 350 80 360 85 355 80 350"/>
+  <polygon fill={c} points="90 350 80 350 85 355 90 350"/>
+  <polygon fill={g} points="80 360 89.99 360 85 355 80 360"/>
+  <polygon fill={d} points="85 355 89.99 360 90 359.99 90 350 85 355"/>
+  <polygon fill={a} points="130.05 340.05 130.05 340.05 130.04 340.06 130.05 340.05 120 330 120 360 135 345 130.05 340.05"/>
+  <polygon fill={b} points="140 350 135 345 120 360 150 360 140.03 350.03 140 350"/>
+  <polygon fill={a} points="149.94 339.95 149.95 339.95 149.96 339.94 149.95 339.95 159.99 350 159.99 320 144.99 335 149.94 339.95"/>
+  <polygon fill={b} points="139.99 330 144.99 335 159.99 320 129.99 320 139.97 329.97 139.99 330"/>
+  <polygon fill={d} points="145.01 355.01 150 360 150 350.01 145.01 355.01"/>
+  <polygon fill={c} points="150 350 140 350 140.03 350.03 145.01 355.01 150 350.01 150 350"/>
+  <rect fill={c} x="159.99" y="340.01" width="0.01" height="9.99"/>
+  <polygon fill={e} points="125 335 130 340 130 330 125 335"/>
+  <polygon fill={f} points="135 345 140 350 140 340.01 135 345"/>
+  <rect fill={c} x="159.99" y="320" width="0.01" height="20.01"/>
+  <polygon fill={g} points="140 340 130 340 130.05 340.05 130.05 340.05 135 345 135 345 140 340.01 140 340"/>
+  <polygon fill={c} points="120 330 125 335 130 330 120 330"/>
+  <polygon fill={f} points="140.01 340 145 335.01 144.99 335 140 330.01 140 340 140.01 340"/>
+  <polygon fill={g} points="149.99 340 149.95 339.95 149.94 339.95 145 335.01 140.01 340 149.99 340"/>
+  <polygon fill={c} points="139.99 330 139.97 329.97 135 325 130 330 139.99 330"/>
+  <polygon fill={e} points="135 325 130 320.01 130 330 135 325"/>
+  <polygon fill={c} points="159.99 350 155 345.01 150.01 350 159.99 350"/>
+  <polygon fill={d} points="150.01 350 155 345.01 150 340.01 150 350 150.01 350"/>
+  <polygon fill={e} points="120 330 130 330 125 325 120 330"/>
+  <polygon fill={g} points="120 320 120 330 125 325 120 320"/>
+  <polygon fill={c} points="130 330 130 320.01 125 325 130 330"/>
+  <polygon fill={h} points="125 325 130 320.01 129.99 320 120 320 125 325"/>
+  <polygon fill={f} points="130 340 140 340 135 335 130 340"/>
+  <polygon fill={c} points="130 330 130 340 135 335 130 330"/>
+  <polygon fill={g} points="140 340 140 330.01 135 335 140 340"/>
+  <polygon fill={e} points="135 335 140 330.01 139.99 330 130 330 135 335"/>
+  <polygon fill={d} points="140 350 150 350 145 345 140 350"/>
+  <polygon fill={g} points="140 340 140 350 145 345 140 340"/>
+  <polygon fill={c} points="150 350 150 340.01 145 345 150 350"/>
+  <polygon fill={f} points="145 345 150 340.01 149.99 340 140 340 145 345"/>
+  <polygon fill={h} points="150 360 160 360 155 355 150 360"/>
+  <polygon fill={c} points="150 350 150 360 155 355 150 350"/>
+  <polygon fill={g} points="160 360 160 350.01 155 355 160 360"/>
+  <polygon fill={d} points="155 355 160 350.01 159.99 350 150 350 155 355"/>
+  <polygon fill={a} points="179.95 330.05 179.95 330.05 179.94 330.04 179.95 330.05 190 320 160 320 175 335 179.95 330.05"/>
+  <polygon fill={b} points="170 340 175 335 160 320 160 350 169.97 340.03 170 340"/>
+  <polygon fill={a} points="180.05 349.94 180.05 349.95 180.06 349.95 180.05 349.95 170 359.99 200 359.99 185 344.99 180.05 349.94"/>
+  <polygon fill={b} points="190 339.99 185 344.99 200 359.99 200 329.99 190.03 339.97 190 339.99"/>
+  <polygon fill={d} points="164.99 345.01 160 350 169.99 350 164.99 345.01"/>
+  <polygon fill={c} points="170 350 170 340 169.97 340.03 164.99 345.01 169.99 350 170 350"/>
+  <rect fill={c} x="170" y="359.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="185 325 180 330 190 330 185 325"/>
+  <polygon fill={f} points="175 335 170 340 179.99 340 175 335"/>
+  <rect fill={c} x="179.99" y="359.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="180 340 180 330 179.95 330.05 179.95 330.05 175 335 175 335 179.99 340 180 340"/>
+  <polygon fill={c} points="190 320 185 325 190 330 190 320"/>
+  <polygon fill={f} points="180 340.01 184.99 345 185 344.99 189.99 340 180 340 180 340.01"/>
+  <polygon fill={g} points="180 349.99 180.05 349.95 180.05 349.94 184.99 345 180 340.01 180 349.99"/>
+  <polygon fill={c} points="190 339.99 190.03 339.97 195 335 190 330 190 339.99"/>
+  <polygon fill={e} points="195 335 199.99 330 190 330 195 335"/>
+  <polygon fill={c} points="170 359.99 174.99 355 170 350.01 170 359.99"/>
+  <polygon fill={d} points="170 350.01 174.99 355 179.99 350 170 350 170 350.01"/>
+  <polygon fill={e} points="190 320 190 330 195 325 190 320"/>
+  <polygon fill={g} points="200 320 190 320 195 325 200 320"/>
+  <polygon fill={c} points="190 330 199.99 330 195 325 190 330"/>
+  <polygon fill={h} points="195 325 199.99 330 200 329.99 200 320 195 325"/>
+  <polygon fill={f} points="180 330 180 340 185 335 180 330"/>
+  <polygon fill={c} points="190 330 180 330 185 335 190 330"/>
+  <polygon fill={g} points="180 340 189.99 340 185 335 180 340"/>
+  <polygon fill={e} points="185 335 189.99 340 190 339.99 190 330 185 335"/>
+  <polygon fill={d} points="170 340 170 350 175 345 170 340"/>
+  <polygon fill={g} points="180 340 170 340 175 345 180 340"/>
+  <polygon fill={c} points="170 350 179.99 350 175 345 170 350"/>
+  <polygon fill={f} points="175 345 179.99 350 180 349.99 180 340 175 345"/>
+  <polygon fill={h} points="160 350 160 360 165 355 160 350"/>
+  <polygon fill={c} points="170 350 160 350 165 355 170 350"/>
+  <polygon fill={g} points="160 360 169.99 360 165 355 160 360"/>
+  <polygon fill={d} points="165 355 169.99 360 170 359.99 170 350 165 355"/>
+  <polygon fill={a} points="229.95 339.95 229.95 339.95 229.96 339.94 229.95 339.95 240 350 240 320 225 335 229.95 339.95"/>
+  <polygon fill={b} points="220 330 225 335 240 320 210 320 219.97 329.97 220 330"/>
+  <polygon fill={a} points="210.06 340.05 210.05 340.05 210.04 340.06 210.05 340.05 200.01 330 200.01 360 215.01 345 210.06 340.05"/>
+  <polygon fill={b} points="220.01 350 215.01 345 200.01 360 230.01 360 220.03 350.03 220.01 350"/>
+  <polygon fill={d} points="214.99 324.99 210 320 210 329.99 214.99 324.99"/>
+  <polygon fill={c} points="210 330 220 330 219.97 329.97 214.99 324.99 210 329.99 210 330"/>
+  <rect fill={c} x="200" y="330" width="0.01" height="9.99"/>
+  <polygon fill={e} points="235 345 230 340 230 350 235 345"/>
+  <polygon fill={f} points="225 335 220 330 220 339.99 225 335"/>
+  <rect fill={c} x="200" y="339.99" width="0.01" height="20.01"/>
+  <polygon fill={g} points="220 340 230 340 229.95 339.95 229.95 339.95 225 335 225 335 220 339.99 220 340"/>
+  <polygon fill={c} points="240 350 235 345 230 350 240 350"/>
+  <polygon fill={f} points="219.99 340 215 344.99 215.01 345 220 349.99 220 340 219.99 340"/>
+  <polygon fill={g} points="210.01 340 210.05 340.05 210.06 340.05 215 344.99 219.99 340 210.01 340"/>
+  <polygon fill={c} points="220.01 350 220.03 350.03 225 355 230 350 220.01 350"/>
+  <polygon fill={e} points="225 355 230 359.99 230 350 225 355"/>
+  <polygon fill={c} points="200.01 330 205 334.99 209.99 330 200.01 330"/>
+  <polygon fill={d} points="209.99 330 205 334.99 210 339.99 210 330 209.99 330"/>
+  <polygon fill={e} points="240 350 230 350 235 355 240 350"/>
+  <polygon fill={g} points="240 360 240 350 235 355 240 360"/>
+  <polygon fill={c} points="230 350 230 359.99 235 355 230 350"/>
+  <polygon fill={h} points="235 355 230 359.99 230.01 360 240 360 235 355"/>
+  <polygon fill={f} points="230 340 220 340 225 345 230 340"/>
+  <polygon fill={c} points="230 350 230 340 225 345 230 350"/>
+  <polygon fill={g} points="220 340 220 349.99 225 345 220 340"/>
+  <polygon fill={e} points="225 345 220 349.99 220.01 350 230 350 225 345"/>
+  <polygon fill={d} points="220 330 210 330 215 335 220 330"/>
+  <polygon fill={g} points="220 340 220 330 215 335 220 340"/>
+  <polygon fill={c} points="210 330 210 339.99 215 335 210 330"/>
+  <polygon fill={f} points="215 335 210 339.99 210.01 340 220 340 215 335"/>
+  <polygon fill={h} points="210 320 200 320 205 325 210 320"/>
+  <polygon fill={c} points="210 330 210 320 205 325 210 330"/>
+  <polygon fill={g} points="200 320 200 329.99 205 325 200 320"/>
+  <polygon fill={d} points="205 325 200 329.99 200.01 330 210 330 205 325"/>
+  <polygon fill={a} points="259.95 330.05 259.95 330.05 259.94 330.04 259.95 330.05 270 320 240 320 255 335 259.95 330.05"/>
+  <polygon fill={b} points="250 340 255 335 240 320 240 350 249.97 340.03 250 340"/>
+  <polygon fill={a} points="260.05 349.94 260.05 349.95 260.06 349.95 260.05 349.95 250 359.99 280 359.99 265 344.99 260.05 349.94"/>
+  <polygon fill={b} points="270 339.99 265 344.99 280 359.99 280 329.99 270.03 339.97 270 339.99"/>
+  <polygon fill={d} points="244.99 345.01 240 350 249.99 350 244.99 345.01"/>
+  <polygon fill={c} points="250 350 250 340 249.97 340.03 244.99 345.01 249.99 350 250 350"/>
+  <rect fill={c} x="250" y="359.99" width="9.99" height="0.01"/>
+  <polygon fill={e} points="265 325 260 330 270 330 265 325"/>
+  <polygon fill={f} points="255 335 250 340 259.99 340 255 335"/>
+  <rect fill={c} x="259.99" y="359.99" width="20.01" height="0.01"/>
+  <polygon fill={g} points="260 340 260 330 259.95 330.05 259.95 330.05 255 335 255 335 259.99 340 260 340"/>
+  <polygon fill={c} points="270 320 265 325 270 330 270 320"/>
+  <polygon fill={f} points="260 340.01 264.99 345 265 344.99 269.99 340 260 340 260 340.01"/>
+  <polygon fill={g} points="260 349.99 260.05 349.95 260.05 349.94 264.99 345 260 340.01 260 349.99"/>
+  <polygon fill={c} points="270 339.99 270.03 339.97 275 335 270 330 270 339.99"/>
+  <polygon fill={e} points="275 335 279.99 330 270 330 275 335"/>
+  <polygon fill={c} points="250 359.99 254.99 355 250 350.01 250 359.99"/>
+  <polygon fill={d} points="250 350.01 254.99 355 259.99 350 250 350 250 350.01"/>
+  <polygon fill={e} points="270 320 270 330 275 325 270 320"/>
+  <polygon fill={g} points="280 320 270 320 275 325 280 320"/>
+  <polygon fill={c} points="270 330 279.99 330 275 325 270 330"/>
+  <polygon fill={h} points="275 325 279.99 330 280 329.99 280 320 275 325"/>
+  <polygon fill={f} points="260 330 260 340 265 335 260 330"/>
+  <polygon fill={c} points="270 330 260 330 265 335 270 330"/>
+  <polygon fill={g} points="260 340 269.99 340 265 335 260 340"/>
+  <polygon fill={e} points="265 335 269.99 340 270 339.99 270 330 265 335"/>
+  <polygon fill={d} points="250 340 250 350 255 345 250 340"/>
+  <polygon fill={g} points="260 340 250 340 255 345 260 340"/>
+  <polygon fill={c} points="250 350 259.99 350 255 345 250 350"/>
+  <polygon fill={f} points="255 345 259.99 350 260 349.99 260 340 255 345"/>
+  <polygon fill={h} points="240 350 240 360 245 355 240 350"/>
+  <polygon fill={c} points="250 350 240 350 245 355 250 350"/>
+  <polygon fill={g} points="240 360 249.99 360 245 355 240 360"/>
+  <polygon fill={d} points="245 355 249.99 360 250 359.99 250 350 245 355"/>
+  <polygon fill={h} points="75 35 70 40 80 40 75 35"/>
+  <polygon fill={g} points="80 30 75 35 80 40 80 30"/>
+  <polygon fill={h} points="80 30 80 40 84.99 35 80 30"/>
+  <polygon fill={g} points="80 40 89.99 40 84.99 35 80 40"/>
+  <polygon fill={h} points="155 35 150 40 160 40 155 35"/>
+  <polygon fill={g} points="160 30 155 35 160 40 160 30"/>
+  <polygon fill={h} points="160 30 160 40 165 35 160 30"/>
+  <polygon fill={g} points="160 40 169.99 40 165 35 160 40"/>
+  <polygon fill={h} points="235 35 230 40 240 40 235 35"/>
+  <polygon fill={g} points="240 30 235 35 240 40 240 30"/>
+  <polygon fill={h} points="240 30 240 40 245 35 240 30"/>
+  <polygon fill={g} points="240 40 250 40 245 35 240 40"/>
+  <polygon fill={g} points="75 365 70 360 80 360 75 365"/>
+  <polygon fill={h} points="80 370 75 365 80 360 80 370"/>
+  <polygon fill={g} points="80 370 80 360 84.99 365 80 370"/>
+  <polygon fill={h} points="80 360 89.99 360 84.99 365 80 360"/>
+  <polygon fill={g} points="155 365 150 360 160 360 155 365"/>
+  <polygon fill={h} points="160 370 155 365 160 360 160 370"/>
+  <polygon fill={g} points="160 370 160 360 165 365 160 370"/>
+  <polygon fill={h} points="160 360 169.99 360 165 365 160 360"/>
+  <polygon fill={g} points="235 365 230 360 240 360 235 365"/>
+  <polygon fill={h} points="240 370 235 365 240 360 240 370"/>
+  <polygon fill={g} points="240 370 240 360 245 365 240 370"/>
+  <polygon fill={h} points="240 360 250 360 245 365 240 360"/>
+  <polygon fill={g} points="35 75 40 70 40 80 35 75"/>
+  <polygon fill={h} points="30 80 35 75 40 80 30 80"/>
+  <polygon fill={g} points="30 80 40 80 35 85 30 80"/>
+  <polygon fill={h} points="40 80 40 89.99 35 85 40 80"/>
+  <polygon fill={g} points="35 155 40 150 40 160 35 155"/>
+  <polygon fill={h} points="30 160 35 155 40 160 30 160"/>
+  <polygon fill={g} points="30 160 40 160 35 165 30 160"/>
+  <polygon fill={h} points="40 160 40 170 35 165 40 160"/>
+  <polygon fill={g} points="35 235.01 40 230.01 40 240.01 35 235.01"/>
+  <polygon fill={h} points="30 240.01 35 235.01 40 240.01 30 240.01"/>
+  <polygon fill={g} points="30 240.01 40 240.01 35 245.01 30 240.01"/>
+  <polygon fill={h} points="40 240.01 40 250 35 245.01 40 240.01"/>
+  <polygon fill={g} points="35 315.01 40 310.01 40 320.01 35 315.01"/>
+  <polygon fill={h} points="30 320.01 35 315.01 40 320.01 30 320.01"/>
+  <polygon fill={g} points="30 320.01 40 320.01 35 325 30 320.01"/>
+  <polygon fill={h} points="40 320.01 40 330 35 325 40 320.01"/>
+  <polygon fill={h} points="285 75 280 70 280 80 285 75"/>
+  <polygon fill={g} points="290 80 285 75 280 80 290 80"/>
+  <polygon fill={h} points="290 80 280 80 285 85 290 80"/>
+  <polygon fill={g} points="280 80 280 89.99 285 85 280 80"/>
+  <polygon fill={h} points="285 155 280 150 280 160 285 155"/>
+  <polygon fill={g} points="290 160 285 155 280 160 290 160"/>
+  <polygon fill={h} points="290 160 280 160 285 165 290 160"/>
+  <polygon fill={g} points="280 160 280 170 285 165 280 160"/>
+  <polygon fill={h} points="285 235.01 280 230.01 280 240.01 285 235.01"/>
+  <polygon fill={g} points="290 240.01 285 235.01 280 240.01 290 240.01"/>
+  <polygon fill={h} points="290 240.01 280 240.01 285 245.01 290 240.01"/>
+  <polygon fill={g} points="280 240.01 280 250 285 245.01 280 240.01"/>
+  <polygon fill={h} points="285 315.01 280 310.01 280 320.01 285 315.01"/>
+  <polygon fill={g} points="290 320.01 285 315.01 280 320.01 290 320.01"/>
+  <polygon fill={h} points="290 320.01 280 320.01 285 325 290 320.01"/>
+  <polygon fill={g} points="280 320.01 280 330 285 325 280 320.01"/>
       </svg>
     );
   }
