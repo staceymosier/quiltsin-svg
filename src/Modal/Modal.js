@@ -7,7 +7,7 @@ class Modal extends Component {
   }
 
   exitModal() {
-    this.setState({ activeModal: false});
+    this.setState({ activeModal: false });
   }
 
   render() {
@@ -15,7 +15,7 @@ class Modal extends Component {
       <div className="modal">
         <div className="modal-content">
            Hello there
-          <button onClick={this.exitModal}>Cancel</button>
+          <button type="button" onClick={this.exitModal}>Cancel</button>
         </div>
       </div>
     );

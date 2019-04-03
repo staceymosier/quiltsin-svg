@@ -41,10 +41,7 @@ class App extends Component {
       isOutlined: true,
       allowClearPalette: false,
       allowRefresh: true,
-      activeColors: Object.entries(activeColors).reduce((result, [key, val], idx) => {
-        result[key] = '#fdfefc';
-        return result;
-      }, {}),
+      activeColors: Object.entries(activeColors).reduce((result, [key]) => ({ ...result, [key]: '#fdfefc' }), {}),
     });
   }
 
@@ -55,10 +52,8 @@ class App extends Component {
     this.setState({
       allowClearPalette: true,
       allowRefresh: true,
-      activeColors: Object.entries(activeColors).reduce((result, [key, val], idx) => {
-        result[key] = newColors[idx];
-        return result;
-      }, {}),
+      activeColors: Object.entries(activeColors).reduce((result, [key], idx) => (
+        { ...result, [key]: newColors[idx] }), {}),
     });
   }
 
@@ -95,8 +90,7 @@ class App extends Component {
 
   updateColor({ letter, color }) {
     const { activeColors } = this.state;
-    activeColors[letter] = color;
-    return this.setState({ activeColors });
+    return this.setState({ activeColors: { ...activeColors, [letter]: color } });
   }
 
   render() {
@@ -116,17 +110,17 @@ class App extends Component {
           <header>
             <div className="topbar">
               <div className="logo">
-              <a href="./index.html"> Amish Quilts </a>
-            </div>
+                <a href="./index.html"> Amish Quilts </a>
+              </div>
               <div className="select-field">
-              <select className="selected" value={activeBlock.id} onChange={e => this.updateActiveBlock(e)}>
-                {Object.entries(data).map(([key, value]) => (
-                  <option value={key} key={key} className="option">
-                    {value.title}
-                  </option>
-                ))}
-              </select>
-            </div>
+                <select className="selected" value={activeBlock.id} onChange={e => this.updateActiveBlock(e)}>
+                  {Object.entries(data).map(([key, value]) => (
+                    <option value={key} key={key} className="option">
+                      {value.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
             <Palette
               activeColors={activeColors}
@@ -135,30 +129,30 @@ class App extends Component {
             />
             <div className="palette-tools">
               <Icon
-              path={mdiCheckboxBlankOutline}
-              color={isOutlined ? 'black' : '#c9c9cb'}
-              size={2}
-              onClick={this.toggleOutline}
-            />
+                path={mdiCheckboxBlankOutline}
+                color={isOutlined ? 'black' : '#c9c9cb'}
+                size={2}
+                onClick={this.toggleOutline}
+              />
               <Icon
-              path={mdiAlphaABoxOutline}
-              color={isShowingLetters ? 'black' : '#c9c9cb'}
-              size={2}
-              onClick={this.showLetters}
-            />
+                path={mdiAlphaABoxOutline}
+                color={isShowingLetters ? 'black' : '#c9c9cb'}
+                size={2}
+                onClick={this.showLetters}
+              />
               <Icon
-              path={mdiLayersOff}
-              color={allowClearPalette ? 'black' : '#c9c9cb'}
-              size={2}
-              onClick={this.clearPalette}
-            />
+                path={mdiLayersOff}
+                color={allowClearPalette ? 'black' : '#c9c9cb'}
+                size={2}
+                onClick={this.clearPalette}
+              />
               <Icon path={mdiShuffle} color="black" size={2} onClick={this.randomizeActiveColors} />
               <Icon
-              path={mdiRefresh}
-              color={allowRefresh ? 'black' : '#c9c9cb'}
-              size={2}
-              onClick={this.resetActiveColors}
-            />
+                path={mdiRefresh}
+                color={allowRefresh ? 'black' : '#c9c9cb'}
+                size={2}
+                onClick={this.resetActiveColors}
+              />
             </div>
           </header>
           <Quilt activeBlock={activeBlock} activeColors={activeColors} isOutlined={isOutlined} />

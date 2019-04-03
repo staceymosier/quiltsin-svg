@@ -5,16 +5,22 @@ import { mdiSettings } from '@mdi/js';
 const SavePanel = () => (
   <div className="form-group">
     <div className="form-item">
-      <input type="checkbox" id="include-swatches" name="include-swatches" />
-      <label htmlFor="include-swatches">With palette</label>
+      <label htmlFor="includeSwatches_opt">
+        With palette
+        <input type="checkbox" id="includeSwatches" name="includeSwatches" />
+      </label>
     </div>
     <div className="form-item">
-      <input type="checkbox" id="include-letters" name="include-letters" />
-      <label htmlFor="include-letters">With letters</label>
+      <label htmlFor="includeLetters">
+        With letters
+        <input type="checkbox" id="includeLetters" name="includeLetters" />
+      </label>
     </div>
     <div className="form-item">
-      <input type="checkbox" id="include-fabric-estimate" name="include-fabric-estimate" />
-      <label htmlFor="include-fabric-estimate">With fabric estimation</label>
+      <label htmlFor="includeFabricEstimate">
+        With fabric estimation
+        <input type="checkbox" id="includeFabricEstimate" name="includeFabricEstimate" />
+      </label>
     </div>
   </div>
 );
@@ -29,19 +35,20 @@ class ButtonGroup extends Component {
     };
   }
 
-  openModal(e) {
+  openModal() {
     this.setState({ activeModal: true });
   }
 
-  exitModal(e) {
+  exitModal() {
     this.setState({ activeModal: false });
   }
 
   render() {
+    const { activeModal } = this.state;
     return (
       <div>
         <div className="actions">
-          <button onClick={this.openModal} className="fab">
+          <button type="button" onClick={this.openModal} className="fab">
             <Icon
               path={mdiSettings}
               size={1}
@@ -50,20 +57,20 @@ class ButtonGroup extends Component {
           </button>
         </div>
 
-        { this.state.activeModal
+        { activeModal
           ? (
-<div className="modal">
-            <div className="content">
-              <div className="panel">
-                <h3>Save Options</h3>
-                <SavePanel />
+            <div className="modal">
+              <div className="content">
+                <div className="panel">
+                  <h3>Save Options</h3>
+                  <SavePanel />
+                </div>
+                <button type="button" className="button" onClick={this.exitModal}>Cancel</button>
+                &nbsp;
+                <button type="button" className="button" onClick={this.saveItem}>Save</button>
               </div>
-              <button className="button" onClick={this.exitModal}>Cancel</button>
-               &nbsp;
-              <button className="button" onClick={this.saveItem}>Save</button>
             </div>
-          </div>
-)
+          )
           : null }
       </div>
     );

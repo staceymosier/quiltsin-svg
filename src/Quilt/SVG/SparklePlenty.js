@@ -1,8 +1,12 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
 class SparklePlenty extends PureComponent {
   render() {
-    const { a, b, c, d, e, f, g, h } = this.props.activeColors;
+    const { activeColors } = this.props;
+    const {
+      a, b, c, d, e, f, g, h,
+    } = activeColors;
     return (
       <svg
         fill="#000"
@@ -1705,5 +1709,9 @@ class SparklePlenty extends PureComponent {
     );
   }
 }
+
+SparklePlenty.propTypes = {
+  colors: PropTypes.object,
+};
 
 export default SparklePlenty;

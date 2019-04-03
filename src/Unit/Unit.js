@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
 class Unit extends PureComponent {
   render() {
@@ -35,6 +36,17 @@ class Unit extends PureComponent {
     );
   }
 }
+
+Unit.propTypes = {
+  height: PropTypes.number,
+  width: PropTypes.number,
+  viewBox: PropTypes.string,
+  color: PropTypes.string,
+  children: PropTypes.object,
+  name: PropTypes.string,
+  isShowingLetters: PropTypes.boolean,
+};
+
 
 class SquareUnit extends PureComponent {
   render() {

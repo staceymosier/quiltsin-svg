@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
-class AmishHomage extends PureComponent {
+class AmishHomage extends Component {
   render() {
     const {a, b, c, d, e, f, g, h, i, j, k, l, m} = this.props.activeColors;
     return (
