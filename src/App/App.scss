@@ -30,9 +30,16 @@ header {
   flex-direction: column;
   flex: 1;
   justify-content: flex-start;
+  max-width: 500px;
 
   .palette {
     display: none;
+
+    button {
+      border: none;
+      background: none;
+      outline: none;
+    }
   }
 }
 
@@ -97,8 +104,36 @@ header {
   }
 }
 
-.palette-tray {
-  padding-left: 1rem;
+.palette-tools {
+  display: flex;
+  padding-top: 1rem;
+
+  > button {
+    background: none;
+    border: none;
+    fill: #2c2521;
+    flex: 1;
+    text-align: center;
+
+    &.inactive {
+      fill: #DFDFE0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      fill: #72cfe8;
+    }
+
+    .tool-label {
+      color: #1c1c4a;
+      font-size: .75rem;
+    }
+  }
+}
+
+.palette-box {
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .quilt {
@@ -123,6 +158,26 @@ header {
   }
 }
 
+.swatch-name {
+  text-align: center;
+  text-transform: uppercase;
+  margin:2px;
+}
+
+@media (max-width: 950px) {
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar,
+  .topbar .logo a {
+    display: block;
+  }
+}
+
+// Inactive components
 .fab {
   background-color: transparent;
   border-radius: 50%;
@@ -172,26 +227,5 @@ header {
     .form-group {
       border-top: solid 4px #c6e9e9;
     }
-  }
-}
-
-.swatch-name {
-  background: #fff;
-  color: #4f4f4f;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 2px;
-}
-
-@media (max-width: 950px) {
-  .wrapper {
-    display: block;
-  }
-}
-
-@media (max-width: 500px) {
-  .topbar,
-  .topbar .logo a {
-    display: block;
   }
 }

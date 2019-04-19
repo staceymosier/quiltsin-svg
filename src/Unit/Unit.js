@@ -19,8 +19,8 @@ class Unit extends PureComponent {
         height={height}
         viewBox={viewBox}
         fill={color}
-        stroke={color === '#fdfefc' ? '#dfdfdf' : ''}
-        strokeWidth="3px"
+        stroke="#000"
+        strokeWidth="2px"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
