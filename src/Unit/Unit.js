@@ -44,7 +44,6 @@ Unit.propTypes = {
   color: PropTypes.string,
   children: PropTypes.object,
   name: PropTypes.string,
-  isShowingLetters: PropTypes.boolean,
 };
 
 

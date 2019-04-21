@@ -1,0 +1,16 @@
+// ****  Update readme.txt
+// ****  Clear ESLint errors
+// ****  Start Tests
+// ****  Complementary Tetrad color scheme
+// ****  Click on piece in svg to trigger update color
+// ****  Quick filter color by hue
+// ****  Show square building block w/ letters
+// ****  Zoom feature
+// ****  Show fabric name on swatch / picker
+// ****  Information about the quilt display
+// ****  Persistent color scheme
+// ****  Rethink icon meanings
+// ****  Calculate fabric / cuts for each letter fabric
+// ****  Lock color
+// ****  Optimize adding quilt design as to not have to map name to component here
+// ****  Rethink mobile ui

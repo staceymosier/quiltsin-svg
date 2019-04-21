@@ -11,7 +11,7 @@ import {
 import './App.scss';
 import Quilt from '../Quilt/Quilt';
 import Palette from '../Palette/Palette';
-import Fab from './Fab.js';
+import Fab from './Fab';
 import Data from '../data';
 
 class App extends Component {
@@ -76,9 +76,8 @@ class App extends Component {
     });
   }
 
-  updateActiveBlock(e) {
+  updateActiveBlock(id) {
     const { data } = this.state;
-    const id = e.target.value;
     this.setState({
       activeBlock: data[id],
       activeColors: data[id].colors,
@@ -131,7 +130,7 @@ class App extends Component {
               isShowingLetters={isShowingLetters}
               updateColor={({ letter, color }, e) => this.updateColor({ letter, color }, e)}
             />
-            <Fab data={data} />
+            <Fab data={data} callback={id => this.updateActiveBlock(id)} />
           </header>
           <Quilt activeBlock={activeBlock} activeColors={activeColors} isOutlined={isOutlined} />
         </div>

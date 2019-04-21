@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Anaheim');
 $display-font: 'Anaheim', serif;
 
+$main-dark: #06283e;
+$main-med: #72cfe8;
+$main-light: #d2f7f7;
+$dark-gray: #2c2521;
+$base-gray: #cecece;
+$white: #fff;
+
 body {
-  background-color: #cecece;
+  background-color: $base-gray;
   font-family: sans-serif;
   margin: 0;
 }
@@ -15,9 +22,26 @@ h1, h2, h3, .display {
   font-family: $display-font;
 }
 
+button {
+  background: none;
+  border: none;
+
+  &.save-button {
+    fill: $main-dark;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
 .app {
-  background: #fff;
-  max-height: 100vh;
+  background: $white;
+  max-height: calc(100vh - 8px); // 8px for the top border ui style
 }
 
 .wrapper {
@@ -50,8 +74,8 @@ header {
     align-content: center;
 
     a {
-      background: #c2d8d8;
-      color: #06283e;
+      background: $main-light;
+      color: $main-dark;
       display: inline-block;
       font-family: $display-font;
       font-size: 1.5rem;
@@ -60,46 +84,8 @@ header {
       padding: 1rem;
 
       &:hover {
-        background: #d2f7f7;
+        background: $main-light;
       }
-    }
-  }
-}
-
-.select-field {
-  border: solid 2px #c2d8d8;
-  display: flex;
-  padding: .5rem;
-  position: relative;
-
-  &::after {
-    background: #fff;
-    border-bottom: 1px solid #c2d8d8;
-    color: #333;
-    content: '<>';
-    font: 24px "Consolas", monospace;
-    padding: 0 0 2px;
-    pointer-events: none;
-    position: absolute;
-    right: 9px;
-    top: 10px;
-    transform: rotate(90deg);
-  }
-
-  select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    color: #06283e;
-    font-family: $display-font;
-    font-size: 1.5rem;
-    font-weight: 100;
-    width: 100%;
-
-    &:focus {
-      outline: none;
     }
   }
 }
@@ -111,21 +97,21 @@ header {
   > button {
     background: none;
     border: none;
-    fill: #2c2521;
+    fill: $dark-gray;
     flex: 1;
     text-align: center;
 
     &.inactive {
-      fill: #DFDFE0;
+      fill: $base-gray;
     }
 
     &:hover {
       cursor: pointer;
-      fill: #72cfe8;
+      fill: $main-med;
     }
 
     .tool-label {
-      color: #1c1c4a;
+      color: $main-dark;
       font-size: .75rem;
     }
   }
@@ -139,17 +125,17 @@ header {
 .quilt {
   flex: 2;
   text-align: center;
-  background-image: linear-gradient(45deg, #dfdfdf 25%, transparent 25%),
-    linear-gradient(-45deg, #dfdfdf 25%, transparent 25%), 
-    linear-gradient(45deg, transparent 75%, #dfdfdf 75%), 
-    linear-gradient(-45deg, transparent 75%, #dfdfdf 75%);
+  background-image: linear-gradient(45deg, $base-gray 25%, transparent 25%),
+    linear-gradient(-45deg, $base-gray 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, $base-gray 75%), 
+    linear-gradient(-45deg, transparent 75%, $base-gray 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 
   svg {
     margin: 2rem auto;
     max-width: 100%;
-    max-height: calc( 100vh - 4rem);
+    max-height: calc( 100vh - (4rem + 8px)); // 8px for the top border ui style
   }
 
   .is-outlined svg > * {
@@ -164,20 +150,6 @@ header {
   margin:2px;
 }
 
-@media (max-width: 950px) {
-  .wrapper {
-    display: block;
-  }
-}
-
-@media (max-width: 500px) {
-  .topbar,
-  .topbar .logo a {
-    display: block;
-  }
-}
-
-// Inactive components
 .fab {
   background-color: transparent;
   border-radius: 50%;
@@ -190,7 +162,7 @@ header {
   transition: background-color .5s ease-in-out;
 
   &:hover {
-    background-color: #437899;
+    background-color: $main-med;
   }
 }
 
@@ -203,29 +175,58 @@ header {
   z-index: 10000;
 
   .content {
-    background: #fff;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 3rem;
+    background: $white;
+    height: calc(100vh - 4rem);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    position: relative;
     width: 75vw;
+    overflow-y: auto;
 
-    .button {
-      background: #06283e;
-      border-radius: 3px;
-      border: none;
-      color: #c2d8d8;
-      cursor: pointer;
-      padding: 1rem;
-      transition: background-color .5s ease-in-out;
+    .quilt-selection {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
 
-      &:hover,
-      &:focus {
-        background-color: #5e89a5;
+      li {
+        background: lighten($base-gray, 10%);
+        margin: 10px;
+        padding: 1rem;
+        text-align: center;
+        width: calc(50% - 20px);
+
+        button {
+          background: $main-dark;
+          border-radius: 2px;
+          border: none;
+          color: $base-gray;
+          font-size: .75rem;
+          margin: 1rem;
+          padding: 1rem;
+          transition: all .5s ease-in-out;
+
+          &:hover {
+            background-color: $main-med;
+            color: $dark-gray;
+          }
+        }
       }
     }
+  }
+}
 
-    .form-group {
-      border-top: solid 4px #c6e9e9;
-    }
+
+@media (max-width: 950px) {
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar,
+  .topbar .logo a {
+    display: block;
   }
 }
