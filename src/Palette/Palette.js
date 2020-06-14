@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import SquareUnit from '../Unit/Unit';
 import PaletteBox from './PaletteBox';
 
@@ -33,7 +32,7 @@ class Palette extends Component {
   }
 
   render() {
-    const squareProps = { width: 80, height: 80, viewBox: '0 0 80 80' };
+    const squareProps = { width: 60, height: 60, viewBox: '0 0 60 60' };
     const { activeColors, updateColor, isShowingLetters } = this.props;
     const { displayColorPicker, selectedLetter } = this.state;
 
