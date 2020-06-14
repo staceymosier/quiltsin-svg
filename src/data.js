@@ -17,6 +17,7 @@ export default {
       k: '#302e82',
       l: '#52373f',
     },
+    previewImage: 'http://staceymosier.com/amish-quilts/img/roman-260x300.png',
   },
   2: {
     title: 'Amish Homage',
@@ -37,6 +38,7 @@ export default {
       l: '#5d111a',
       m: '#475656',
     },
+    previewImage: 'http://staceymosier.com/amish-quilts/img/amish-260x300.png',
   },
   3: {
     title: 'Sparkle Plenty',
@@ -52,6 +54,7 @@ export default {
       g: '#113259',
       h: '#0179bf',
     },
+    previewImage: 'http://staceymosier.com/amish-quilts/img/sparkle-260x300.png',
   },
   4: {
     title: 'Robbing Peter to Pay Paul',
@@ -68,5 +71,6 @@ export default {
       h: '#00a87d',
       i: '#000',
     },
+    previewImage: 'http://staceymosier.com/amish-quilts/img/paypaul-260x300.png',
   },
 };

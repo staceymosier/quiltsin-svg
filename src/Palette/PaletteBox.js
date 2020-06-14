@@ -9,13 +9,6 @@ const styles = {
   },
   popover: {
     background: '#fff',
-    border: 'solid 1px #8e989d',
-    boxShadow: '1px 1px 0px #8e989d',
-    height: '200px',
-    overflowY: 'scroll',
-    padding: '1rem',
-    position: 'absolute',
-    textAlign: 'center',
   },
 };
 

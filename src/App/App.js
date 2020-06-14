@@ -11,6 +11,7 @@ import {
 import './App.scss';
 import Quilt from '../Quilt/Quilt';
 import Palette from '../Palette/Palette';
+import Fab from './Fab';
 import Data from '../data';
 
 class App extends Component {
@@ -20,11 +21,10 @@ class App extends Component {
     this.state = {
       activeBlock: Data['1'],
       activeColors: Data['1'].colors,
-      allowClearPalette: true,
       allowRefresh: false,
       data: Data,
       isOutlined: false,
-      isShowingLetters: false,
+      isShowingLetters: true,
     };
 
     this.updateColor = this.updateColor.bind(this);
@@ -39,7 +39,6 @@ class App extends Component {
     const { activeColors } = this.state;
     this.setState({
       isOutlined: true,
-      allowClearPalette: false,
       allowRefresh: true,
       activeColors: Object.entries(activeColors).reduce((result, [key]) => ({ ...result, [key]: '#fdfefc' }), {}),
     });
@@ -50,7 +49,6 @@ class App extends Component {
     const newColors = Object.values(activeColors);
     newColors.push(newColors.shift());
     this.setState({
-      allowClearPalette: true,
       allowRefresh: true,
       activeColors: Object.entries(activeColors).reduce((result, [key], idx) => (
         { ...result, [key]: newColors[idx] }), {}),
@@ -60,7 +58,6 @@ class App extends Component {
   resetActiveColors() {
     const { activeBlock } = this.state;
     return this.setState({
-      allowClearPalette: true,
       isOutlined: false,
       allowRefresh: false,
       activeColors: activeBlock.colors,
@@ -79,9 +76,8 @@ class App extends Component {
     });
   }
 
-  updateActiveBlock(e) {
+  updateActiveBlock(id) {
     const { data } = this.state;
-    const id = e.target.value;
     this.setState({
       activeBlock: data[id],
       activeColors: data[id].colors,
@@ -96,7 +92,6 @@ class App extends Component {
   render() {
     const {
       activeBlock,
-      allowClearPalette,
       activeColors,
       allowRefresh,
       data,
@@ -105,55 +100,37 @@ class App extends Component {
     } = this.state;
 
     return (
-      <div className="app">
+      <div className="app" style={{ borderTop: `solid 8px ${activeColors.a}` }}>
         <div className="wrapper">
           <header>
-            <div className="topbar">
-              <div className="logo">
-                <a href="./index.html"> Amish Quilts </a>
-              </div>
-              <div className="select-field">
-                <select className="selected" value={activeBlock.id} onChange={e => this.updateActiveBlock(e)}>
-                  {Object.entries(data).map(([key, value]) => (
-                    <option value={key} key={key} className="option">
-                      {value.title}
-                    </option>
-                  ))}
-                </select>
-              </div>
+            <div className="palette-tools">
+              <button type="button" onClick={this.toggleOutline} className={isOutlined ? 'active' : 'inactive'}>
+                <Icon path={mdiCheckboxBlankOutline} size={2} />
+                <div className="tool-label">Outlines</div>
+              </button>
+              <button type="button" onClick={this.showLetters} className={isShowingLetters ? 'active' : 'inactive'}>
+                <Icon path={mdiAlphaABoxOutline} size={2} />
+                <div className="tool-label">Letters</div>
+              </button>
+              <button type="button" onClick={this.clearPalette}>
+                <Icon path={mdiLayersOff} size={2} />
+                <div className="tool-label">Clear</div>
+              </button>
+              <button type="button" onClick={this.randomizeActiveColors}>
+                <Icon path={mdiShuffle} size={2} />
+                <div className="tool-label">Shuffle</div>
+              </button>
+              <button type="button" onClick={this.resetActiveColors} className={allowRefresh ? 'active' : 'inactive'}>
+                <Icon path={mdiRefresh} size={2} />
+                <div className="tool-label">Reset</div>
+              </button>
             </div>
             <Palette
               activeColors={activeColors}
               isShowingLetters={isShowingLetters}
               updateColor={({ letter, color }, e) => this.updateColor({ letter, color }, e)}
             />
-            <div className="palette-tools">
-              <Icon
-                path={mdiCheckboxBlankOutline}
-                color={isOutlined ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.toggleOutline}
-              />
-              <Icon
-                path={mdiAlphaABoxOutline}
-                color={isShowingLetters ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.showLetters}
-              />
-              <Icon
-                path={mdiLayersOff}
-                color={allowClearPalette ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.clearPalette}
-              />
-              <Icon path={mdiShuffle} color="black" size={2} onClick={this.randomizeActiveColors} />
-              <Icon
-                path={mdiRefresh}
-                color={allowRefresh ? 'black' : '#c9c9cb'}
-                size={2}
-                onClick={this.resetActiveColors}
-              />
-            </div>
+            <Fab data={data} callback={id => this.updateActiveBlock(id)} />
           </header>
           <Quilt activeBlock={activeBlock} activeColors={activeColors} isOutlined={isOutlined} />
         </div>
