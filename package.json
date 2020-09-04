@@ -5,7 +5,7 @@
   "dependencies": {
     "@mdi/js": "^3.5.95",
     "@mdi/react": "^1.1.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "parcel": "^1.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
